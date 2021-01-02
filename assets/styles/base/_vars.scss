@@ -27,3 +27,9 @@ $sdBaseSize: 1rem;
   /* Measurements */
   --m-regular: 37.5rem;
 }
+
+/* Media Queries */
+$sm: '(min-width: 36em)';
+$md: '(min-width: 40em)';
+$lg: '(min-width: 64em)';
+$xl: '(min-width: 90em)';
