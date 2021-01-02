@@ -1,0 +1,10 @@
+/*
+ * Type
+ */
+
+html {
+  font-family: var(--f-primary);
+  font-size: clamp(13px, 1.2vw, 18px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,29 @@
+/*
+ * Variables
+ */
+
+$sdBaseSize: 1rem;
+
+:root {
+  /* Size Scale */
+  --s-300: #{$sdBaseSize * 0.75};
+  --s-400: #{$sdBaseSize};
+  --s-500: #{$sdBaseSize * 1.33};
+  --s-600: #{$sdBaseSize * 1.77};
+  --s-700: #{$sdBaseSize * 2.36};
+  --s-800: #{$sdBaseSize * 3.15};
+  --s-900: #{$sdBaseSize * 4.2};
+  --s-major: #{$sdBaseSize * 5.6};
+
+  /* Leading */
+  --l-flat: 1;
+  --l-tight: 1.3;
+  --l-medium: 1.5;
+  --l-loose: 1.7;
+
+  /* Fonts */
+  --f-primary: 'Ideal Sans SSm A', 'Ideal Sans SSm B', system,-apple-system,BlinkMacSystemFont,Avenir,sans-serif;
+
+  /* Measurements */
+  --m-regular: 37.5rem;
+}
