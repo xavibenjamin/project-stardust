@@ -8,6 +8,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media #{$md} {
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
 
 .site-id__image {
@@ -16,13 +21,22 @@
   img {
     border: 2px solid white;
     border-radius: 50%;
-    max-width: 80px;
+    max-width: 70px;
+  }
+
+  @media #{$md} {
+    margin-bottom: 0;
+    margin-right: var(--s-300);
   }
 }
 
 .site-id__info {
   line-height: var(--l-flat);
   text-align: center;
+
+  @media #{$md} {
+    text-align: left;
+  }
 }
 
 .site-name {

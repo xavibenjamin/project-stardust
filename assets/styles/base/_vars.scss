@@ -17,15 +17,22 @@ $sdBaseSize: 1rem;
 
   /* Leading */
   --l-flat: 1;
-  --l-tight: 1.3;
-  --l-medium: 1.5;
-  --l-loose: 1.7;
+  --l-tight: 1.1;
+  --l-medium: 1.4;
+  --l-loose: 1.6;
 
   /* Fonts */
   --f-primary: 'Ideal Sans SSm A', 'Ideal Sans SSm B', system,-apple-system,BlinkMacSystemFont,Avenir,sans-serif;
+  --f-secondary: 'Verlag Cond A', 'Verlag Cond B', system,-apple-system,BlinkMacSystemFont,Avenir,sans-serif;
+  --f-mono: 'JetBrains Mono', monospace;
 
   /* Measurements */
-  --m-regular: 37.5rem;
+  --m-reg: 45rem;
+  --m-lg: 50rem;
+  --m-xl: 65rem;
+
+  /* Misc */
+  --m-radius: 0.3rem;
 }
 
 /* Media Queries */

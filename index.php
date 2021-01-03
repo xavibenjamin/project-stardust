@@ -2,23 +2,22 @@
 get_header();
 ?>
 
-<div class="wrapper">
-  <div class="[ site-id ] [ h-card ]">
-    <div class="site-id__image">
-      <img class="u-photo" src="<?php echo get_template_directory_uri(); ?>/assets/img/tim-smith-avatar.jpg" alt="Tim Smith Avatar Illustration">
-    </div>
-    <div class="site-id__info">
-      <h1 class="site-name">
-        <a class="p-name u-url" rel="me" href="/">
-          Timothy Smith
-        </a>
-        <span class="site-pronouns">he/him</span>
-      </h1>
-      <p class="site-bio">Geek, coffee snob, and maker of stuff.</p>
+<main tabindex="-1" id="main-content">
+  <div class="wrapper">
+
+    <div class="site-feed">
+      <?php if (have_posts()) : while (have_posts()) : the_post();
+
+        if ( has_post_format( 'status') || has_post_format( 'image') ) {
+          get_template_part( 'template-parts/content/format', get_post_format() );
+        } else {
+          get_template_part( 'template-parts/content/format-standard' );
+        }
+
+      endwhile; endif; ?>
     </div>
   </div>
-</div>
-
+</main>
 
 <?php
 get_footer();

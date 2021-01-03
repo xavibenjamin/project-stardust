@@ -1,0 +1,10 @@
+/*
+ * Align Wide
+ */
+
+.alignwide {
+  margin-left: 50%;
+  max-width: var(--m-lg);
+  transform: translateX(-50%);
+  width: 100vw;
+}

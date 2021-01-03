@@ -1,0 +1,18 @@
+/*
+ * Video
+ */
+
+.wp-block-embed {
+  margin-bottom: var(--s-600);
+  margin-top: var(--s-700);
+
+  iframe {
+    border-radius: var(--m-radius);
+  }
+
+  figcaption {
+    color: var(--c-text-alt);
+    font-size: var(--s-400);
+    margin-top: var(--s-400);
+  }
+}
