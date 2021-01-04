@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tim</title>
-
-   <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7114076/6732832/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7114076/6732832/css/fonts.css" />
 
   <?php wp_head(); ?>
 </head>
@@ -21,11 +19,11 @@
       <div class="site-id__info">
         <h1 class="site-name">
           <a class="p-name u-url" rel="me" href="/">
-            Timothy Smith
+            <?php esc_html_e( 'Timothy Smith', 'stardust' ); ?>
           </a>
-          <span class="site-pronouns">he/him</span>
+          <span class="site-pronouns"><?php esc_html_e( 'he/him', 'stardust' ); ?></span>
         </h1>
-        <p class="site-bio">Geek, coffee snob, and maker of stuff.</p>
+        <p class="site-bio"><?php esc_html_e( 'Geek, coffee snob, and maker of stuff.', 'stardust' ); ?></p>
       </div>
     </div>
   </div>
