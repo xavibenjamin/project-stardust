@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main tabindex="-1" id="main-content">
+<main tabindex="-1" id="main-content" class="site-content">
   <div class="wrapper">
 
     <div class="site-feed">
