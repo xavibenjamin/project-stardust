@@ -14,11 +14,6 @@
     margin-right: auto;
     margin-top: var(--s-400);
     max-width: var(--m-reg);
-    padding: var(--s-600);
-
-    @media #{$md} {
-      padding: 0 var(--s-600);
-    }
   }
 
   &.alignfull {
@@ -28,6 +23,11 @@
 
     img {
       border-radius: 0;
+    }
+
+    figcaption {
+      padding-left: var(--s-600);
+      padding-right: var(--s-600);
     }
   }
 

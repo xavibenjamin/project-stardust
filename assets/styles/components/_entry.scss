@@ -71,6 +71,14 @@
   color: var(--c-text-alt);
   font-size: var(--s-400);
   margin-top: var(--s-400);
+  
+  @media #{$md} {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--m-reg);
+    padding-left: var(--s-600);
+    padding-right: var(--s-600);
+  }
 }
 
 .entry__content {
