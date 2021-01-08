@@ -1,0 +1,10 @@
+/*
+ * WP Block Separator
+ */
+
+.wp-block-separator {
+  border: 0;
+  border-bottom: 1px solid var(--c-border-line);
+  margin: var(--s-600) auto;
+  max-width: 200px;
+}
