@@ -21,7 +21,7 @@
     </figure>
   <?php endif; ?>
 
-  <div class="e-content entry__content">
+  <div class="e-content entry__content hyphens">
     <?php the_content(); ?>
   </div>
 

@@ -1,6 +1,6 @@
 <article <?php post_class('entry'); ?>>
 
-  <div class="e-content entry__content">
+  <div class="e-content entry__content hyphens">
     <?php the_content(); ?>
   </div>
 
