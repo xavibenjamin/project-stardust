@@ -33,3 +33,20 @@ function stardust_setup() {
   add_theme_support( 'automatic-feed-links' );
 }
 add_action( 'after_setup_theme', 'stardust_setup' );
+
+// Theme Widont
+function theme_widont( $str = '' ) {
+
+  // Strip spaces.
+  $str = trim( $str );
+  // Find the last space.
+  $space = strrpos( $str, ' ' );
+
+  // If there's a space then replace the last on with a non breaking space.
+  if ( false !== $space ) {
+    $str = substr( $str, 0, $space ) . '&nbsp;' . substr( $str, $space + 1 );
+  }
+
+  // Return the string.
+  return $str;
+}
