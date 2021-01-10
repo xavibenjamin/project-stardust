@@ -3,7 +3,8 @@
  */
 
 .caps {
-  .entry__content & {
+  .entry__content &,
+  .comment-body & {
     font-family: var(--f-caps);
   }
 }
