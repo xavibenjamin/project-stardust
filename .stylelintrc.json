@@ -24,6 +24,7 @@
   },
   "ignoreFiles": [
     "./node_modules/",
-    "./assets/styles/base/_reset.scss"
+    "./assets/styles/base/_reset.scss",
+    "./assets/styles/components/_entry-comments.scss"
   ]
 }
