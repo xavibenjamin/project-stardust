@@ -25,4 +25,17 @@
     <?php the_content(); ?>
   </div>
 
+  <?php if ( is_singular('post') ) : ?>
+  <footer class="entry__footer">
+    <?php if ( comments_open() || get_comments_number() > 0 ) : ?>
+      <div id="post-discussion" class="entry-comments">        
+        <div class="entry-comments__comments">
+          <?php comments_template(); ?>
+        </div>
+        
+      </div>
+    <?php endif; ?>
+  </footer>
+  <?php endif; ?>
+
 </article>

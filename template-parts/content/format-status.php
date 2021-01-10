@@ -8,6 +8,16 @@
     <div class="entry__meta">
       <a href="<?php the_permalink(); ?>" class="entry__date u-url"><time class="dt-published"><?php echo get_the_date('D, M jS, Y · g:i a'); ?></time></a>
     </div>
+
+    <?php if ( is_singular('post') ) : ?>
+    <?php if ( comments_open() || get_comments_number() > 0 ) : ?>
+      <div id="post-discussion" class="entry-comments">        
+        <div class="entry-comments__comments">
+          <?php comments_template(); ?>
+        </div>
+        
+      </div>
+    <?php endif; endif; ?>
   </footer>
 
 </article>
