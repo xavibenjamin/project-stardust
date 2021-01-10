@@ -14,16 +14,16 @@
   <div class="wrapper">
     <div class="[ site-id ] [ h-card ]">
       <div class="site-id__image">
-        <img class="u-photo" src="<?php echo get_template_directory_uri(); ?>/assets/img/tim-smith-avatar.jpg" alt="Tim Smith Avatar Illustration">
+        <img class="u-photo" src="<?php site_icon_url(200); ?>" alt="Tim Smith Avatar Illustration">
       </div>
       <div class="site-id__info">
         <h1 class="site-name">
           <a class="p-name u-url" rel="me" href="/">
-            <?php esc_html_e( 'Timothy Smith', 'stardust' ); ?>
+            <?php bloginfo('name'); ?>
           </a>
           <span class="site-pronouns"><?php esc_html_e( 'he/him', 'stardust' ); ?></span>
         </h1>
-        <p class="site-bio"><?php esc_html_e( 'Geek, coffee snob, and maker of stuff.', 'stardust' ); ?></p>
+        <p class="site-bio"><?php bloginfo( 'description' ); ?></p>
       </div>
     </div>
   </div>
