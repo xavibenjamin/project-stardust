@@ -86,3 +86,9 @@ img {
   background: var(--c-accent);
   color: #fff;
 }
+
+// Reset Focus
+:focus {
+  outline: 2px dashed var(--c-accent);
+  outline-offset: 0.2rem;
+}
