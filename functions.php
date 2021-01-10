@@ -50,3 +50,14 @@ function theme_widont( $str = '' ) {
   // Return the string.
   return $str;
 }
+
+// Comment Replies
+function sd_enqueue_comments_reply() {
+
+  if( is_singular() && comments_open() && ( get_option( 'thread_comments' ) == 1) ) {
+    // Load comment-reply.js (into footer)
+    wp_enqueue_script( 'comment-reply', '/wp-includes/js/comment-reply.min.js', array(), false, true );
+  }
+  
+}
+add_action(  'wp_enqueue_scripts', 'sd_enqueue_comments_reply' );
