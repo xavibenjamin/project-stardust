@@ -22,6 +22,7 @@
   list-style: none;
   margin-top: 0;
   padding: 0;
+  margin-bottom: var(--s-600);
 
   .comment {
     + .comment {
@@ -106,7 +107,11 @@
 
 /* Comment Form */
 .comment-respond {
-  margin-top: var(--s-600);
+  border-radius: var(--m-radius);
+  background-color: var(--c-bg-alt);
+  padding: var(--s-600);
+
+
 
   #cancel-comment-reply-link {
     margin-left: var(--s-400);
@@ -207,3 +212,47 @@
     font-size: var(--s-400);
   }
 }
+
+/* Likes */
+  .likes {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--s-600);
+
+    h3 {
+      color: var(--c-text-accent);
+      font-family: var(--f-caps);
+      font-size: var(--s-400);
+    }
+
+    .mention-list {
+      margin: 0;
+      margin-left: var(--s-400);
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+      .webmention {
+        + .webmention {
+          transform: translateX(-0.75rem);
+          transition: transform var(--t-timing) var(--t-easing);
+        }
+      }
+
+      .avatar {
+        width: var(--s-600);;
+        height: var(--s-600);;
+        border-radius: 50%;
+        border: 1px solid var(--c-border-line);
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      
+      .webmention + .webmention {
+        transform: translateX(0);
+      }
+    }
+  }
