@@ -4,12 +4,12 @@
  */
 
 .site-id {
-  align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
 
   @media #{$md} {
+    align-items: center;
     display: inline-flex;
     flex-direction: row;
   }
@@ -32,11 +32,6 @@
 
 .site-id__info {
   line-height: var(--l-flat);
-  text-align: center;
-
-  @media #{$md} {
-    text-align: left;
-  }
 }
 
 .site-name {

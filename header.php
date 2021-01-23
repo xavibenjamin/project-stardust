@@ -11,7 +11,7 @@
 <body <?php body_class($class); ?>>
 
 <header class="site-header">
-  <div class="wrapper">
+  <div class="[ site-header__wrapper ] [ wrapper ]">
     <div class="[ site-id ] [ h-card ]">
       <div class="site-id__image">
         <img class="u-photo" src="<?php site_icon_url(200); ?>" alt="Tim Smith Avatar Illustration">
@@ -26,5 +26,6 @@
         <p class="site-bio"><?php bloginfo( 'description' ); ?></p>
       </div>
     </div>
+    <a href="/subscribe/" class="button">Subscribe</a>
   </div>
 </header>

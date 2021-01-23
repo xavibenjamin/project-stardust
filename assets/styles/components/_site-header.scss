@@ -3,6 +3,14 @@
  */
 
 .site-header {
-  margin-bottom: var(--s-700);
-  margin-top: var(--s-400);
+  margin-bottom: var(--s-900);
+  margin-top: var(--s-500);
+}
+
+.site-header__wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
