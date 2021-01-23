@@ -36,9 +36,10 @@
 
 .entry__subtitle {
   color: var(--c-text);
-  font-size: var(--s-600);
+  font-family: var(--f-primary);
+  font-size: var(--s-500);
   font-weight: 400;
-  line-height: var(--l-tight);
+  line-height: var(--l-medium);
   margin-bottom: var(--s-600);
 }
 
