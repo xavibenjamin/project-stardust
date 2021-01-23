@@ -31,6 +31,37 @@
   --c-input-bg: var(--vulcan);
 }
 
+[data-theme='halcyon'] {
+  /* Color Defs */
+  --midnight-express: #1b2434;
+  --kashmir-blue: #596684;
+  --ship-cove: #8591ad;
+  --yellow-orange: #ffaa40;
+  --feijoa: #ade86e;
+  --grandis: #ffd070;
+  --dark-turquoise: #00d1e9;
+  --mischka: #a0aabd;
+  --mauve: #c9a1ff;
+  --black-russian: #151c29;
+  --link-water: #f0f2f5;
+  --biscay: #2c3a56;
+
+  /* Theme Vars */
+  --c-bg: var(--midnight-express);
+  --c-bg-alt: var(--black-russian);
+  --c-heading: var(--link-water);
+  --c-text: var(--mischka);
+  --c-text-alt: var(--ship-cove);
+  --c-text-accent: var(--yellow-orange);
+  --c-accent: var(--grandis);
+  --c-accent-alt: var(--feijoa);
+  --c-link: var(--mauve);
+  --c-code: var(--biscay);
+  --c-code-block-bg: var(--black-russian);
+  --c-border-line: var(--kashmir-blue);
+  --c-input-bg: var(--biscay);
+}
+
 html {
   background-color: var(--c-bg);
 }

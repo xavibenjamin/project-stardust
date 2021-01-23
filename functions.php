@@ -1,7 +1,7 @@
 <?php
 
 // Useful global constants.
-define( 'SD_VERSION', '2021.3' );
+define( 'SD_VERSION', '2021.4' );
 
 function stardust_scripts() {
   wp_enqueue_script(

@@ -4,7 +4,7 @@
 
 .entry-comments {
   border-top: 1px solid var(--c-border-line);
-  margin-top: var(--s-900);
+  margin-top: var(--s-600);
   padding-top: var(--s-600);
 }
 
@@ -214,7 +214,8 @@
 }
 
 /* Likes */
-  .likes {
+  .likes,
+  .reposts {
     display: flex;
     align-items: center;
     margin-bottom: var(--s-600);
@@ -234,8 +235,8 @@
 
       .webmention {
         + .webmention {
-          transform: translateX(-0.75rem);
-          transition: transform var(--t-timing) var(--t-easing);
+          margin-left: -0.75rem;
+          transition: margin-left var(--t-timing) var(--t-easing);
         }
       }
 
@@ -252,7 +253,11 @@
     &:focus-within {
       
       .webmention + .webmention {
-        transform: translateX(0);
+        margin-left: 0;
       }
     }
   }
+
+::placeholder {
+  color: var(--c-text-alt);
+}

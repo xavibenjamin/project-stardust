@@ -35,7 +35,7 @@
 }
 
 .entry__subtitle {
-  font-family: var(--f-secondary);
+  color: var(--c-text);
   font-size: var(--s-600);
   font-weight: 400;
   line-height: var(--l-tight);
@@ -96,5 +96,5 @@
 }
 
 .entry__footer {
-  margin-top: var(--s-500);
+  margin-top: var(--s-700);
 }
