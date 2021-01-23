@@ -6,7 +6,7 @@
 
   <footer class="entry__footer">
     <div class="entry__meta">
-      <a href="<?php the_permalink(); ?>" class="entry__date u-url"><time class="dt-published"><?php echo get_the_date('D, M jS, Y · g:i a'); ?></time></a>
+      <a href="<?php the_permalink(); ?>" class="entry__date u-url"><span class="entry__date-arrow">&rarr;</span><time class="dt-published"><?php echo get_the_date('D, M jS, Y · g:i a'); ?></time></a>
     </div>
 
     <?php if ( is_singular('post') ) : ?>
