@@ -49,7 +49,16 @@
 
 .entry__date {
   color: var(--c-text-alt);
+  font-family: var(--f-caps);
   font-size: var(--s-400);
+  text-decoration: none;
+}
+
+.entry__date-arrow {
+  color: var(--c-accent-alt);
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.07em;
 }
 
 .entry__featured-image {
@@ -97,5 +106,5 @@
 }
 
 .entry__footer {
-  margin-top: var(--s-700);
+  margin-top: var(--s-600);
 }
