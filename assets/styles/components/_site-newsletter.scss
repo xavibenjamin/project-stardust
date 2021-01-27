@@ -8,6 +8,12 @@
   flex-direction: column;
   justify-content: center;
   min-height: 50vh;
+
+  .success {
+    color: var(--c-text-alt);
+    font-size: var(--s-400);
+    text-align: center;
+  }
 }
 
 .site-newsletter__title {
@@ -15,6 +21,8 @@
 }
 
 .site-newsletter__form {
+  width: 100%;
+
   form {
     align-items: center !important;
   }
