@@ -85,3 +85,18 @@ function sd_twitter_profile_replace($content) {
 }
 add_filter('the_content', 'sd_twitter_profile_replace');
 add_filter('comment_text', 'sd_twitter_profile_replace');
+
+// Retrieve first image
+function get_the_first_image() {
+  global $post, $posts;
+  $first_img = '';
+  ob_start();
+  ob_end_clean();
+  $output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
+  $first_img = $matches[1][0];
+
+  if(empty($first_img)) {
+    $first_img = "/path/to/default.png";
+  }
+  return $first_img;
+}
