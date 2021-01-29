@@ -1,0 +1,52 @@
+/*
+ * Photo Grid
+ */
+
+.photo-grid {
+  display: grid;
+  grid-gap: var(--s-300);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.photo-grid__card {
+  border-radius: var(--m-radius);
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: transform var(--t-timing) var(--t-easign);
+    width: 100%;
+  }
+
+  a {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+
+  svg {
+    bottom: var(--s-400);
+    fill: #fff;
+    height: var(--s-500);
+    left: var(--s-400);
+    position: absolute;
+    width: var(--s-500);
+  }
+}
