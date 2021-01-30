@@ -1,0 +1,23 @@
+/*
+ * Archive List
+ */
+
+.archive-list__item {
+  // line-height: var(--l-tight);
+
+  + .archive-list__item {
+    margin-top: var(--s-500);
+  }
+}
+
+.archive-list__item-title {
+  color: var(--c-heading);
+  font-weight: 700;
+}
+
+.archive-list__item-link {
+  color: var(--c-link);
+  font-family: var(--f-caps);
+  font-size: var(--s-400);
+  text-decoration: none;
+}

@@ -1,7 +1,7 @@
 <?php
 
 // Useful global constants.
-define( 'SD_VERSION', '2021.5' );
+define( 'SD_VERSION', '2021.6' );
 
 function stardust_scripts() {
   wp_enqueue_script(
@@ -46,6 +46,8 @@ function stardust_setup() {
 
   // Automatic feed
   add_theme_support( 'automatic-feed-links' );
+
+  register_nav_menu( 'primary', __( 'Primary Menu', 'timmmmydotblog' ) );
 }
 add_action( 'after_setup_theme', 'stardust_setup' );
 
@@ -95,8 +97,17 @@ function get_the_first_image() {
   $output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
   $first_img = $matches[1][0];
 
-  if(empty($first_img)) {
-    $first_img = "/path/to/default.png";
-  }
   return $first_img;
 }
+
+// Modify Excerpt Length
+function sd_custom_excerpt_length( $length ) {
+  return 25;
+}
+add_filter( 'excerpt_length', 'sd_custom_excerpt_length', 999 );
+
+// 
+function sd_excerpt_more( $more ) {
+    return '…';
+}
+add_filter( 'excerpt_more', 'sd_excerpt_more' );

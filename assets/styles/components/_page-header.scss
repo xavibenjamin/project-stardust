@@ -1,0 +1,20 @@
+/*
+ * Page Header
+ */
+
+.page-header {
+  margin-bottom: var(--s-800);
+}
+
+.page-header__title {
+  align-items: center;
+  display: flex;
+
+  small {
+    color: var(--c-text-alt);
+    font-family: var(--f-mono);
+    font-size: var(--s-500);
+    font-weight: normal;
+    margin-left: var(--s-300);
+  }
+}
