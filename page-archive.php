@@ -12,7 +12,7 @@
     <div class="taxonomy-list">
       <h2 class="taxonomy-list__title">Browse by Subject</h2>
       <ul class="taxonomy-list__list">
-			 <?php wp_list_categories( array(
+       <?php wp_list_categories( array(
         'exclude'  => 1,
         'title_li' => ''
     ) ); ?>
@@ -20,9 +20,9 @@
     </div>
 
     <div class="taxonomy-list">
-      <h2 class="taxonomy-list__title">Browse by Year</h2>
+      <h2 class="taxonomy-list__title">Browse by Month</h2>
       <ul class="taxonomy-list__list">
-			 <?php wp_get_archives('type=yearly'); ?>
+       <?php wp_get_archives('type=monthly'); ?>
       </ul>
     </div>
 
