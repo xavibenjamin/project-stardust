@@ -7,7 +7,7 @@ get_header();
     <header class="page-header">
       <h1 class="page-header__title" id="page-title">
         <?php
-          single_cat_title();
+          echo get_the_archive_title();
         ?>
         <small>
           <?php
@@ -26,10 +26,12 @@ get_header();
     <div class="site-feed">
       <?php if (have_posts()) : while (have_posts()) : the_post();
 
-        get_template_part( 'template-parts/content/format-standard' );
+        get_template_part( 'template-parts/content/excerpt' );
 
       endwhile; endif; ?>
     </div>
+
+    <?php wp_pagenavi(); ?>
 
   </div>
 </main>
