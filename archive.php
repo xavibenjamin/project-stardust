@@ -9,11 +9,6 @@ get_header();
         <?php
           echo get_the_archive_title();
         ?>
-        <small>
-          <?php
-            echo $wp_query->found_posts;
-          ?>
-        </small>
       </h1>
       
       <?php if (get_the_archive_description()) : ?>
