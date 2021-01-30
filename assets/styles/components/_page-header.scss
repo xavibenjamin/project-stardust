@@ -3,18 +3,13 @@
  */
 
 .page-header {
-  margin-bottom: var(--s-800);
+  border-bottom: 2px solid var(--c-border-line);
+  margin-bottom: var(--s-500);
+  padding-bottom: var(--s-300);
 }
 
 .page-header__title {
-  align-items: center;
-  display: flex;
-
-  small {
-    color: var(--c-text-alt);
-    font-family: var(--f-mono);
-    font-size: var(--s-500);
-    font-weight: normal;
-    margin-left: var(--s-300);
-  }
+  font-size: var(--s-800);
+  font-weight: 800;
+  line-height: var(--l-tight);
 }
