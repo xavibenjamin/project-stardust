@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7114076/6936832/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7114076/6038832/css/fonts.css" />
 
   <?php wp_head(); ?>
 </head>
