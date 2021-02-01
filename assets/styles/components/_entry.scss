@@ -30,7 +30,7 @@
   font-family: var(--f-secondary);
   font-size: var(--s-800);
   font-weight: 800;
-  line-height: var(--l-tight);
+  line-height: var(--l-flat);
 
   @media #{$md} {
     font-size: var(--s-900);
