@@ -19,7 +19,7 @@ $sdBaseSize: 1rem;
   --l-flat: 1;
   --l-tight: 1.1;
   --l-medium: 1.4;
-  --l-loose: 1.6;
+  --l-loose: 1.5;
 
   /* Fonts */
   --f-primary: 'Ideal Sans SSm A', 'Ideal Sans SSm B', system,-apple-system,BlinkMacSystemFont,Avenir,sans-serif;
@@ -41,5 +41,6 @@ $sdBaseSize: 1rem;
 /* Media Queries */
 $sm: '(min-width: 36em)';
 $md: '(min-width: 40em)';
+$mdMax: '(max-width: 39.9em)';
 $lg: '(min-width: 64em)';
 $xl: '(min-width: 90em)';
