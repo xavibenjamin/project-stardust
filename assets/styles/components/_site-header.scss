@@ -9,8 +9,19 @@
 
 .site-header__wrapper {
   align-items: center;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 
+  @media #{$md} {
+    display: flex;
+  }
+
+  .button {
+    @media #{$mdMax} {
+      position: absolute;
+      right: var(--s-600);
+      top: var(--s-500);
+    }
+  }
 }
