@@ -64,6 +64,42 @@
   --c-selection-bg: var(--biscay);
 }
 
+[data-theme='github-dark'] {
+
+  // Color Defs
+  --cinder: #22292e;
+  --black-pearl: #1d2428;
+  --blue-charcoal: #262e34;
+  --atomic: #424d56;
+  --aluminium: #889196;
+  --link-water: #d0d5da;
+  --heather: #afb6bd;
+  --perfume: #ba90f6;
+  --emerald: #59e491;
+  --brink: #ff6a80;
+  --light-sky: #91ccff;
+  --maya-blue: #63baff;
+  --bittersweet: #ff7864;
+  --rajah: #ffa663;
+  --blue-whale: #21374a;
+
+  /* Theme Vars */
+  --c-bg: var(--cinder);
+  --c-bg-alt: var(--black-pearl);
+  --c-heading: var(--link-water);
+  --c-text: var(--heather);
+  --c-text-alt: var(--aluminium);
+  --c-text-accent: var(--brink);
+  --c-accent: var(--bittersweet);
+  --c-accent-alt: var(--emerald);
+  --c-link: var(--perfume);
+  --c-code: var(--blue-whale);
+  --c-code-block-bg: var(--black-pearl);
+  --c-border-line: var(--atomic);
+  --c-input-bg: var(--blue-charcoal);
+  --c-selection-bg: var(--blue-whale);
+}
+
 html {
   background-color: var(--c-bg);
 }
