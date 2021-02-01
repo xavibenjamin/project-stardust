@@ -12,8 +12,12 @@
 }
 
 .entry__taxonomy {
-  font-size: var(--s-300);
+  font-size: var(--s-400);
   line-height: var(--l-flat);
+
+  @media #{$md} {
+    font-size: var(--s-300);
+  }
 
   a {
     font-weight: 700;
@@ -27,6 +31,10 @@
   font-size: var(--s-800);
   font-weight: 800;
   line-height: var(--l-tight);
+
+  @media #{$md} {
+    font-size: var(--s-900);
+  }
 
   a {
     color: var(--c-heading);
