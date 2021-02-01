@@ -5,7 +5,7 @@ get_header();
 <main tabindex="-1" id="main-content" class="site-content">
   <div class="wrapper">
 
-    <div class="photo-grid alignwide">
+    <div class="photo-grid">
       <?php 
         if (have_posts()) : while (have_posts()) : the_post();
 

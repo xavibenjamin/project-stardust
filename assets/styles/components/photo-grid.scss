@@ -4,8 +4,16 @@
 
 .photo-grid {
   display: grid;
-  grid-gap: var(--s-300);
+  grid-gap: 2px;
   grid-template-columns: repeat(3, 1fr);
+  margin-left: 50%;
+  max-width: var(--m-lg);
+  transform: translateX(-50%);
+  width: 100vw;
+
+  @media #{$md} {
+    grid-gap: var(--s-300);
+  }
 }
 
 
@@ -15,6 +23,10 @@
   overflow: hidden;
   padding-bottom: 100%;
   position: relative;
+
+  @media #{$mdMax} {
+    border-radius: 0;
+  }
 
   &:hover,
   &:focus {
@@ -29,6 +41,10 @@
     position: absolute;
     transition: transform var(--t-timing) var(--t-easing);
     width: 100%;
+
+    @media #{$mdMax} {
+      border-radius: 0;
+    }
   }
 
   a {
