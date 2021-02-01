@@ -64,5 +64,9 @@
 
 .site-bio {
   color: var(--c-text-alt);
-  font-size: var(--s-400);
+  font-size: var(--s-500);
+
+  @media #{$md} {
+    font-size: var(--s-400);
+  }
 }

@@ -8,12 +8,16 @@
   color: var(--c-accent);
   display: inline-block;
   font-family: var(--f-caps);
-  font-size: var(--s-400);
+  font-size: var(--s-500);
   font-weight: 700;
   line-height: var(--l-flat);
   padding: var(--s-300);
   text-decoration: none;
   transition: background-color var(--t-timing) var(--t-easing);
+
+  @media #{$md} {
+    font-size: var(--s-400);
+  }
 
   &:hover,
   &:focus {

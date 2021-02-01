@@ -3,7 +3,11 @@
  */
 
 .site-nav {
-  margin-top: var(--s-400);
+  margin-top: var(--s-500);
+
+  @media #{$md} {
+    margin-top: var(--s-400);
+  }
 }
 
 .site-nav__menu {
@@ -25,12 +29,16 @@
     border-bottom: 2px solid transparent;
     color: var(--c-text);
     font-family: var(--f-caps);
-    font-size: var(--s-400);
+    font-size: var(--s-500);
     font-weight: 700;
     text-decoration: none;
     transition: 
       border-color var(--t-timing) var(--t-easing),
       color var(--t-timing) var(--t-easing);
+    
+    @media #{$md} {
+      font-size: var(--s-400);
+    }
     
     &[aria-current='page'],
     &:hover,
