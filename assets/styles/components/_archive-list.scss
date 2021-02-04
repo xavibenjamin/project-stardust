@@ -6,6 +6,11 @@
   + .archive-list__item {
     margin-top: var(--s-500);
   }
+
+  .entry__star-rating {
+    margin-left: 0.4rem;
+    width: 4em;
+  }
 }
 
 .archive-list__item-title {
