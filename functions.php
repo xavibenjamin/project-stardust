@@ -81,7 +81,7 @@ add_action(  'wp_enqueue_scripts', 'sd_enqueue_comments_reply' );
 
 // Auto-link Twitter usernames
 function sd_twitter_profile_replace($content) {
-  $twtreplace = preg_replace('/([^a-zA-Z0-9-_&])@([0-9a-zA-Z_]+)/',"&nbsp;<a href=\"http://twitter.com/$2\" target=\"_blank\" rel=\"nofollow\">@$2</a>",$content);
+  $twtreplace = preg_replace('/(\s)@(\w+)/',"&nbsp;<a href=\"http://twitter.com/$2\" target=\"_blank\" rel=\"nofollow\">@$2</a>",$content);
 
   return $twtreplace;
 }
