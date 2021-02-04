@@ -1,4 +1,4 @@
-<article <?php post_class('entry'); ?>>
+<article <?php post_class('entry h-entry'); ?>>
   <header class="entry__header">
     <div class="entry__taxonomy"><?php the_category(' '); ?></div>
     <h1 class="entry__title">

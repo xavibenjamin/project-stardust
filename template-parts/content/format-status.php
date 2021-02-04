@@ -1,4 +1,4 @@
-<article <?php post_class('entry'); ?>>
+<article <?php post_class('entry h-entry'); ?>>
 
   <div class="e-content entry__content hyphens">
     <?php the_content(); ?>
