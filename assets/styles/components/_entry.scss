@@ -45,8 +45,9 @@
 .entry__subtitle {
   color: var(--c-text);
   font-family: var(--f-primary);
-  font-size: var(--s-500);
+  font-size: var(--s-600);
   font-weight: 400;
+  letter-spacing: -0.063rem;
   line-height: var(--l-medium);
   margin-bottom: var(--s-600);
 }
