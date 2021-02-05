@@ -13,7 +13,7 @@
       <h2 class="taxonomy-list__title">Browse by Subject</h2>
       <ul class="taxonomy-list__list">
        <?php wp_list_categories( array(
-        'exclude'  => 1,
+        'exclude'  => array( 1, 156 ),
         'title_li' => ''
     ) ); ?>
       </ul>

@@ -1,7 +1,7 @@
 <?php
 
 // Useful global constants.
-define( 'SD_VERSION', '2021.12' );
+define( 'SD_VERSION', '2021.13' );
 
 function stardust_scripts() {
   wp_enqueue_script(
@@ -112,7 +112,7 @@ function sd_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'sd_excerpt_more' );
 
-//
+// Modify Archive Title
 function sd_archive_title( $title ) {
     if ( is_category() ) {
         $title = single_cat_title( '', false );
@@ -131,3 +131,10 @@ function sd_archive_title( $title ) {
     return $title;
 }
 add_filter( 'get_the_archive_title', 'sd_archive_title' );
+
+// Exclude posts in these categories from subscription emails
+function sd_exclude_these( $categories ) {
+  $categories = array( 'skip-email' );
+  return $categories;
+}
+add_filter( 'jetpack_subscriptions_exclude_these_categories', 'sd_exclude_these' );
