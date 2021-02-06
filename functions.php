@@ -47,7 +47,11 @@ function stardust_setup() {
   // Automatic feed
   add_theme_support( 'automatic-feed-links' );
 
+  // Register Menu
   register_nav_menu( 'primary', __( 'Primary Menu', 'timmmmydotblog' ) );
+
+  // Register Photo Card Thumb
+  add_image_size( 'photo-card', 600, 600, true );
 }
 add_action( 'after_setup_theme', 'stardust_setup' );
 
