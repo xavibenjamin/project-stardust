@@ -19,9 +19,7 @@
 
 .photo-grid__card {
   border-radius: var(--m-radius);
-  height: 0;
   overflow: hidden;
-  padding-bottom: 100%;
   position: relative;
 
   @media #{$mdMax} {
@@ -36,11 +34,7 @@
   }
 
   img {
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
     transition: transform var(--t-timing) var(--t-easing);
-    width: 100%;
 
     @media #{$mdMax} {
       border-radius: 0;
