@@ -4,7 +4,7 @@
   ?>
 
   <?php if ( get_the_post_thumbnail() != '' ): ?>
-    <?php the_post_thumbnail(); ?>
+    <?php the_post_thumbnail( 'photo-card' ); ?>
   <?php else: ?>
   <img src="<?php echo get_the_first_image() ?>" alt="" loading="lazy">
   <?php endif; ?>
