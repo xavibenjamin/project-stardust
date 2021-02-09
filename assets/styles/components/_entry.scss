@@ -155,3 +155,30 @@
     width: 0.9em;
   }
 }
+
+// Entry Tags
+.entry__tags {
+  align-items: center;
+  display: flex;
+  font-size: var(--s-400);
+
+  &:not(:first-child) {
+    margin-top: var(--s-300);
+  }
+
+  svg {
+    fill: var(--c-accent-alt);
+    height: 0.9em;
+    margin-right: 0.5rem;
+    width: 0.9em;
+  }
+
+  a {
+    color: var(--c-text-alt);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
