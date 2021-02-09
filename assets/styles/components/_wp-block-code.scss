@@ -5,14 +5,12 @@
   margin-left: 50%;
   margin-top: var(--s-700);
   overflow-x: auto;
-  padding: var(--s-600);
   tab-size: 2;
   text-align: left;
   transform: translateX(-50%);
   width: 100vw;
 
   @media #{$md} {
-    border-radius: 0.25rem;
     max-width: var(--m-lg);
   }
 
@@ -23,5 +21,19 @@
     word-break: normal;
     word-spacing: normal;
     word-wrap: normal;
+  }
+
+  &[class*='language-'] {
+    background: var(--c-code-block-bg);
+    margin: 0;
+    margin-bottom: var(--s-700);
+    margin-left: 50%;
+    margin-top: var(--s-700);
+    padding: var(--s-600);
+    position: relative;
+
+    @media #{$md} {
+      border-radius: 0.25rem;
+    }
   }
 }
