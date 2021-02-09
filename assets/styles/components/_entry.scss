@@ -24,6 +24,10 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  > * + * {
+    margin-left: var(--s-300);
+  }
 }
 
 .entry__title {
@@ -112,6 +116,13 @@
 .entry__content {
   > * + * {
     margin-top: var(--s-500);
+  }
+
+  & .has-drop-cap:not(:focus)::first-letter {
+    color: var(--c-text-accent);
+    font-family: var(--f-secondary);
+    font-size: 5.4em;
+    font-weight: 800;
   }
 
   h2 {
