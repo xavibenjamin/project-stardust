@@ -50,6 +50,11 @@
         </span>
 
       <?php endif; ?>
+      <?php
+        get_template_part(
+          'template-parts/content/post-tags'
+        );
+        ?>
       <?php if (comments_open() || get_comments_number() > 0) : ?>
         <div id="post-discussion" class="entry-comments">
           <div class="entry-comments__comments">
