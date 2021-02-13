@@ -28,18 +28,18 @@
     </div>
     <a href="/subscribe/" class="button"><?php esc_html_e( 'Subscribe', 'stardust' ); ?></a>
   </div>
-  <div class="wrapper">
-    <nav class="site-nav">
-      <?php
-        wp_nav_menu(
-          array(
-            'theme_location' => 'primary',
-            'menu_class'     => 'site-nav__menu',
-            'menu_id'        => 'primary-nav',
-          )
-        );
-        ?>
-    </nav>
-  </div>
-  
+
+  <nav class="site-nav">
+    <div class="wrapper">
+    <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'primary',
+          'menu_class'     => 'site-nav__menu',
+          'menu_id'        => 'primary-nav',
+        )
+      );
+      ?>
+    </div>
+  </nav>
 </header>
