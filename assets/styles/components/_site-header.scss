@@ -5,6 +5,11 @@
 .site-header {
   margin-bottom: var(--s-800);
   margin-top: var(--s-500);
+
+  @media #{$mdMax} {
+    border-bottom: 1px solid var(--c-border-line);
+    padding-bottom: var(--s-400);
+  }
 }
 
 .site-header__wrapper {
@@ -21,7 +26,7 @@
     @media #{$mdMax} {
       position: absolute;
       right: var(--s-600);
-      top: var(--s-500);
+      top: var(--s-300);
     }
   }
 }
