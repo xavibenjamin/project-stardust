@@ -182,3 +182,21 @@
     }
   }
 }
+
+// More Link
+.more-link {
+  color: var(--c-text-alt);
+  display: inline-block;
+  font-family: var(--f-caps);
+  font-size: var(--s-400);
+  margin-top: var(--s-600);
+  text-decoration: none;
+}
+
+.more-link__arrow {
+  color: var(--c-accent-alt);
+  color: var(--c-accent-alt);
+  margin-left: 0.5rem;
+  position: relative;
+  top: 0.07em;
+}
