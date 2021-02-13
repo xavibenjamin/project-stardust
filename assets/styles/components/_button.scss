@@ -3,15 +3,13 @@
  */
 
 .button {
-  border: 2px solid var(--c-accent);
+  border: 1px solid var(--c-accent);
   border-radius: var(--m-radius);
   color: var(--c-accent);
   display: inline-block;
-  font-family: var(--f-caps);
   font-size: var(--s-500);
-  font-weight: 700;
   line-height: var(--l-flat);
-  padding: var(--s-300);
+  padding: 0.5rem var(--s-400);
   text-decoration: none;
   transition: background-color var(--t-timing) var(--t-easing);
 
