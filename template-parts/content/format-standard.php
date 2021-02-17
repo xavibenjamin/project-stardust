@@ -1,7 +1,7 @@
 <article <?php post_class('entry h-entry'); ?>>
   <header class="entry__header">
     <div class="entry__taxonomy"><?php the_category(' '); ?></div>
-    <h1 class="entry__title">
+    <h1 class="entry__title headline">
       <a href="<?php the_permalink(); ?>"><?php echo theme_widont(get_the_title()); ?></a>
     </h1>
     <?php if (has_excerpt()) : ?>

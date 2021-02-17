@@ -1,7 +1,7 @@
 <?php
 
 // Useful global constants.
-define( 'SD_VERSION', '2021.17' );
+define( 'SD_VERSION', '2021.18' );
 
 function stardust_scripts() {
   wp_enqueue_script(
@@ -119,19 +119,19 @@ add_filter( 'excerpt_more', 'sd_excerpt_more' );
 // Modify Archive Title
 function sd_archive_title( $title ) {
     if ( is_category() ) {
-        $title = single_cat_title( '', false );
+        $title = '<span class="page-header__tax-type">Category</span>' . single_cat_title( '', false );
     } elseif ( is_tag() ) {
-        $title = single_tag_title( '', false );
+        $title = '<span class="page-header__tax-type">Tag</span>' . single_tag_title( '', false );
     } elseif ( is_author() ) {
         $title = '<span class="vcard">' . get_the_author() . '</span>';
     } elseif ( is_post_type_archive() ) {
         $title = post_type_archive_title( '', false );
     } elseif ( is_tax() ) {
-        $title = single_term_title( '', false );
+        $title = '<span class="page-header__tax-type">Post Format</span>' . single_term_title( '', false );
     } elseif ( is_month() ) {
-        $title  = get_the_date( _x( 'F Y', 'monthly archives date format' ) );
+        $title  = '<span class="page-header__tax-type">Month</span>' . get_the_date( _x( 'F Y', 'monthly archives date format' ) );
     }
-  
+
     return $title;
 }
 add_filter( 'get_the_archive_title', 'sd_archive_title' );

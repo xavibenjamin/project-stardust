@@ -5,7 +5,7 @@ get_header();
 <main tabindex="-1" id="main-content" class="site-content">
   <div class="wrapper">
     <header class="page-header">
-      <h1 class="page-header__title" id="page-title">
+      <h1 class="[ page-header__title ] [ headline ]" id="page-title">
         <?php
           echo get_the_archive_title();
         ?>

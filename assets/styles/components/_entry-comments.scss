@@ -24,8 +24,8 @@
   padding: 0;
   margin-bottom: var(--s-600);
 
-  .comment {
-    + .comment {
+  li {
+    + li {
       border-top: 1px solid var(--c-border-line);
       margin-top: var(--s-600);
       padding-top: var(--s-600);
