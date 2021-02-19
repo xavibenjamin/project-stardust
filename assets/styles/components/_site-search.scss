@@ -1,0 +1,46 @@
+/*
+ * Site Search
+ */
+
+.site-search {
+  form {
+    margin-bottom: var(--s-300);
+  }
+}
+
+.site-search__input {
+  background: transparent;
+  border: 0;
+  color: var(--c-heading);
+  font-family: var(--f-secondary);
+  font-size: var(--s-900);
+  letter-spacing: -1.3px;
+  line-height: var(--l-flat);
+  width: 40vw;
+
+  &:placeholder {
+    color: var(--c-text-alt);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.site-search__icon {
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+
+  svg {
+    fill: var(--c-text);
+    height: var(--s-600);
+    width: var(--s-600);
+  }
+}
+
+.site-search__results {
+  color: var(--c-text-alt);
+  font-size: var(--s-400);
+}
