@@ -148,3 +148,11 @@ function modify_read_more_link() {
   return '<a class="more-link" href="' . get_permalink() . '">Read More&nbsp;<span class="more-link__arrow">&rarr;</span></a>';
 }
 add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
+// Indieweb Plugin Support
+function sd_indieweb_plugin_support() {
+
+  // Remove syndication links from body
+  remove_filter( 'the_content', array( 'Syn_Config', 'the_content' ), 30 );
+}
+add_action( 'init', 'sd_indieweb_plugin_support' );
