@@ -125,24 +125,6 @@
   margin-top: var(--s-600);
 }
 
-.entry__syndicated {
-  font-size: var(--s-400);
-
-  a {
-    display: inline-flex;
-    line-height: var(--l-flat);
-  }
-
-  svg {
-    fill: var(--c-accent-alt);
-    height: 0.9em;
-    margin-left: 0.2rem;
-    position: relative;
-    top: 0.1em;
-    width: 0.9em;
-  }
-}
-
 // Entry Tags
 .entry__tags {
   align-items: center;
@@ -166,6 +148,41 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+// Entry Syndication
+.entry__syndication {
+  align-items: center;
+  color: var(--c-text-alt);
+  display: flex;
+  font-size: var(--s-400);
+  line-height: var(--l-flat);
+
+  &:not(:first-child) {
+    margin-top: var(--s-300);
+  }
+
+  .syn-text {
+    margin-right: 0.5rem;
+  }
+}
+
+ul.relsyn {
+  align-items: center;
+  display: flex;
+  position: relative;
+
+  li {
+    padding-right: 0 !important;
+
+    + li {
+      margin-left: 0.3rem;
+    }
+
+    svg {
+      fill: var(--c-accent-alt); 
     }
   }
 }
