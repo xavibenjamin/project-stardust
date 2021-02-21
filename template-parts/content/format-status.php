@@ -14,6 +14,11 @@
         get_template_part(
           'template-parts/content/post-tags'
         );
+        
+        // Add Post Syndication
+        get_template_part(
+          'template-parts/content/post-syndication'
+        );
         ?>
     <?php if ( comments_open() || get_comments_number() > 0 ) : ?>
       <div id="post-discussion" class="entry-comments">        
