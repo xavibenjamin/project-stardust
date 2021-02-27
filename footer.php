@@ -1,3 +1,12 @@
+<footer class="site-footer">
+  <div class="footer-logo">
+    <?php
+      get_template_part(
+        'template-parts/svg/icon-smith'
+      );
+      ?>
+  </div>
+</footer>
 <!--WP Generated Footer -->
 <?php wp_footer(); ?>
 <!--End WP Generated Footer -->
