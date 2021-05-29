@@ -39,6 +39,20 @@
     @media #{$md} {
       font-size: var(--s-400);
     }
+
+    &:not([href*='timmmmy.blog']):not([href*='localhost:3000']):not([href*='/type/']) {
+      align-items: center;
+      column-gap: 0.4rem;
+      display: flex;
+
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23ba90f6' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'%3E%3Cpath d='M15 3h6v6M21 3L11 13M19 18v1a2 2 0 01-2 2H5a2 2 0 01-2-2V7c0-1.1.9-2 2-2h1'/%3E%3C/g%3E%3C/svg%3E%0A");
+        content: '';
+        display: block;
+        height: 0.8em;
+        width: 0.8em;
+      }
+    }
     
     &[aria-current='page'],
     &:hover,
