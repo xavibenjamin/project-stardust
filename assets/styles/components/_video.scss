@@ -16,3 +16,9 @@
     margin-top: var(--s-400);
   }
 }
+
+.wp-block-video {
+  video {
+    border-radius: var(--m-radius);
+  }
+}
