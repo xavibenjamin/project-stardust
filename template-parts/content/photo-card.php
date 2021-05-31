@@ -1,3 +1,13 @@
+<?php
+ /**
+  * Photo Card Partial
+  *
+  * @package Stardust
+  */
+
+use function Stardust\Utility\get_the_first_image;
+?>
+
 <article class="photo-grid__card">
   <?php
     $count = count( get_attached_media( 'image', $post->ID ) );
