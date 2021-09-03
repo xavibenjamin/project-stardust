@@ -1,14 +1,37 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
+const isProduction = 'production' === process.env.mode;
+
+const cssRules = {
+  test: /\.css$/,
+  use: [
+    {
+      loader: MiniCssExtractPlugin.loader,
+    },
+    {
+      loader: 'css-loader',
+      options: {
+        sourceMap: !isProduction,
+      },
+    },
+    {
+      loader: 'postcss-loader',
+      options: {
+        sourceMap: !isProduction,
+      },
+    },
+  ],
+}
+
 
 module.exports = {
   mode: 'development',
   devtool: 'eval-cheap-source-map',
   entry: {
-    frontend: ['./assets/js/main.js', './assets/styles/main.scss'],
+    frontend: ['./assets/js/main.js', './assets/styles/main.css'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -16,7 +39,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css'
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     }),
     new BrowserSyncPlugin({
       files: '**/*.php',
@@ -24,16 +48,14 @@ module.exports = {
     })
   ],
   optimization: {
-    minimizer: [new UglifyJsPlugin(), new OptimizeCssAssetsPlugin()]
+    minimizer: [new UglifyJsPlugin()]
   },
   // Build rules to handle asset files.
   module: {
     rules: [
+      
       // Styles
-      {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
-      },
+      cssRules,
     ],
   },
 }
