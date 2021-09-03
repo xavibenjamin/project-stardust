@@ -9,12 +9,12 @@
   font-size: var(--s-400);
   margin-top: var(--s-800);
 
-  > * + * {
+  & > * + * {
     margin-left: 0.5rem;
   }
 
-  a,
-  .current {
+  & a,
+  & .current {
     border: 1px solid transparent;
     border-radius: 0.2rem;
     color: var(--c-text);
@@ -29,9 +29,8 @@
     }
   }
 
-  .current {
+  & .current {
     background-color: var(--c-bg-alt);
-    
     color: var(--c-link);
   }
 }

@@ -15,7 +15,6 @@
   --cotton-candy: #ffbed7;
   --persian-pink: #ff8ab7;
   --fiord: #4d555d;
-
   --c-bg: var(--black-russian);
   --c-bg-alt: var(--charcoal-blue);
   --c-heading: var(--very-light-grey);
@@ -65,8 +64,7 @@
 }
 
 [data-theme='github-dark'] {
-
-  // Color Defs
+  /* Color Defs */
   --cinder: #22292e;
   --black-pearl: #1d2428;
   --blue-charcoal: #262e34;
@@ -98,6 +96,31 @@
   --c-border-line: var(--atomic);
   --c-input-bg: var(--blue-charcoal);
   --c-selection-bg: var(--blue-whale);
+  --c-alert-primary: var(--bittersweet);
+  --c-alert-success: var(--emerald);
+  --c-alert-danger: var(--rajah);
+}
+
+[data-theme='primrose'] {
+  --bittersweet: #ff7864;
+  --rajah: #ffa663;
+
+  /* Theme Vars */
+  --c-bg: #2e284d;
+  --c-bg-alt: #221d3a;
+  --c-heading: #eee;
+  --c-text: #aeabba;
+  --c-text-alt: #8593b7;
+  --c-text-accent: #07e99d;
+  --c-accent: #75d1ff;
+  --c-accent-alt: #f6a051;
+  --c-link: #ec5fa3;
+  --c-code: #221d3a;
+  --c-code-block-bg: #221d3a;
+  --c-border-line: #60597d;
+
+  /* --c-input-bg: #75d1ff; */
+  --c-selection-bg: #ec5fa3;
   --c-alert-primary: var(--bittersweet);
   --c-alert-success: var(--emerald);
   --c-alert-danger: var(--rajah);

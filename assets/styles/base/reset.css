@@ -80,14 +80,15 @@ img {
   border-radius: var(--m-radius);
 }
 
-// High contrast selection because it can help visually-impaired
-// folks read the text easier
+/* High contrast selection because it can help visually-impaired
+ * folks read the text easier
+ */
 ::selection {
   background: var(--c-selection-bg);
   color: #fff;
 }
 
-// Reset Focus
+/* Reset Focus */
 :focus {
   outline: 2px dashed var(--c-accent);
   outline-offset: 0.2rem;

@@ -3,7 +3,8 @@
  */
 
 .site-search {
-  form {
+
+  & form {
     margin-bottom: var(--s-300);
   }
 }
@@ -33,7 +34,7 @@
   display: inline-flex;
   padding: 0;
 
-  svg {
+  & svg {
     fill: var(--c-text);
     height: var(--s-600);
     width: var(--s-600);

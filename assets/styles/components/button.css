@@ -13,7 +13,7 @@
   text-decoration: none;
   transition: background-color var(--t-timing) var(--t-easing);
 
-  @media #{$md} {
+  @media (--bp-medium) {
     font-size: var(--s-400);
   }
 

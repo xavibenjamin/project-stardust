@@ -24,14 +24,14 @@
   padding: 0;
   margin-bottom: var(--s-600);
 
-  li {
-    + li {
+  & li {
+    & + li {
       border-top: 1px solid var(--c-border-line);
       margin-top: var(--s-600);
       padding-top: var(--s-600);
     }
 
-    .children {
+    & .children {
       border-left: 4px solid var(--c-border-line);
       list-style: none;
       margin-left: var(--s-900);
@@ -47,7 +47,7 @@
   padding-left: var(--s-900);
   position: relative;
 
-  p + p {
+  & p + p {
     margin-top: var(--s-400);
   }
 }
@@ -58,22 +58,22 @@
   align-items: center;
   display: flex;
 
-  .fn {
+  & .fn {
     font-size: var(--s-500);
     font-style: normal;
     font-weight: 700;
 
-    a {
+    & a {
       color: var(--c-heading);
       text-decoration-color: var(--c-link);;
     }
   }
 
-  .says {
+  & .says {
     display: none;
   }
 
-  .avatar {
+  & .avatar {
     border: 1px solid var(--c-border-line);
     height: var(--s-800);
     left: 0;
@@ -89,7 +89,7 @@
   font-size: var(--s-400);
   margin-bottom: var(--s-500);
 
-  a {
+  & a {
     color: var(--c-text-alt);
     text-decoration: none;
   }
@@ -100,7 +100,7 @@
   margin-top: var(--s-400);
   text-align: right;
 
-  a {
+  & a {
     color: var(--c-link);
   }
 }
@@ -113,7 +113,7 @@
 
 
 
-  #cancel-comment-reply-link {
+  & #cancel-comment-reply-link {
     margin-left: var(--s-400);
   }
 }
@@ -128,17 +128,17 @@
 }
 
 .comment-form {
-  > * + * {
+  & > * + * {
     margin-top: var(--s-400);
   }
 
-  label {
+  & label {
     font-size: var(--s-400);
     font-weight: 700;
     line-height: var(--l-tight);
   }
 
-  textarea {
+  & textarea {
     appearance: none;
     background-color: var(--c-input-bg);
     border: 0;
@@ -158,14 +158,14 @@
 }
 
 .comment-form-cookies-consent {
-  label {
+  & label {
     font-size: var(--s-300);
   }
 }
 
 #webmention-form,
 .comment-form {
-  input[type='submit'] {
+  & input[type='submit'] {
     appearance: none;
     background-color: transparent;
     border: 2px solid var(--c-accent);
@@ -178,8 +178,8 @@
     padding: 0.5rem 0.8rem;
   }
 
-  input[type='text'],
-  input[type='url'] {
+  & input[type='text'],
+  & input[type='url'] {
     appearance: none;
     background-color: var(--c-input-bg);
     border: 0;
@@ -200,63 +200,63 @@
 #webmention-form {
   margin-top: var(--s-600);
 
-  > * + * {
+  & > * + * {
     margin-top: var(--s-400);
   }
 
-  p {
+  & p {
     line-height: var(--l-tight);
   }
 
-  label {
+  & label {
     font-size: var(--s-400);
   }
 }
 
 /* Likes */
-  .likes,
-  .reposts {
+.likes,
+.reposts {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--s-600);
+
+  & h3 {
+    color: var(--c-text-accent);
+    font-family: var(--f-caps);
+    font-size: var(--s-400);
+  }
+
+  & .mention-list {
+    margin: 0;
+    margin-left: var(--s-400);
+    padding: 0;
     display: flex;
     align-items: center;
-    margin-bottom: var(--s-600);
 
-    h3 {
-      color: var(--c-text-accent);
-      font-family: var(--f-caps);
-      font-size: var(--s-400);
-    }
-
-    .mention-list {
-      margin: 0;
-      margin-left: var(--s-400);
-      padding: 0;
-      display: flex;
-      align-items: center;
-
-      .webmention {
-        + .webmention {
-          margin-left: -0.75rem;
-          transition: margin-left var(--t-timing) var(--t-easing);
-        }
-      }
-
-      .avatar {
-        width: var(--s-600);;
-        height: var(--s-600);;
-        border-radius: 50%;
-        border: 1px solid var(--c-border-line);
+    & .webmention {
+      & + .webmention {
+        margin-left: -0.75rem;
+        transition: margin-left var(--t-timing) var(--t-easing);
       }
     }
 
-    &:hover,
-    &:focus,
-    &:focus-within {
-      
-      .webmention + .webmention {
-        margin-left: 0;
-      }
+    & .avatar {
+      width: var(--s-600);;
+      height: var(--s-600);;
+      border-radius: 50%;
+      border: 1px solid var(--c-border-line);
     }
   }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    
+    & .webmention + .webmention {
+      margin-left: 0;
+    }
+  }
+}
 
 ::placeholder {
   color: var(--c-text-alt);

@@ -1,5 +1,5 @@
 /**
- * Alert 
+ * Alert
  */
 
 :root {
@@ -15,20 +15,20 @@
   padding: var(--s-600);
   position: relative;
 
-  @media #{$md} {
+  @media (--bp-medium) {
     margin-left: calc(var(--s-600) * -1);
     margin-right: calc(var(--s-600) * -1);
   }
 
-  + .alert {
+  & + .alert {
     margin-top: var(--s-700);
   }
 
-  > * + * {
+  & > * + * {
     margin-top: var(--s-500);
   }
 
-  .alert__icon {
+  & .alert__icon {
     align-items: center;
     background-color: var(--c-bg);
     border: 0.2rem solid var(--c-alert-accent);
@@ -43,14 +43,14 @@
     width: 3rem;
     z-index: 2;
 
-    svg {
+    & svg {
       fill: var(--c-alert-accent);
       height: 1.35rem;
       width: 1.35rem;
     }
   }
 
-  .alert__label {
+  & .alert__label {
     color: var(--c-heading);
     font-family: var(--f-secondary);
     font-size: var(--s-600);
@@ -65,7 +65,7 @@
   &[data-variant='danger'] {
     --c-alert-accent: var(--c-alert-danger);
 
-    svg {
+    & svg {
       position: relative;
       top: -0.1em;
     }
