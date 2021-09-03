@@ -9,13 +9,13 @@
   justify-content: center;
   min-height: 50vh;
 
-  .success {
+  & .success {
     color: var(--c-text-alt);
     font-size: var(--s-400);
     text-align: center;
   }
 
-  small {
+  & small {
     padding-top: var(--s-600);
   }
 }
@@ -27,11 +27,11 @@
 .site-newsletter__form {
   width: 100%;
 
-  form {
+  & form {
     align-items: center !important;
   }
 
-  input {
+  & input {
     background-color: var(--c-input-bg);
     border: 0;
     border-radius: var(--m-radius);
@@ -47,7 +47,7 @@
     }
   }
 
-  button {
+  & button {
     background-color: var(--c-bg-alt);
     border: 2px solid var(--c-accent);
     border-radius: var(--m-radius);
@@ -58,5 +58,4 @@
     margin-left: var(--s-300);
     padding: var(--s-300);
   }
-  
 }

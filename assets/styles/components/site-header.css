@@ -6,7 +6,7 @@
   margin-bottom: var(--s-800);
   margin-top: var(--s-500);
 
-  @media #{$mdMax} {
+  @media (--bp-medium-max) {
     border-bottom: 1px solid var(--c-border-line);
     padding-bottom: var(--s-400);
   }
@@ -18,12 +18,13 @@
   justify-content: space-between;
   position: relative;
 
-  @media #{$md} {
+  @media (--bp-medium) {
     display: flex;
   }
 
-  .button {
-    @media #{$mdMax} {
+  & .button {
+
+    @media (--bp-medium-max) {
       position: absolute;
       right: var(--s-600);
       top: var(--s-300);

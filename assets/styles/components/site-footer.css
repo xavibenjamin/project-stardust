@@ -12,7 +12,7 @@
 .footer-logo {
   width: 6rem;
 
-  svg {
+  & svg {
     fill: var(--c-accent);
   }
 }

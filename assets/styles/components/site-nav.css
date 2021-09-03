@@ -4,8 +4,8 @@
 
 .site-nav {
   margin-top: var(--s-600);
-  
-  @media #{$md} {
+
+  @media (--bp-medium) {
     margin-top: var(--s-400);
   }
 }
@@ -17,26 +17,26 @@
   margin: 0;
   padding: 0;
 
-  li + li {
+  & li + li {
     margin-left: var(--s-500);
 
-    @media #{$md} {
+    @media (--bp-medium) {
       margin-left: var(--s-300);
     }
   }
 
-  a {
+  & a {
     border-bottom: 2px solid transparent;
     color: var(--c-text);
     display: block;
     font-size: var(--s-500);
     font-weight: 700;
     text-decoration: none;
-    transition: 
+    transition:
       border-color var(--t-timing) var(--t-easing),
       color var(--t-timing) var(--t-easing);
-    
-    @media #{$md} {
+
+    @media (--bp-medium) {
       font-size: var(--s-400);
     }
 
@@ -53,7 +53,7 @@
         width: 0.8em;
       }
     }
-    
+
     &[aria-current='page'],
     &:hover,
     &:focus {

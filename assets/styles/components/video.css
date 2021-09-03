@@ -6,11 +6,11 @@
   margin-bottom: var(--s-600);
   margin-top: var(--s-700);
 
-  iframe {
+  & iframe {
     border-radius: var(--m-radius);
   }
 
-  figcaption {
+  & figcaption {
     color: var(--c-text-alt);
     font-size: var(--s-400);
     margin-top: var(--s-400);
@@ -18,7 +18,8 @@
 }
 
 .wp-block-video {
-  video {
+
+  & video {
     border-radius: var(--m-radius);
   }
 }

@@ -10,11 +10,11 @@
   transform: translateX(-50%);
   width: 100vw;
 
-  @media #{$md} {
+  @media (--bp-medium) {
     max-width: var(--m-lg);
   }
 
-  code {
+  & code {
     background: none;
     padding: 0;
     white-space: pre;
@@ -32,7 +32,7 @@
     padding: var(--s-600);
     position: relative;
 
-    @media #{$md} {
+    @media (--bp-medium) {
       border-radius: 0.25rem;
     }
   }

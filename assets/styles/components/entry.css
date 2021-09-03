@@ -6,7 +6,7 @@
 .entry__header {
   margin-bottom: var(--s-700);
 
-  > * + * {
+  & > * + * {
     margin-top: var(--s-300);
   }
 }
@@ -17,17 +17,18 @@
   font-weight: 700;
   line-height: var(--l-flat);
 
-  a {
+  & a {
     text-decoration: none;
   }
 
-  > * + * {
+  & > * + * {
     margin-left: var(--s-300);
   }
 }
 
 .entry__title {
-  a {
+
+  & a {
     color: var(--c-heading);
     text-decoration: none;
   }
@@ -65,7 +66,7 @@
   margin-top: var(--s-700);
   width: 8rem;
 
-  .star--filled {
+  & .star--filled {
     fill: var(--c-accent);
   }
 }
@@ -74,13 +75,13 @@
   margin-bottom: var(--s-600);
   margin-top: var(--s-600);
 
-  @media #{$md} {
+  @media (--bp-medium) {
     margin-left: 50%;
     max-width: 50rem;
     transform: translateX(-50%);
     width: 100vw;
 
-    img {
+    & img {
       width: 100%;
     }
   }
@@ -90,8 +91,8 @@
   color: var(--c-text-alt);
   font-size: var(--s-400);
   margin-top: var(--s-400);
-  
-  @media #{$md} {
+
+  @media (--bp-medium) {
     margin-left: auto;
     margin-right: auto;
     max-width: var(--m-reg);
@@ -101,7 +102,8 @@
 }
 
 .entry__content {
-  > * + * {
+
+  & > * + * {
     margin-top: var(--s-500);
   }
 
@@ -112,11 +114,11 @@
     font-weight: 800;
   }
 
-  h2 {
+  & h2 {
     margin-top: var(--s-900);
   }
 
-  h3 {
+  & h3 {
     margin-top: var(--s-800);
   }
 }
@@ -125,7 +127,8 @@
   margin-top: var(--s-600);
 }
 
-// Entry Tags
+/*  Entry Tags */
+
 .entry__tags {
   align-items: center;
   display: flex;
@@ -135,14 +138,14 @@
     margin-top: var(--s-300);
   }
 
-  svg {
+  & svg {
     fill: var(--c-accent-alt);
     height: 0.9em;
     margin-right: 0.5rem;
     width: 0.9em;
   }
 
-  a {
+  & a {
     color: var(--c-text-alt);
     text-decoration: none;
 
@@ -152,7 +155,8 @@
   }
 }
 
-// Entry Syndication
+/* Entry Syndication */
+
 .entry__syndication {
   align-items: center;
   color: var(--c-text-alt);
@@ -164,7 +168,7 @@
     margin-top: var(--s-300);
   }
 
-  .syn-text {
+  & .syn-text {
     margin-right: 0.5rem;
   }
 }
@@ -174,20 +178,21 @@ ul.relsyn {
   display: flex;
   position: relative;
 
-  li {
+  & li {
     padding-right: 0 !important;
 
-    + li {
+    & + li {
       margin-left: 0.3rem;
     }
 
-    svg {
-      fill: var(--c-accent-alt); 
+    & svg {
+      fill: var(--c-accent-alt);
     }
   }
 }
 
-// More Link
+/* More Link */
+
 .more-link {
   color: var(--c-text-alt);
   display: inline-block;
@@ -198,7 +203,6 @@ ul.relsyn {
 }
 
 .more-link__arrow {
-  color: var(--c-accent-alt);
   color: var(--c-accent-alt);
   margin-left: 0.5rem;
   position: relative;

@@ -3,7 +3,8 @@
  */
 
 .site-feed {
-  > * + * {
+
+  & > * + * {
     margin-top: var(--s-major);
   }
 }

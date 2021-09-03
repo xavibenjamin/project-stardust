@@ -8,7 +8,7 @@
   flex-direction: column;
   position: relative;
 
-  @media #{$md} {
+  @media (--bp-medium) {
     align-items: center;
     display: inline-flex;
     flex-direction: row;
@@ -18,17 +18,17 @@
 .site-id__image {
   margin-bottom: var(--s-400);
 
-  img {
+  & img {
     border: 1px solid var(--c-border-line);
     border-radius: var(--m-radius);
     max-width: var(--s-900);
 
-    @media #{$md} {
+    @media (--bp-medium) {
       max-width: var(--s-800);
     }
   }
 
-  @media #{$md} {
+  @media (--bp-medium) {
     margin-bottom: 0;
     margin-right: var(--s-400);
   }
@@ -45,11 +45,11 @@
   letter-spacing: -0.063rem;
   margin-bottom: 0.15rem;
 
-  @media #{$md} {
-    font-size: var(--s-500);;
+  @media (--bp-medium) {
+    font-size: var(--s-500);
   }
 
-  a {
+  & a {
     color: var(--c-heading);
     text-decoration: none;
 
@@ -70,7 +70,7 @@
   font-size: var(--s-500);
   font-weight: 400;
 
-  @media #{$md} {
+  @media (--bp-medium) {
     font-size: var(--s-400);
   }
 }
@@ -79,7 +79,7 @@
   color: var(--c-text-alt);
   font-size: var(--s-500);
 
-  @media #{$md} {
+  @media (--bp-medium) {
     font-size: var(--s-400);
   }
 }
