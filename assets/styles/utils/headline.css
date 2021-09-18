@@ -1,0 +1,14 @@
+/*
+ * Headline
+ * - used as the big headline on pages
+ */
+
+.headline {
+  font-size: var(--s-800);
+  font-weight: 800;
+  line-height: var(--l-tight);
+
+  @media (--bp-medium) {
+    font-size: var(--s-900);
+  }
+}

@@ -1,0 +1,191 @@
+/*
+ * Theme
+ * - color names from https://www.htmlcsscolor.com/
+ */
+
+:root {
+  --c-input-bg: rgba(255, 255, 255, 0.1);
+}
+
+/*
+ * Bright Pixels Theme
+ *
+ */
+
+[data-theme='bright-pixels'] {
+  /* Color Defs */
+  --vulcan: #2e3237;
+  --very-light-grey: #ccc;
+  --black-russian: #23252a;
+  --glacier: #7bb2bf;
+  --ship-cove: #818fae;
+  --heather: #afb6bd;
+  --charcoal-blue: #1c1d21;
+  --chenin: #dbbb76;
+  --cotton-candy: #ffbed7;
+  --persian-pink: #ff8ab7;
+  --fiord: #4d555d;
+
+  /* Theme Vars */
+  --c-bg: var(--black-russian);
+  --c-bg-alt: var(--charcoal-blue);
+  --c-heading: var(--very-light-grey);
+  --c-text: var(--heather);
+  --c-text-alt: var(--ship-cove);
+  --c-text-accent: var(--chenin);
+  --c-accent: var(--persian-pink);
+  --c-accent-alt: var(--cotton-candy);
+  --c-link: var(--glacier);
+  --c-code: var(--vulcan);
+  --c-code-block-bg: var(--charcoal-blue);
+  --c-border-line: var(--fiord);
+}
+
+/*
+ * Halcyon Theme
+ *
+ */
+
+[data-theme='halcyon'] {
+  /* Color Defs */
+  --midnight-express: #1b2434;
+  --kashmir-blue: #596684;
+  --ship-cove: #8591ad;
+  --yellow-orange: #ffaa40;
+  --feijoa: #ade86e;
+  --grandis: #ffd070;
+  --dark-turquoise: #00d1e9;
+  --mischka: #a0aabd;
+  --mauve: #c9a1ff;
+  --black-russian: #151c29;
+  --solitude: #f0f2f5;
+  --link-water: #bdc4d1;
+  --biscay: #2c3a56;
+
+  /* Theme Vars */
+  --c-bg: var(--midnight-express);
+  --c-bg-alt: var(--black-russian);
+  --c-heading: var(--solitude);
+  --c-text: var(--link-water);
+  --c-text-alt: var(--ship-cove);
+  --c-text-accent: var(--yellow-orange);
+  --c-accent: var(--grandis);
+  --c-accent-alt: var(--feijoa);
+  --c-link: var(--mauve);
+  --c-code: var(--biscay);
+  --c-code-block-bg: var(--black-russian);
+  --c-border-line: var(--kashmir-blue);
+  --c-selection-bg: var(--biscay);
+}
+
+/*
+ * Github Dark Theme
+ *
+ */
+
+[data-theme='github-dark'] {
+  /* Color Defs */
+  --cinder: #22292e;
+  --black-pearl: #1d2428;
+  --blue-charcoal: #262e34;
+  --atomic: #424d56;
+  --aluminium: #889196;
+  --link-water: #d0d5da;
+  --heather: #afb6bd;
+  --perfume: #ba90f6;
+  --emerald: #59e491;
+  --brink: #ff6a80;
+  --light-sky: #91ccff;
+  --maya-blue: #63baff;
+  --bittersweet: #ff7864;
+  --rajah: #ffa663;
+  --blue-whale: #21374a;
+
+  /* Theme Vars */
+  --c-bg: var(--cinder);
+  --c-bg-alt: var(--black-pearl);
+  --c-heading: var(--link-water);
+  --c-text: var(--heather);
+  --c-text-alt: var(--aluminium);
+  --c-text-accent: var(--brink);
+  --c-accent: var(--bittersweet);
+  --c-accent-alt: var(--emerald);
+  --c-link: var(--perfume);
+  --c-code: var(--blue-whale);
+  --c-code-block-bg: var(--black-pearl);
+  --c-border-line: var(--atomic);
+  --c-selection-bg: var(--blue-whale);
+  --c-alert-primary: var(--bittersweet);
+  --c-alert-success: var(--emerald);
+  --c-alert-danger: var(--rajah);
+}
+
+/*
+ * Primrose Theme
+ *
+ */
+
+[data-theme='primrose'] {
+  --bittersweet: #ff7864;
+  --rajah: #ffa663;
+
+  /* Theme Vars */
+  --c-bg: #2e284d;
+  --c-bg-alt: #221d3a;
+  --c-heading: #eee;
+  --c-text: #aeabba;
+  --c-text-alt: #8593b7;
+  --c-text-accent: #07e99d;
+  --c-accent: #75d1ff;
+  --c-accent-alt: #f6a051;
+  --c-link: #ec5fa3;
+  --c-code: #221d3a;
+  --c-code-block-bg: #221d3a;
+  --c-border-line: #60597d;
+  --c-selection-bg: #ec5fa3;
+  --c-alert-primary: var(--bittersweet);
+  --c-alert-success: var(--emerald);
+  --c-alert-danger: var(--rajah);
+}
+
+/*
+ * Halloween Theme
+ *
+ */
+
+[data-theme='halloween'] {
+  /* Color Defs */
+  --color-nero: #141414;
+  --color-black: #0f0f0f;
+  --color-sun: #ff8533;
+  --color-whisper: #e5e5e5;
+  --color-silver: #bababa;
+  --color-suva-grey: #8c8c8c;
+  --color-scream-green: #33ff69;
+  --color-matterhorn: #4f4f4f;
+  --color-honey-flower: #513e60;
+  --color-dodger-blue: #009afa;
+  --color-supernova: #fdb42e;
+
+  /* Theme Vars */
+  --c-bg: var(--color-nero);
+  --c-bg-alt: var(--color-black);
+  --c-link: var(--color-sun);
+  --c-heading: var(--color-whisper);
+  --c-text: var(--color-silver);
+  --c-text-alt: var(--color-suva-grey);
+  --c-text-accent: var(--color-scream-green);
+  --c-accent: var(--color-sun);
+  --c-accent-alt: var(--color-scream-green);
+  --c-border-line: var(--color-matterhorn);
+  --c-code: var(--color-honey-flower);
+  --c-code-block-bg: var(--color-black);
+  --c-selection-bg: var(--color-sun);
+  --c-alert-primary: var(--color-dodger-blue);
+  --c-alert-success: var(--color-scream-green);
+  --c-alert-danger: var(--color-supernova);
+}
+
+html {
+  background-color: var(--c-bg);
+}

@@ -1,0 +1,39 @@
+.wp-block-code {
+  background: var(--c-code-block-bg);
+  font-family: var(--f-mono);
+  margin-bottom: var(--s-700);
+  margin-left: 50%;
+  margin-top: var(--s-700);
+  overflow-x: auto;
+  tab-size: 2;
+  text-align: left;
+  transform: translateX(-50%);
+  width: 100vw;
+
+  @media (--bp-medium) {
+    max-width: var(--m-lg);
+  }
+
+  & code {
+    background: none;
+    padding: 0;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+  }
+
+  &[class*='language-'] {
+    background: var(--c-code-block-bg);
+    margin: 0;
+    margin-bottom: var(--s-700);
+    margin-left: 50%;
+    margin-top: var(--s-700);
+    padding: var(--s-600);
+    position: relative;
+
+    @media (--bp-medium) {
+      border-radius: 0.25rem;
+    }
+  }
+}

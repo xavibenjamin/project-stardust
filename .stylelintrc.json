@@ -1,18 +1,16 @@
 {
-  "extends": "stylelint-config-sass-guidelines",
+  "extends": "stylelint-config-standard",
   "rules": {
-    "property-no-vendor-prefix": null,
-    "selector-class-pattern": "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
-    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "no-descending-specificity": null,
     "at-rule-empty-line-before": [
       "always",
       {
         "except": [
-          "first-nested",
           "blockless-after-blockless"
         ]
       }
     ],
+    "rule-empty-line-before": "always-multi-line",
     "max-nesting-depth": [
       3,
       {
@@ -24,7 +22,7 @@
   },
   "ignoreFiles": [
     "./node_modules/",
-    "./assets/styles/base/_reset.scss",
-    "./assets/styles/components/_entry-comments.scss"
+    "./assets/styles/base/reset.css",
+    "./assets/styles/components/entry-comments.css"
   ]
 }

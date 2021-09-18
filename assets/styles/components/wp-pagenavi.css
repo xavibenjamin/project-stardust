@@ -1,0 +1,36 @@
+/*
+ * WP Pagenavi
+ */
+
+.wp-pagenavi {
+  align-items: center;
+  display: flex;
+  font-family: var(--f-mono);
+  font-size: var(--s-400);
+  margin-top: var(--s-800);
+
+  & > * + * {
+    margin-left: 0.5rem;
+  }
+
+  & a,
+  & .current {
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    color: var(--c-text);
+    line-height: var(--l-flat);
+    padding: 0.4rem 0.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      border: 1px solid var(--c-link);
+      color: var(--c-link);
+    }
+  }
+
+  & .current {
+    background-color: var(--c-bg-alt);
+    color: var(--c-link);
+  }
+}
