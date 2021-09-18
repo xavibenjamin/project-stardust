@@ -3,7 +3,17 @@
  * - color names from https://www.htmlcsscolor.com/
  */
 
+:root {
+  --c-input-bg: rgba(255, 255, 255, 0.1);
+}
+
+/*
+ * Bright Pixels Theme
+ *
+ */
+
 [data-theme='bright-pixels'] {
+  /* Color Defs */
   --vulcan: #2e3237;
   --very-light-grey: #ccc;
   --black-russian: #23252a;
@@ -15,6 +25,8 @@
   --cotton-candy: #ffbed7;
   --persian-pink: #ff8ab7;
   --fiord: #4d555d;
+
+  /* Theme Vars */
   --c-bg: var(--black-russian);
   --c-bg-alt: var(--charcoal-blue);
   --c-heading: var(--very-light-grey);
@@ -27,8 +39,12 @@
   --c-code: var(--vulcan);
   --c-code-block-bg: var(--charcoal-blue);
   --c-border-line: var(--fiord);
-  --c-input-bg: var(--vulcan);
 }
+
+/*
+ * Halcyon Theme
+ *
+ */
 
 [data-theme='halcyon'] {
   /* Color Defs */
@@ -59,9 +75,13 @@
   --c-code: var(--biscay);
   --c-code-block-bg: var(--black-russian);
   --c-border-line: var(--kashmir-blue);
-  --c-input-bg: var(--biscay);
   --c-selection-bg: var(--biscay);
 }
+
+/*
+ * Github Dark Theme
+ *
+ */
 
 [data-theme='github-dark'] {
   /* Color Defs */
@@ -94,12 +114,16 @@
   --c-code: var(--blue-whale);
   --c-code-block-bg: var(--black-pearl);
   --c-border-line: var(--atomic);
-  --c-input-bg: var(--blue-charcoal);
   --c-selection-bg: var(--blue-whale);
   --c-alert-primary: var(--bittersweet);
   --c-alert-success: var(--emerald);
   --c-alert-danger: var(--rajah);
 }
+
+/*
+ * Primrose Theme
+ *
+ */
 
 [data-theme='primrose'] {
   --bittersweet: #ff7864;
@@ -118,12 +142,48 @@
   --c-code: #221d3a;
   --c-code-block-bg: #221d3a;
   --c-border-line: #60597d;
-
-  /* --c-input-bg: #75d1ff; */
   --c-selection-bg: #ec5fa3;
   --c-alert-primary: var(--bittersweet);
   --c-alert-success: var(--emerald);
   --c-alert-danger: var(--rajah);
+}
+
+/*
+ * Halloween Theme
+ *
+ */
+
+[data-theme='halloween'] {
+  /* Color Defs */
+  --color-nero: #141414;
+  --color-black: #0f0f0f;
+  --color-sun: #ff8533;
+  --color-whisper: #e5e5e5;
+  --color-silver: #bababa;
+  --color-suva-grey: #8c8c8c;
+  --color-scream-green: #33ff69;
+  --color-matterhorn: #4f4f4f;
+  --color-honey-flower: #513e60;
+  --color-dodger-blue: #009afa;
+  --color-supernova: #fdb42e;
+
+  /* Theme Vars */
+  --c-bg: var(--color-nero);
+  --c-bg-alt: var(--color-black);
+  --c-link: var(--color-sun);
+  --c-heading: var(--color-whisper);
+  --c-text: var(--color-silver);
+  --c-text-alt: var(--color-suva-grey);
+  --c-text-accent: var(--color-scream-green);
+  --c-accent: var(--color-sun);
+  --c-accent-alt: var(--color-scream-green);
+  --c-border-line: var(--color-matterhorn);
+  --c-code: var(--color-honey-flower);
+  --c-code-block-bg: var(--color-black);
+  --c-selection-bg: var(--color-sun);
+  --c-alert-primary: var(--color-dodger-blue);
+  --c-alert-success: var(--color-scream-green);
+  --c-alert-danger: var(--color-supernova);
 }
 
 html {
