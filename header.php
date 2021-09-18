@@ -11,7 +11,7 @@
 <body <?php body_class($class); ?>>
 
 <header class="site-header">
-  <div class="[ site-header__wrapper ] [ wrapper ]">
+  <div class="[ site-header__wrapper ] [ wrapper wrapper--large ]">
     <div class="[ site-id ] [ h-card ]">
       <div class="site-id__image">
         <img class="u-photo" src="<?php site_icon_url(200); ?>" alt="Tim Smith Avatar Illustration">
@@ -26,20 +26,17 @@
         <p class="site-bio"><?php bloginfo( 'description' ); ?></p>
       </div>
     </div>
-    <a href="/subscribe/" class="button"><?php esc_html_e( 'Subscribe', 'stardust' ); ?></a>
-  </div>
 
-  <nav class="site-nav">
-    <div class="wrapper">
-    <?php
-      wp_nav_menu(
-        array(
-          'theme_location' => 'primary',
-          'menu_class'     => 'site-nav__menu',
-          'menu_id'        => 'primary-nav',
-        )
-      );
-      ?>
-    </div>
-  </nav>
+    <nav class="site-nav">
+      <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'primary',
+            'menu_class'     => 'site-nav__menu',
+            'menu_id'        => 'primary-nav',
+          )
+        );
+        ?>
+    </nav>
+  </div>
 </header>
