@@ -9,3 +9,7 @@
   padding-left: var(--s-600);
   padding-right: var(--s-600);
 }
+
+.wrapper--large {
+  max-width: var(--m-xxl);
+}
