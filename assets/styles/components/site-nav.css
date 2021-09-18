@@ -6,7 +6,7 @@
   margin-top: var(--s-600);
 
   @media (--bp-medium) {
-    margin-top: var(--s-400);
+    margin-top: 0;
   }
 }
 
