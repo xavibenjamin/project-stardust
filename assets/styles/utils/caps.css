@@ -2,9 +2,10 @@
  * Caps
  */
 
-/* .caps {
-  & .entry__content &,
-  & .comment-body & {
+.entry__content,
+.comment-body {
+
+  & .caps {
     font-family: var(--f-caps);
   }
-} */
+}
