@@ -2,8 +2,8 @@
  * Base Index
  */
 
-@import 'reset';
-@import 'mono-fonts';
-@import 'vars';
-@import 'theme';
-@import 'type';
+@import url("reset");
+@import url("mono-fonts");
+@import url("vars");
+@import url("theme");
+@import url("type");
