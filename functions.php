@@ -16,3 +16,15 @@ require_once SD_INC . 'utility.php';
 Stardust\Core\setup();
 Stardust\Overrides\setup();
 Stardust\Shortcodes\setup();
+
+
+// Require Composer autoloader if it exists.
+if ( file_exists( get_template_directory() . '/vendor/autoload.php' ) ) {
+	require_once get_template_directory() . '/vendor/autoload.php';
+}
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+// Data Files
+require_once SD_INC . 'data/last-fm.php';
