@@ -18,7 +18,8 @@
           "pseudo-classes"
         ]
       }
-    ]
+    ],
+    "string-quotes": "double"
   },
   "ignoreFiles": [
     "./node_modules/",
