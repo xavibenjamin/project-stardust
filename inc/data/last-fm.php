@@ -13,7 +13,7 @@ function get_data() {
   $api_key  = $_ENV['LASTFM_API_KEY'];
   $username = 'timothybsmith';
   $api_root = 'http://ws.audioscrobbler.com/2.0/';
-  $api_url  = "{$api_root}?method=user.getrecenttracks&user={$username}&limit=10&api_key={$api_key}&format=json";
+  $api_url  = "{$api_root}?method=user.getrecenttracks&user={$username}&limit=5&api_key={$api_key}&format=json";
 
   $lastfm_data = get_transient( 'sd_lastfm_data' );
 
