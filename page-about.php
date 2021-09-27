@@ -1,4 +1,8 @@
 <?
+/*
+* Template Name: About
+*/
+
 get_header();
 
 use function Stardust\DataLastFm\show_lastfm;
