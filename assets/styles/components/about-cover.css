@@ -1,0 +1,13 @@
+/*
+ * About Cover
+ *
+ */
+
+.about-cover {
+  margin-bottom: var(--s-800);
+  margin-top: calc(var(--s-600) * -1);
+
+  & img {
+    border-radius: 0;
+  }
+}
