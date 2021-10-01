@@ -3,72 +3,72 @@
  */
 
 .wp-block-image {
-  margin-bottom: var(--s-700);
-  margin-top: var(--s-700);
+	margin-bottom: var(--s-700);
+	margin-top: var(--s-700);
 
-  &:not(.is-style-rounded) img {
-    border-radius: var(--m-radius);
-  }
+	&:not(.is-style-rounded) img {
+		border-radius: var(--m-radius);
+	}
 
-  & figcaption {
-    color: var(--c-text-alt);
-    font-size: var(--s-400);
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--s-400);
-    max-width: var(--m-reg);
-  }
+	& figcaption {
+		color: var(--c-text-alt);
+		font-size: var(--s-400);
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: var(--s-400);
+		max-width: var(--m-reg);
+	}
 
-  &.alignfull {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
+	&.alignfull {
+		margin-left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
 
-    & img {
-      border-radius: 0;
-    }
+		& img {
+			border-radius: 0;
+		}
 
-    & figcaption {
-      padding-left: var(--s-600);
-      padding-right: var(--s-600);
-    }
-  }
+		& figcaption {
+			padding-left: var(--s-600);
+			padding-right: var(--s-600);
+		}
+	}
 
-  & .alignright,
-  & .alignleft {
-    float: none;
-    margin: 0;
+	& .alignright,
+	& .alignleft {
+		float: none;
+		margin: 0;
 
-    @media (--bp-medium) {
-      align-items: flex-end;
-      display: flex;
-      flex-direction: row;
-      margin-left: 50%;
-      max-width: var(--m-xl);
-      padding: 0 var(--s-700);
-      transform: translateX(-50%);
-      width: 100vw;
+		@media (--bp-medium) {
+			align-items: flex-end;
+			display: flex;
+			flex-direction: row;
+			margin-left: 50%;
+			max-width: var(--m-xl);
+			padding: 0 var(--s-700);
+			transform: translateX(-50%);
+			width: 100vw;
 
-      & figcaption {
-        padding-left: var(--s-500);
-      }
+			& figcaption {
+				padding-left: var(--s-500);
+			}
 
-      & img {
-        width: 65%;
-      }
-    }
-  }
+			& img {
+				width: 65%;
+			}
+		}
+	}
 
-  & .alignright {
+	& .alignright {
 
-    @media (--bp-medium) {
-      flex-direction: row-reverse;
+		@media (--bp-medium) {
+			flex-direction: row-reverse;
 
-      & figcaption {
-        padding-left: 0;
-        padding-right: var(--s-500);
-      }
-    }
-  }
+			& figcaption {
+				padding-left: 0;
+				padding-right: var(--s-500);
+			}
+		}
+	}
 }

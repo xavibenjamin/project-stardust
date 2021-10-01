@@ -3,23 +3,23 @@
  */
 
 .wp-block-embed {
-  margin-bottom: var(--s-600);
-  margin-top: var(--s-700);
+	margin-bottom: var(--s-600);
+	margin-top: var(--s-700);
 
-  & iframe {
-    border-radius: var(--m-radius);
-  }
+	& iframe {
+		border-radius: var(--m-radius);
+	}
 
-  & figcaption {
-    color: var(--c-text-alt);
-    font-size: var(--s-400);
-    margin-top: var(--s-400);
-  }
+	& figcaption {
+		color: var(--c-text-alt);
+		font-size: var(--s-400);
+		margin-top: var(--s-400);
+	}
 }
 
 .wp-block-video {
 
-  & video {
-    border-radius: var(--m-radius);
-  }
+	& video {
+		border-radius: var(--m-radius);
+	}
 }

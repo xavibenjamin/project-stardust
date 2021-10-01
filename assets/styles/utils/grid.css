@@ -4,13 +4,13 @@
  */
 
 .grid {
-  display: grid;
-  grid-gap: var(--s-700);
+	display: grid;
+	grid-gap: var(--s-700);
 }
 
 .grid--about {
 
-  @media (--bp-medium) {
-    grid-template-columns: minmax(min-content, var(--m-reg)) minmax(min-content, 300px);
-  }
+	@media (--bp-medium) {
+		grid-template-columns: minmax(min-content, var(--m-reg)) minmax(min-content, 300px);
+	}
 }

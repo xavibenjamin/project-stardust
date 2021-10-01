@@ -3,16 +3,16 @@
  */
 
 .site-footer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--s-major);
-  margin-top: var(--s-major);
+	display: flex;
+	justify-content: center;
+	margin-bottom: var(--s-major);
+	margin-top: var(--s-major);
 }
 
 .footer-logo {
-  width: 6rem;
+	width: 6rem;
 
-  & svg {
-    fill: var(--c-accent);
-  }
+	& svg {
+		fill: var(--c-accent);
+	}
 }

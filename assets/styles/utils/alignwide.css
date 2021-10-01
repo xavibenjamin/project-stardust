@@ -4,15 +4,15 @@
 
 .alignwide {
 
-  @media (--bp-medium) {
-    margin-left: 50%;
-    max-width: var(--m-lg);
-    transform: translateX(-50%);
-    width: 100vw;
+	@media (--bp-medium) {
+		margin-left: 50%;
+		max-width: var(--m-lg);
+		transform: translateX(-50%);
+		width: 100vw;
 
-    & figcaption {
-      padding-left: var(--s-600);
-      padding-right: var(--s-600);
-    }
-  }
+		& figcaption {
+			padding-left: var(--s-600);
+			padding-right: var(--s-600);
+		}
+	}
 }

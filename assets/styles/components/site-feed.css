@@ -4,7 +4,7 @@
 
 .site-feed {
 
-  & > * + * {
-    margin-top: var(--s-major);
-  }
+	& > * + * {
+		margin-top: var(--s-major);
+	}
 }

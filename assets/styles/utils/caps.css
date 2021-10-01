@@ -5,7 +5,7 @@
 .entry__content,
 .comment-body {
 
-  & .caps {
-    font-family: var(--f-caps);
-  }
+	& .caps {
+		font-family: var(--f-caps);
+	}
 }
