@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
       stage: 1
     },
     'postcss-nesting': {},
-    
+
     // Minify style on production using cssano.
     cssnano: 'production' === env ?
       {
