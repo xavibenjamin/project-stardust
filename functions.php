@@ -1,4 +1,9 @@
 <?php
+/**
+ * Functions
+ *
+ * @package Stardust
+ */
 
 // Useful global constants.
 define( 'SD_VERSION', '2021.28' );
@@ -23,7 +28,7 @@ if ( file_exists( get_template_directory() . '/vendor/autoload.php' ) ) {
 	require_once get_template_directory() . '/vendor/autoload.php';
 }
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable( __DIR__ );
 $dotenv->load();
 
 // Data Files
