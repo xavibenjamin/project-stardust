@@ -41,7 +41,7 @@ const jsRules = {
 module.exports = {
   mode: 'development',
   devtool: 'eval-cheap-source-map',
-  
+
   // Entry Points
   entry: {
     frontend: ['./assets/js/main.js', './assets/styles/main.css'],
@@ -89,7 +89,7 @@ module.exports = {
   // Build rules to handle asset files.
   module: {
     rules: [
-      
+
       // Scripts
       jsRules,
 

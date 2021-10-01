@@ -3,6 +3,6 @@
  * - imports all stuff into one place
  */
 
-@import url('base/index');
-@import url('utils/index');
-@import url('components/index');
+@import url("base/index");
+@import url("utils/index");
+@import url("components/index");

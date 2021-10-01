@@ -7,6 +7,7 @@
     "no-descending-specificity": null,
     "order/properties-alphabetical-order": true,
     "selector-nested-pattern": "^&",
+    "indentation": "tab",
     "at-rule-empty-line-before": [
       "always",
       {
@@ -28,7 +29,6 @@
   },
   "ignoreFiles": [
     "./node_modules/",
-    "./assets/styles/base/reset.css",
-    "./assets/styles/components/entry-comments.css"
+    "./assets/styles/base/reset.css"
   ]
 }

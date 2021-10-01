@@ -4,7 +4,7 @@
 
 .wp-block-gallery {
 
-  &:not(:first-child) {
-    margin-top: var(--s-700);
-  }
+	&:not(:first-child) {
+		margin-top: var(--s-700);
+	}
 }

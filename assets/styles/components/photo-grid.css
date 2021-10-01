@@ -3,59 +3,59 @@
  */
 
 .photo-grid {
-  display: grid;
-  grid-gap: 2px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-left: 50%;
-  max-width: var(--m-lg);
-  transform: translateX(-50%);
-  width: 100vw;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-left: 50%;
+	max-width: var(--m-lg);
+	transform: translateX(-50%);
+	width: 100vw;
 
-  @media (--bp-medium) {
-    grid-gap: var(--s-300);
-  }
+	@media (--bp-medium) {
+		grid-gap: var(--s-300);
+	}
 }
 
 .photo-grid__card {
-  border-radius: var(--m-radius);
-  overflow: hidden;
-  position: relative;
+	border-radius: var(--m-radius);
+	overflow: hidden;
+	position: relative;
 
-  @media (--bpm-medium-max) {
-    border-radius: 0;
-  }
+	@media (--bpm-medium-max) {
+		border-radius: 0;
+	}
 
-  &:hover,
-  &:focus {
+	&:hover,
+	&:focus {
 
-    & img {
-      transform: scale(1.1);
-    }
-  }
+		& img {
+			transform: scale(1.1);
+		}
+	}
 
-  & img {
-    transition: transform var(--t-timing) var(--t-easing);
+	& img {
+		transition: transform var(--t-timing) var(--t-easing);
 
-    @media (--bp-medium-max) {
-      border-radius: 0;
-    }
-  }
+		@media (--bp-medium-max) {
+			border-radius: 0;
+		}
+	}
 
-  & a {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 2;
-  }
+	& a {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 2;
+	}
 
-  & svg {
-    bottom: var(--s-400);
-    fill: #fff;
-    height: var(--s-500);
-    left: var(--s-400);
-    position: absolute;
-    width: var(--s-500);
-  }
+	& svg {
+		bottom: var(--s-400);
+		fill: #fff;
+		height: var(--s-500);
+		left: var(--s-400);
+		position: absolute;
+		width: var(--s-500);
+	}
 }

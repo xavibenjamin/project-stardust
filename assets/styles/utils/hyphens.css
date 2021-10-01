@@ -3,6 +3,6 @@
  */
 
 .hyphens {
-  -webkit-hyphens: auto;
-  hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
 }

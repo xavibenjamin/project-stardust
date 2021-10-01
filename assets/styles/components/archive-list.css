@@ -4,30 +4,30 @@
 
 .archive-list__item {
 
-  & + .archive-list__item {
-    margin-top: var(--s-500);
-  }
+	& + .archive-list__item {
+		margin-top: var(--s-500);
+	}
 
-  & .entry__star-rating {
-    margin-left: 0.4rem;
-    margin-top: 0;
-    width: 4em;
-  }
+	& .entry__star-rating {
+		margin-left: 0.4rem;
+		margin-top: 0;
+		width: 4em;
+	}
 }
 
 .archive-list__item-title {
-  color: var(--c-heading);
-  font-weight: 700;
+	color: var(--c-heading);
+	font-weight: 700;
 
-  & a {
-    color: currentColor;
-    text-decoration: none;
-  }
+	& a {
+		color: currentColor;
+		text-decoration: none;
+	}
 }
 
 .archive-list__item-link {
-  color: var(--c-link);
-  font-family: var(--f-caps);
-  font-size: var(--s-400);
-  text-decoration: none;
+	color: var(--c-link);
+	font-family: var(--f-caps);
+	font-size: var(--s-400);
+	text-decoration: none;
 }

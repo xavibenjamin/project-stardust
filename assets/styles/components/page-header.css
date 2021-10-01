@@ -3,12 +3,12 @@
  */
 
 .page-header {
-  margin-bottom: var(--s-800);
+	margin-bottom: var(--s-800);
 }
 
 .page-header__tax-type {
-  color: var(--c-accent-alt);
-  display: block;
-  font-family: var(--f-caps);
-  font-size: var(--s-400);
+	color: var(--c-accent-alt);
+	display: block;
+	font-family: var(--f-caps);
+	font-size: var(--s-400);
 }

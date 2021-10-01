@@ -3,45 +3,45 @@
  */
 
 :root {
-  --base-size: 1rem;
+	--base-size: 1rem;
 
-  /* Size Scale */
+	/* Size Scale */
 
-  --s-300: calc(var(--base-size) * 0.75);
-  --s-400: var(--base-size);
-  --s-500: calc(var(--base-size) * 1.33);
-  --s-600: calc(var(--base-size) * 1.77);
-  --s-700: calc(var(--base-size) * 2.36);
-  --s-800: calc(var(--base-size) * 3.15);
-  --s-900: calc(var(--base-size) * 4.2);
-  --s-major: calc(var(--base-size) * 5.6);
+	--s-300: calc(var(--base-size) * 0.75);
+	--s-400: var(--base-size);
+	--s-500: calc(var(--base-size) * 1.33);
+	--s-600: calc(var(--base-size) * 1.77);
+	--s-700: calc(var(--base-size) * 2.36);
+	--s-800: calc(var(--base-size) * 3.15);
+	--s-900: calc(var(--base-size) * 4.2);
+	--s-major: calc(var(--base-size) * 5.6);
 
-  /* Leading */
+	/* Leading */
 
-  --l-flat: 1;
-  --l-tight: 1.1;
-  --l-medium: 1.4;
-  --l-loose: 1.5;
+	--l-flat: 1;
+	--l-tight: 1.1;
+	--l-medium: 1.4;
+	--l-loose: 1.5;
 
-  /* Fonts */
+	/* Fonts */
 
-  --f-primary: 'Whitney SSm A', 'Whitney SSm B', system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
-  --f-secondary: 'Whitney Narrow A', 'Whitney Narrow B', system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
-  --f-mono: 'JetBrains Mono', monospace;
-  --f-caps: 'Whitney SSm SmallCaps A', 'Whitney SSm SmallCaps B', system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
+	--f-primary: "Whitney SSm A", "Whitney SSm B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
+	--f-secondary: "Whitney Narrow A", "Whitney Narrow B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
+	--f-mono: "JetBrains Mono", monospace;
+	--f-caps: "Whitney SSm SmallCaps A", "Whitney SSm SmallCaps B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
 
-  /* Measurements */
+	/* Measurements */
 
-  --m-reg: 45rem;
-  --m-lg: 50rem;
-  --m-xl: 65rem;
-  --m-xxl: 75rem;
+	--m-reg: 45rem;
+	--m-lg: 50rem;
+	--m-xl: 65rem;
+	--m-xxl: 75rem;
 
-  /* Misc */
+	/* Misc */
 
-  --m-radius: 0.3rem;
-  --t-timing: 200ms;
-  --t-easing: ease;
+	--m-radius: 0.3rem;
+	--t-timing: 200ms;
+	--t-easing: ease;
 }
 
 /* Media Queries */
