@@ -14,7 +14,7 @@ namespace Stardust\DataLastFm;
  *
  * @return array
  */
-function get_data() {
+function get_lastfm_data() {
 	$api_key  = $_ENV['LASTFM_API_KEY'];
 	$username = 'timothybsmith';
 	$api_root = 'http://ws.audioscrobbler.com/2.0/';
@@ -24,35 +24,11 @@ function get_data() {
 
 	if ( false === $lastfm_data ) {
 		$response = wp_remote_get( $api_url );
-
 		if ( ! is_wp_error( $response ) && 200 === wp_remote_retrieve_response_code( $response ) ) {
 			$body = json_decode( wp_remote_retrieve_body( $response ), true );
 			set_transient( 'sd_lastfm_data', $body, DAY_IN_SECONDS );
 		}
 	}
 
-	return $lastfm_data;
-}
-
-/**
- * Show Last FM
- * - retrieves data and displays it
- *
- * @return string
- */
-function show_lastfm() {
-	$data = get_data();
-
-	ob_start();
-
-	// include template
-	get_template_part(
-		'template-parts/about/last-fm',
-		null,
-		$data
-	);
-
-	$html = ob_get_clean();
-
-	return $html;
+	return $lastfm_data['recenttracks']['track'];
 }

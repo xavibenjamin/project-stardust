@@ -7,7 +7,6 @@
 
 get_header();
 
-use function Stardust\DataLastFm\show_lastfm;
 ?>
 
 <main tabindex="-1" id="main-content" class="site-content">
@@ -24,8 +23,8 @@ use function Stardust\DataLastFm\show_lastfm;
 			</div>
 			<div class="about-body__sidebar">
 				<?php
-					$songs = show_lastfm();
-					echo wp_kses_post( $songs );
+					get_template_part( 'template-parts/about/last-fm' );
+					get_template_part( 'template-parts/about/letterboxd' );
 				?>
 			</div>
 		</div>

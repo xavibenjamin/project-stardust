@@ -1,0 +1,43 @@
+/*
+ * Sidebar List
+ *
+ */
+
+.sidebar-section {
+
+	& + .sidebar-section {
+		margin-top: 4rem;
+	}
+}
+
+.sidebar-section__title {
+	align-items: center;
+	display: flex;
+	font-family: var(--f-caps);
+	font-size: var(--s-600);
+
+	@media (--bp-medium) {
+		font-size: var(--s-500);
+	}
+
+	& svg {
+		fill: var(--c-accent-alt);
+		height: 0.6em;
+		margin-left: 0.5rem;
+		width: 0.6em;
+	}
+}
+
+.sidebar-section__list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--s-400);
+	list-style: none;
+	margin: 0;
+	margin-top: var(--s-400);
+	padding: 0;
+}
+
+.sidebar-section__list--gap600 {
+	gap: var(--s-600);
+}
