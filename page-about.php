@@ -27,6 +27,10 @@ use function Stardust\DataLastFm\show_lastfm;
 					$songs = show_lastfm();
 					echo wp_kses_post( $songs );
 				?>
+
+				<?php
+					get_template_part( 'template-parts/about/letterboxd' );
+				?>
 			</div>
 		</div>
 	</div>

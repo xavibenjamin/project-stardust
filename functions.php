@@ -33,3 +33,4 @@ $dotenv->load();
 
 // Data Files
 require_once SD_INC . 'data/last-fm.php';
+require_once SD_INC . 'data/letterboxd.php';

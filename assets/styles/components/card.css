@@ -1,0 +1,79 @@
+/*
+ * Card
+ *
+ */
+
+.card {
+	align-items: center;
+	display: flex;
+	gap: 0.9rem;
+	position: relative;
+
+	&:hover,
+	&:focus {
+
+		& .card__title,
+		& .card__meta {
+			color: var(--c-link);
+		}
+
+		& .card__media {
+			opacity: 0.6;
+		}
+	}
+}
+
+.card__media {
+	flex: 0 0 auto;
+	transition: opacity var(--t-timing);
+	width: var(--s-major);
+
+	@media (--bp-medium) {
+		width: var(--s-900);
+	}
+
+	& img {
+		border: 1px solid var(--c-border-line);
+	}
+}
+
+.card__title {
+	color: var(--c-text);
+	font-family: var(--f-primary);
+	font-size: var(--s-500);
+	margin-bottom: 0.2rem;
+	transition: color var(--t-timing);
+
+	@media (--bp-medium) {
+		font-size: calc(var(--s-400) * 0.9);
+	}
+}
+
+.card__meta {
+	color: var(--c-text-alt);
+	font-size: var(--s-400);
+	transition: color var(--t-timing);
+
+	@media (--bp-medium) {
+		font-size: calc(var(--s-400) * 0.8);
+	}
+}
+
+.card__link {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* .card--film */
+
+.card--film {
+
+	& .entry__star-rating {
+		margin-left: 0.2rem;
+		margin-top: 0;
+		width: 4em;
+	}
+}
