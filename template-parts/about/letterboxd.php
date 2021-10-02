@@ -8,6 +8,10 @@
 use function Stardust\DataLetterboxd\get_letterboxd_data;
 
 $films = get_letterboxd_data();
+
+if ( empty( $films ) ) {
+	return;
+}
 ?>
 
 <div class="recently-watched sidebar-section">
