@@ -10,6 +10,10 @@
 use function Stardust\DataLastFm\get_lastfm_data;
 
 $tracks = get_lastfm_data();
+
+if ( empty( $tracks ) ) {
+	return;
+}
 ?>
 
 <?php if ( ! empty( $tracks ) ) : ?>
