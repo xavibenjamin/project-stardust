@@ -9,7 +9,7 @@ get_header();
 ?>
 
 <main tabindex="-1" id="main-content" class="site-content">
-	<div class="wrapper">
+	<div class="wrapper wrapper--large">
 
 		<div class="photo-grid">
 			<?php
