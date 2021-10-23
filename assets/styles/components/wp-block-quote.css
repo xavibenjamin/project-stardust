@@ -7,7 +7,17 @@
 	color: var(--c-text-alt);
 	padding-left: var(--s-400);
 
-	& > p + p {
+	& > * + * {
 		margin-top: var(--s-500);
+	}
+
+	& cite {
+		display: inline-block;
+		font-size: var(--s-400);
+
+		&::before {
+			color: var(--c-accent-alt);
+			content: "—";
+		}
 	}
 }
