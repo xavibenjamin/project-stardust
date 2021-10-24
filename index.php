@@ -15,11 +15,9 @@ get_header();
 			<?php
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-					if ( has_post_format( 'status' ) || has_post_format( 'image' ) ) {
-						get_template_part( 'template-parts/content/format-status' );
-					} else {
-						get_template_part( 'template-parts/content/format-standard' );
-					}
+					get_template_part(
+						'template-parts/content/content'
+					);
 
 			endwhile;
 endif;
