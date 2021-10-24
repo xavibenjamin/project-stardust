@@ -5,11 +5,10 @@
  * @package Stardust
  */
 
-	$posttags = get_the_tags();
+$posttags = get_the_tags();
 
 if ( $posttags ) :
 	?>
-
 	<div class="entry__tags">
 	<?php get_template_part( 'template-parts/svg/icon-tags' ); ?>
 
