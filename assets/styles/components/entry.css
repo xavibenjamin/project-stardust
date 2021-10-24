@@ -155,42 +155,6 @@
 	}
 }
 
-/* Entry Syndication */
-
-.entry__syndication {
-	align-items: center;
-	color: var(--c-text-alt);
-	display: flex;
-	font-size: var(--s-400);
-	line-height: var(--l-flat);
-
-	&:not(:first-child) {
-		margin-top: var(--s-300);
-	}
-
-	& .syn-text {
-		margin-right: 0.5rem;
-	}
-}
-
-ul.relsyn {
-	align-items: center;
-	display: flex;
-	position: relative;
-
-	& li {
-		padding-right: 0 !important;
-
-		& + li {
-			margin-left: 0.3rem;
-		}
-
-		& svg {
-			fill: var(--c-accent-alt);
-		}
-	}
-}
-
 /* More Link */
 
 .more-link {

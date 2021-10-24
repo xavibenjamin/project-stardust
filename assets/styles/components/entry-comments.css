@@ -235,9 +235,22 @@
 		font-size: var(--s-400);
 	}
 
+	& .hide-name {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: auto;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
 	& .mention-list {
 		align-items: center;
 		display: flex;
+		list-style: none;
 		margin: 0;
 		margin-left: var(--s-400);
 		padding: 0;
