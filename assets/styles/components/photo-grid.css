@@ -13,7 +13,6 @@
 
 	@media (--bp-medium-max) {
 		margin-left: 50%;
-		margin-top: calc(var(--s-600) * -1);
 		max-width: var(--m-lg);
 		transform: translateX(-50%);
 		width: 100vw;
