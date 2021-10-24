@@ -21,7 +21,7 @@
 	<div class="[ site-header__wrapper ] [ wrapper ]">
 		<?php
 			get_template_part( 'template-parts/header/site', 'id' );
-			get_template_part( 'template-parts/header/site', 'navigation' );
+			get_template_part( 'template-parts/header/site', 'nav' );
 		?>
 	</div>
 </header>

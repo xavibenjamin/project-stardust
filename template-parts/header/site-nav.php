@@ -15,6 +15,7 @@
 		aria-haspopup="true"
 		aria-controls="js-site-nav-menu"
 		aria-expanded="false"
+		aria-label="Toggle Main Navigation"
 	>
 		<?php
 			get_template_part(
