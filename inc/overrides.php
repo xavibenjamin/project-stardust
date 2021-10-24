@@ -37,6 +37,9 @@ function setup() {
 	// Modify Read More Link
 	add_filter( 'the_content_more_link', $n( 'modify_read_more_link' ) );
 
+	// Add Async Attrs to CSS
+	add_filter( 'style_loader_tag', $n( 'sd_async_css' ), 10, 2 );
+
 }
 
 /**
@@ -114,4 +117,14 @@ function sd_exclude_these( $categories ) {
  */
 function modify_read_more_link() {
 	return '<a class="more-link" href="' . get_permalink() . '">Read More&nbsp;<span class="more-link__arrow">&rarr;</span></a>';
+}
+
+/**
+ * Adds Async Attributes to stylesheet tag
+ *
+ * @param  string $html the original stylesheet tag
+ * @return string the modified stylesheet tag
+ */
+function sd_async_css( $html ) {
+	return str_replace( "rel='stylesheet'", "rel='stylesheet' media=\"print\" onload=\"this.media='all'\"", $html );
 }
