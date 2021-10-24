@@ -44,6 +44,13 @@
 	}
 }
 
+/* Align the toggle with the center of the
+ site image on the homepage */
+
+.home .site-nav__toggle {
+	margin-top: 1.15rem;
+}
+
 .site-nav__menu {
 	align-items: center;
 	border-radius: var(--m-radius);
