@@ -20,6 +20,7 @@ function setup() {
 	add_action( 'wp_enqueue_scripts', $n( 'stardust_bundle_assets' ) );
 	add_action( 'wp_enqueue_scripts', $n( 'sd_enqueue_comments_reply' ) );
 	add_action( 'init', $n( 'sd_indieweb_plugin_support' ) );
+	add_action( 'wp_print_styles', $n( 'stardust_remove_plugin_assets' ), 100 );
 }
 
 /**
@@ -59,9 +60,16 @@ function stardust_setup() {
 }
 
 /**
+ * Remove Plugin Assets
+ */
+function stardust_remove_plugin_assets() {
+	wp_deregister_style( 'semantic-linkbacks-css' );
+	wp_deregister_style( 'syndication-style' );
+	wp_deregister_style( 'indieweb' );
+}
+
+/**
  * Enqueue scripts and styles for theme
- *
- * @return void
  */
 function stardust_bundle_assets() {
 	wp_enqueue_script(
@@ -83,18 +91,16 @@ function stardust_bundle_assets() {
 		'cloud-type-styles',
 		'https://cloud.typography.com/7114076/6038832/css/fonts.css',
 		[],
-		null
+		SD_VERSION
 	);
 }
 
 /**
  * Enqueue comment script
- *
- * @return void
  */
 function sd_enqueue_comments_reply() {
 
-	if ( is_singular() && comments_open() && ( get_option( 'thread_comments' ) == 1 ) ) {
+	if ( is_singular() && comments_open() && ( get_option( 'thread_comments' ) === 1 ) ) {
 		// Load comment-reply.js (into footer)
 		wp_enqueue_script(
 			'comment-reply',
