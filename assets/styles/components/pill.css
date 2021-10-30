@@ -1,0 +1,25 @@
+/*
+ * Pill
+ * - small pill component
+ */
+
+.pill {
+	align-items: center;
+	border: 3px solid var(--c-text);
+	border-radius: 50rem;
+	color: var(--c-text);
+	display: flex;
+	font-size: var(--s-300);
+	font-weight: bold;
+	gap: 0.5rem;
+	justify-content: space-between;
+	line-height: var(--l-tight);
+	padding: 0.5rem var(--s-300);
+	text-decoration: none;
+}
+
+.pill__meta {
+	color: var(--c-text-alt);
+	font-family: var(--f-mono);
+	font-size: var(--s-300);
+}
