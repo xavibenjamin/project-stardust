@@ -7,13 +7,12 @@
  * @package Stardust
  */
 
-use function Stardust\DataLastFm\get_lastfm_data;
+use function Stardust\DataLastFm\get_recent_tracks;
+use function Stardust\DataLastFm\get_top_artists;
 
-$tracks = get_lastfm_data();
+$tracks  = get_recent_tracks();
+$artists = get_top_artists();
 
-if ( empty( $tracks ) ) {
-	return;
-}
 ?>
 
 <?php if ( ! empty( $tracks ) ) : ?>
@@ -64,6 +63,35 @@ if ( empty( $tracks ) ) {
 					</div>
 				</article>
 			</li>
+		<?php endforeach; ?>
+	</ul>
+</div>
+<?php endif; ?>
+
+<?php if ( ! empty( $artists ) ) : ?>
+<div class="top-artists sidebar-section">
+	<h2 class="sidebar-section__title">
+		<?php esc_html_e( 'Top Artists', 'stardust' ); ?>
+		<?php get_template_part( 'template-parts/svg/icon-microphone' ); ?>
+	</h2>
+
+	<ul class="sidebar-section__list sidebar-section__list--compressed">
+		<?php
+		foreach ( $artists as $artist ) :
+			[
+				'name'      => $artist_name,
+				'url'       => $artist_url,
+				'playcount' => $artist_playcount,
+			] = $artist;
+			?>
+
+			<li>
+				<a class="pill" href="<?php echo esc_url( $artist_url ); ?>">
+					<span class="pill__title"><?php echo esc_html( $artist_name ); ?></span>
+					<span class="pill__meta"><?php echo esc_html( $artist_playcount ); ?></span>
+				</a>
+			</li>
+
 		<?php endforeach; ?>
 	</ul>
 </div>
