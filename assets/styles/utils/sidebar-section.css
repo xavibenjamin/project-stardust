@@ -41,3 +41,8 @@
 .sidebar-section__list--gap600 {
 	gap: var(--s-600);
 }
+
+.sidebar-section__list--compressed {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
