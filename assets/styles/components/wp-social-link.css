@@ -1,0 +1,13 @@
+/*
+ * Social Link
+ * - as seen on links page
+ */
+
+.wp-social-link {
+	background-color: transparent !important;
+	border: 2px solid var(--c-accent);
+}
+
+.wp-block-social-link-anchor svg {
+	fill: var(--c-accent) !important;
+}
