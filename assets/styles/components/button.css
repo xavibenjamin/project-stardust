@@ -22,3 +22,12 @@
 		background-color: var(--c-bg-alt);
 	}
 }
+
+.wp-block-button__link {
+	border-radius: var(--m-radius);
+	padding: 0.5rem var(--s-400) !important;
+}
+
+.is-style-outline .wp-block-button__link {
+	color: var(--c-accent) !important;
+}
