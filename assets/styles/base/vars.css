@@ -27,7 +27,7 @@
 
 	--f-primary: "Whitney SSm A", "Whitney SSm B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
 	--f-secondary: "Whitney Narrow A", "Whitney Narrow B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
-	--f-mono: "JetBrains Mono", monospace;
+	--f-mono: ui-monospace, sfmono-regular, sf mono, menlo, consolas, liberation mono, monospace;
 	--f-caps: "Whitney SSm SmallCaps A", "Whitney SSm SmallCaps B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
 
 	/* Measurements */
