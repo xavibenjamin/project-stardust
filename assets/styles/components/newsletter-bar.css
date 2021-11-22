@@ -1,0 +1,103 @@
+/*
+ * Newsletter Bar
+ * - appears at the bottom of every page
+ */
+
+.newsletter-bar {
+	padding-top: var(--s-400);
+}
+
+.newsletter-bar--is-active {
+	bottom: 0;
+	left: 0;
+	pointer-events: auto;
+	position: fixed;
+	right: 0;
+	transform: translateY(0);
+	transition: transform var(--t-timing) var(--t-easing);
+	z-index: 20;
+
+	& .newsletter-bar__close {
+		display: flex;
+	}
+}
+
+.newsletter-bar--is-hidden {
+	pointer-events: none;
+	transform: translateY(150%);
+	transition: transform var(--t-timing) var(--t-easing);
+}
+
+.newsletter-bar__wave {
+	height: var(--s-800);
+
+	& svg {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.newsletter-bar__inner {
+	background: var(--c-bg-alt);
+	padding-bottom: var(--s-500);
+
+	@media (--bp-medium) {
+		align-items: flex-end;
+		display: flex;
+		gap: var(--s-500);
+	}
+}
+
+.newsletter-bar__text {
+	flex: 0 1 50%;
+	margin-bottom: var(--s-600);
+
+	@media (--bp-medium) {
+		margin-bottom: 0;
+	}
+}
+
+.newsletter-bar__title {
+	color: var(--c-text-accent);
+}
+
+.newsletter-bar__description {
+	font-size: var(--s-400);
+	margin-top: var(--s-300);
+}
+
+.newsletter-bar__form {
+	flex: 1;
+}
+
+.newsletter-bar__close {
+	align-items: center;
+	appearance: none;
+	background-color: var(--c-accent);
+	border: 0;
+	border-radius: 50%;
+	bottom: 70%;
+	cursor: pointer;
+	display: none;
+	justify-content: center;
+	padding: 0.6rem;
+	position: absolute;
+	right: var(--s-600);
+	transform: rotate(0deg) scale(1);
+	transition:
+		background-color var(--t-timing) var(--t-easing),
+		transform var(--t-timing) var(--t-easing);
+	z-index: 60;
+
+	@media (--bp-medium) {
+		right: var(--s-800);
+	}
+
+	& svg {
+		fill: var(--c-bg);
+		height: var(--s-600);
+		transition: fill var(--t-timing) var(--t-easing);
+		width: var(--s-600);
+	}
+}

@@ -3,16 +3,15 @@
  */
 
 .site-footer {
-	display: flex;
-	justify-content: center;
-	margin-bottom: var(--s-major);
-	margin-top: var(--s-major);
+	padding-top: var(--s-major);
 }
 
 .footer-logo {
-	width: 6rem;
+	display: flex;
+	justify-content: center;
 
 	& svg {
 		fill: var(--c-accent);
+		width: 6rem;
 	}
 }

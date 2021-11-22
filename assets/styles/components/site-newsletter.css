@@ -29,7 +29,18 @@
 	width: 100%;
 
 	& form {
-		align-items: center !important;
+		align-items: center;
+		display: grid;
+		gap: 0 var(--s-400);
+		grid-template-columns: 2fr 1fr;
+	}
+
+	& .mailpoet_paragraph {
+		margin-bottom: 0 !important;
+	}
+
+	& .mailpoet_message {
+		grid-column: span 2;
 	}
 
 	& input {
@@ -42,7 +53,7 @@
 		font-size: var(--s-400);
 		padding: var(--s-400) !important;
 
-		&:focus {
+		&:focus:not([type="submit"]) {
 			box-shadow: 0 0 0 2px var(--c-accent);
 			outline: 0;
 		}
@@ -51,15 +62,16 @@
 	& button,
 	& input[type="submit"] {
 		appearance: none;
-		background-color: var(--c-accent);
+		background-color: var(--c-accent-alt);
 		border-radius: var(--m-radius);
 		box-shadow: none;
 		color: var(--c-bg);
 		cursor: pointer;
+		font-family: var(--f-caps);
 		font-size: var(--s-400);
 		font-weight: 700;
 		margin-left: var(--s-300);
-		padding: var(--s-300) !important;
+		padding: var(--s-400) !important;
 	}
 }
 
