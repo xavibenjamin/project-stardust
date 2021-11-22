@@ -12,6 +12,7 @@ define( 'SD_PATH', get_template_directory() . '/' );
 define( 'SD_INC', SD_PATH . 'inc/' );
 
 require_once SD_INC . 'core.php';
+require_once SD_INC . 'customizer.php';
 require_once SD_INC . 'overrides.php';
 require_once SD_INC . 'rewrites.php';
 require_once SD_INC . 'shortcodes.php';
@@ -21,6 +22,7 @@ require_once SD_INC . 'widgets.php';
 // Run the setup functions
 
 Stardust\Core\setup();
+Stardust\Customizer\setup();
 Stardust\Overrides\setup();
 Stardust\Rewrites\setup();
 Stardust\Shortcodes\setup();
