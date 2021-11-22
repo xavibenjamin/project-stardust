@@ -29,6 +29,7 @@
 	/* Theme Vars */
 	--c-bg: var(--black-russian);
 	--c-bg-alt: var(--charcoal-blue);
+	--c-nav-scrim: #1c1d21d9;
 	--c-heading: var(--very-light-grey);
 	--c-text: var(--heather);
 	--c-text-alt: var(--ship-cove);
@@ -65,6 +66,7 @@
 	/* Theme Vars */
 	--c-bg: var(--midnight-express);
 	--c-bg-alt: var(--black-russian);
+	--c-nav-scrim: #151c29d9;
 	--c-heading: var(--solitude);
 	--c-text: var(--link-water);
 	--c-text-alt: var(--ship-cove);
@@ -104,6 +106,7 @@
 	/* Theme Vars */
 	--c-bg: var(--cinder);
 	--c-bg-alt: var(--black-pearl);
+	--c-nav-scrim: #1d2428d9;
 	--c-heading: var(--link-water);
 	--c-text: var(--heather);
 	--c-text-alt: var(--aluminium);
@@ -147,44 +150,6 @@
 	--c-alert-primary: var(--bittersweet);
 	--c-alert-success: var(--emerald);
 	--c-alert-danger: var(--rajah);
-}
-
-/*
- * Halloween Theme
- *
- */
-
-[data-theme="halloween"] {
-	/* Color Defs */
-	--color-nero: #1c1c1c;
-	--color-black: #0f0f0f;
-	--color-sun: #ff8533;
-	--color-whisper: #e5e5e5;
-	--color-silver: #bababa;
-	--color-suva-grey: #8c8c8c;
-	--color-scream-green: #33ff69;
-	--color-matterhorn: #4f4f4f;
-	--color-honey-flower: #513e60;
-	--color-dodger-blue: #009afa;
-	--color-supernova: #fdb42e;
-
-	/* Theme Vars */
-	--c-bg: var(--color-nero);
-	--c-bg-alt: var(--color-black);
-	--c-link: var(--color-sun);
-	--c-heading: var(--color-whisper);
-	--c-text: var(--color-silver);
-	--c-text-alt: var(--color-suva-grey);
-	--c-text-accent: var(--color-scream-green);
-	--c-accent: var(--color-sun);
-	--c-accent-alt: var(--color-scream-green);
-	--c-border-line: var(--color-matterhorn);
-	--c-code: var(--color-honey-flower);
-	--c-code-block-bg: var(--color-black);
-	--c-selection-bg: var(--color-sun);
-	--c-alert-primary: var(--color-dodger-blue);
-	--c-alert-success: var(--color-scream-green);
-	--c-alert-danger: var(--color-supernova);
 }
 
 html {
