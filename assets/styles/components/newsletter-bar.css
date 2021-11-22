@@ -41,6 +41,9 @@
 .newsletter-bar__inner {
 	background: var(--c-bg-alt);
 	padding-bottom: var(--s-500);
+}
+
+.newsletter-bar__body {
 
 	@media (--bp-medium) {
 		align-items: flex-end;
