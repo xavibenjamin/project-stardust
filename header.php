@@ -5,9 +5,10 @@
  * @package Stardust
  */
 
+$color_theme = get_option( 'sd_theme_color' ) ?? 'bright-pixels';
 ?>
 <!DOCTYPE html>
-<html lang="en" data-theme="primrose">
+<html lang="en" data-theme="<?php echo esc_attr( $color_theme ); ?>">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
