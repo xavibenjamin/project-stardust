@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const DependencyExtractionWebpackPlugin = require('@wordpress/dependency-extraction-webpack-plugin');
 
 const isProduction = 'production' === process.env.NODE_ENV;
 
@@ -31,7 +32,7 @@ const jsRules = {
   use: {
     loader: 'babel-loader',
     options: {
-      presets: ['@babel/preset-env'],
+      presets: ['@babel/preset-env', '@babel/preset-react'],
       cacheDirectory: true,
       sourceMap: ! isProduction,
     },
@@ -45,12 +46,15 @@ module.exports = {
   // Entry Points
   entry: {
     frontend: ['./assets/js/main.js', './assets/styles/main.css'],
+		"editor-style": './assets/styles/editor.css',
+		driver: './inc/blocks/driver/index.js',
+		"core-block-overrides": './inc/core-block-overrides.js',
   },
 
   // Output
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name]-bundle.js'
+    filename: 'js/[name]/[name]-bundle.js'
   },
 
   // Stats
@@ -72,7 +76,7 @@ module.exports = {
   // Plugins
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: 'css/[name].css',
       chunkFilename: '[id].css',
     }),
     new BrowserSyncPlugin({
@@ -83,7 +87,8 @@ module.exports = {
       ],
       proxy: 'http://localhost:10003/',
       open: false
-    })
+    }),
+		new DependencyExtractionWebpackPlugin(),
   ],
 
   // Build rules to handle asset files.
