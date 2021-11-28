@@ -25,6 +25,9 @@
 	--cotton-candy: #ffbed7;
 	--persian-pink: #ff8ab7;
 	--fiord: #4d555d;
+	--malibu: #52b1e0;
+	--emerald: #52e081;
+	--flamingo: #e06952;
 
 	/* Theme Vars */
 	--c-bg: var(--black-russian);
@@ -40,6 +43,10 @@
 	--c-code: var(--vulcan);
 	--c-code-block-bg: var(--charcoal-blue);
 	--c-border-line: var(--fiord);
+	--c-selection-bg: var(--persian-pink);
+	--c-alert-primary: var(--malibu);
+	--c-alert-success: var(--emerald);
+	--c-alert-danger: var(--flamingo);
 }
 
 /*
@@ -78,6 +85,9 @@
 	--c-code-block-bg: var(--black-russian);
 	--c-border-line: var(--kashmir-blue);
 	--c-selection-bg: var(--biscay);
+	--c-alert-primary: var(--dark-turquoise);
+	--c-alert-success: var(--feijoa);
+	--c-alert-danger: var(--yellow-orange);
 }
 
 /*
@@ -118,7 +128,7 @@
 	--c-code-block-bg: var(--black-pearl);
 	--c-border-line: var(--atomic);
 	--c-selection-bg: var(--blue-whale);
-	--c-alert-primary: var(--bittersweet);
+	--c-alert-primary: var(--maya-blue);
 	--c-alert-success: var(--emerald);
 	--c-alert-danger: var(--rajah);
 }
