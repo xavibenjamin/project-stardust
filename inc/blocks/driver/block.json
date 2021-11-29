@@ -1,0 +1,40 @@
+{
+  "title": "Stardust Driver",
+  "description": "Driver with important supplemental information",
+  "text-domain": "stardust",
+  "name": "stardust/driver",
+  "icon": "format-aside",
+  "category": "stardust-blocks",
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "example": {
+    "attributes": {
+      "title": "Driver Title Goes Here…"
+    }
+  },
+  "supports": {
+    "align": false,
+    "alignWide": false,
+    "anchor": false,
+    "color": {
+      "gradients": false,
+      "background": false,
+      "text": false
+    },
+    "customClassName": true,
+    "defaultStylePicker": false,
+    "fontSize": false,
+    "html": false,
+    "inserter": true,
+    "lineHeight": true,
+    "multiple": true,
+    "reusable": false,
+    "spacing": {
+      "padding": false
+    }
+  },
+  "editorScript": "file:../../../dist/js/driver/driver-bundle.js"
+}

@@ -14,6 +14,8 @@
   "devDependencies": {
     "@babel/core": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.16.0",
+    "@wordpress/dependency-extraction-webpack-plugin": "^3.2.1",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",
     "browser-sync-webpack-plugin": "^2.3.0",
@@ -21,6 +23,7 @@
     "cssnano": "^5.0.8",
     "mini-css-extract-plugin": "^1.6.2",
     "postcss": "^8.3.6",
+    "postcss-editor-styles": "^0.3.0",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.1.1",
     "postcss-nested": "^5.0.6",

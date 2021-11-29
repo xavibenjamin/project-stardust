@@ -29,9 +29,11 @@ $excerpt = has_excerpt() ? widont( get_the_excerpt() ) : '';
 			<?php if ( has_excerpt() ) : ?>
 				<h2 class="entry__subtitle"><?php echo esc_html( $excerpt ); ?></h2>
 			<?php endif; ?>
+			<?php if ( has_post_format() && ! is_page() ) : ?>
 			<div class="entry__meta">
 				<a href="<?php the_permalink(); ?>" class="entry__date u-url"><time class="dt-published" datetime="<?php echo get_the_date( 'c' ); ?>"><?php echo get_the_date( 'D, M jS, Y' ); ?></time></a>
 			</div>
+			<?php endif; ?>
 
 			<?php
 			if ( ! empty( $rating ) ) {
