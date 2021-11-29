@@ -50,6 +50,7 @@
 		box-shadow: inset 0 0 0 2px var(--c-border-line);
 		color: var(--c-text);
 		display: block;
+		font-family: var(--f-primary) !important;
 		font-size: var(--s-400);
 		padding: var(--s-400) !important;
 
