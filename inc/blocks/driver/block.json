@@ -1,9 +1,9 @@
 {
-  "title": "Driver",
+  "title": "Stardust Driver",
   "description": "Driver with important supplemental information",
   "text-domain": "stardust",
   "name": "stardust/driver",
-  "icon": "feedback",
+  "icon": "format-aside",
   "category": "stardust-blocks",
   "attributes": {
     "title": {
