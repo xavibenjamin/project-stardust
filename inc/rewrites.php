@@ -26,6 +26,12 @@ function sd_register_rewrite_rules() {
 
 	// Redirect photos archive to /photos
 	add_rewrite_rule(
+		'photos/page/([0-9])/?',
+		'index.php?post_format=post-format-image&paged=$matches[1]',
+		'top'
+	);
+
+	add_rewrite_rule(
 		'photos',
 		'index.php?post_format=post-format-image',
 		'top'
