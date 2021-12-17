@@ -90,8 +90,10 @@ function sd_archive_title( $title ) {
 		$title = '<span class="vcard">' . get_the_author() . '</span>';
 	} elseif ( is_post_type_archive() ) {
 		$title = post_type_archive_title( '', false );
-	} elseif ( is_tax() ) {
+	} elseif ( is_tax( 'post_format' ) ) {
 		$title = '<span class="page-header__tax-type">Post Format</span>' . single_term_title( '', false );
+	} elseif ( is_tax( 'sd_snippet_type' ) ) {
+		$title = '<span class="page-header__tax-type">Snippet Type</span>' . single_term_title( '', false );
 	} elseif ( is_month() ) {
 		$title = '<span class="page-header__tax-type">Month</span>' . get_the_date( _x( 'F Y', 'monthly archives date format' ) );
 	}

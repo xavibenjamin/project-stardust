@@ -28,9 +28,35 @@
 
 .entry__title {
 
+	&:not(.headline) {
+		font-family: var(--f-primary);
+		font-size: var(--s-700);
+		letter-spacing: -0.03em;
+	}
+
 	& a {
 		color: var(--c-heading);
 		text-decoration: none;
+	}
+}
+
+.entry__title--snippet {
+	align-items: center;
+	display: flex;
+	gap: 0.4rem;
+
+	& .title__parent {
+		color: var(--c-link);
+		font-size: var(--s-500);
+	}
+
+	& .title__separator {
+		color: var(--c-border-line);
+		font-weight: normal;
+	}
+
+	& a {
+		font-size: var(--s-600);
 	}
 }
 

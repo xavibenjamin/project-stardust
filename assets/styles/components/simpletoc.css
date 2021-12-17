@@ -1,0 +1,60 @@
+/*
+ * SimpleToc Styles
+ *
+ */
+
+.is-style-simpletoc-wrapper {
+	background-color: var(--c-bg-alt);
+	border-left: 3px solid var(--c-accent);
+	font-size: var(--s-400);
+	margin-bottom: var(--s-500);
+	margin-top: var(--s-500);
+	padding: var(--s-600);
+	position: relative;
+	z-index: 2;
+
+	@media (--bp-medium) {
+		float: right;
+		margin-left: var(--s-500);
+		margin-right: calc(var(--s-700) * -1);
+		max-width: 18rem;
+	}
+
+	@media (--bp-large) {
+		margin-right: calc(var(--s-major) * -1);
+	}
+}
+
+.simpletoc-title {
+	font-family: var(--f-caps);
+	font-size: var(--s-400);
+	margin-top: 0 !important;
+}
+
+.simpletoc {
+	margin-bottom: 0;
+	margin-left: -0.8rem;
+	padding-left: var(--s-600);
+
+	& li + li {
+		margin-top: 0.4rem;
+	}
+
+	& a {
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+/* Editor Specific Stuff */
+
+.editor-styles-wrapper .simpletoc-wrapper {
+	float: none;
+	margin-left: 0;
+	margin-right: 0;
+	max-width: none;
+}
