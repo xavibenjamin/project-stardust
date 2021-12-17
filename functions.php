@@ -22,6 +22,7 @@ require_once SD_INC . 'rewrites.php';
 require_once SD_INC . 'shortcodes.php';
 require_once SD_INC . 'utility.php';
 require_once SD_INC . 'widgets.php';
+require_once SD_INC . 'post-types/snippets.php';
 
 // Run the setup functions
 Stardust\Blocks\setup();
@@ -31,6 +32,7 @@ Stardust\Overrides\setup();
 Stardust\Rewrites\setup();
 Stardust\Shortcodes\setup();
 Stardust\Widgets\setup();
+Stardust\CPT\Snippets\setup();
 
 // Require Composer autoloader if it exists.
 if ( file_exists( get_template_directory() . '/vendor/autoload.php' ) ) {
