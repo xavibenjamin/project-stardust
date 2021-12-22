@@ -3,10 +3,6 @@
  * - appears at the bottom of every page
  */
 
-.newsletter-bar {
-	padding-top: var(--s-400);
-}
-
 .newsletter-bar--is-active {
 	bottom: 0;
 	left: 0;
@@ -40,7 +36,7 @@
 
 .newsletter-bar__inner {
 	background: var(--c-bg-alt);
-	padding-bottom: var(--s-500);
+	padding-bottom: var(--s-700);
 }
 
 .newsletter-bar__body {

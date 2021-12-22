@@ -3,6 +3,7 @@
  */
 
 .site-footer {
+	padding-bottom: var(--s-major);
 	padding-top: var(--s-major);
 }
 
