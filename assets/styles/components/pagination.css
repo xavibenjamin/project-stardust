@@ -1,0 +1,35 @@
+/*
+ * Pagination
+ * - as seen on archive pages
+ *
+ */
+
+.pagination {
+	display: flex;
+	font-family: var(--f-caps);
+	font-size: var(--s-400);
+	justify-content: center;
+	margin-top: var(--s-800);
+
+	& a {
+		border: 1px solid var(--c-text-alt);
+		border-radius: var(--m-radius);
+		color: var(--c-text-alt);
+		padding: 0.5rem var(--s-300);
+		text-decoration: none;
+		transition:
+			border-color var(--t-timing) var(--t-easing),
+			color var(--t-timing) var(--t-easing);
+
+		&:hover,
+		&:focus {
+			border-color: var(--c-link);
+			color: var(--c-link);
+		}
+	}
+}
+
+.pagination__wrapper {
+	display: flex;
+	gap: var(--s-500);
+}

@@ -19,7 +19,6 @@
 @import url("taxonomy-list");
 @import url("page-header");
 @import url("archive-list");
-@import url("wp-pagenavi");
 @import url("wp-block-gallery");
 @import url("site-search");
 @import url("site-footer");
@@ -32,3 +31,4 @@
 @import url("wp-social-link");
 @import url("newsletter-bar");
 @import url("simpletoc");
+@import url("pagination");
