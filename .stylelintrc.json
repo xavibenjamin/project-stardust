@@ -28,7 +28,6 @@
     "string-quotes": "double"
   },
   "ignoreFiles": [
-    "./node_modules/",
-    "./assets/styles/base/reset.css"
+    "./node_modules/"
   ]
 }
