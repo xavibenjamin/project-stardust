@@ -88,6 +88,7 @@
 }
 
 .entry__star-rating {
+	display: inline-block;
 	fill: var(--c-border-line);
 	margin-top: var(--s-700);
 	width: 8rem;
