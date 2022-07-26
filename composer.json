@@ -8,5 +8,10 @@
     "scripts": {
         "lint": "phpcs -s .",
         "lint-fix": "phpcbf ."
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }

@@ -225,8 +225,8 @@
 
 .likes,
 .reposts {
-	align-items: center;
-	display: flex;
+	display: grid;
+	grid-template-columns: 85px auto;
 	margin-bottom: var(--s-600);
 
 	& h3 {
@@ -250,6 +250,8 @@
 	& .mention-list {
 		align-items: center;
 		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
 		list-style: none;
 		margin: 0;
 		margin-left: var(--s-400);
@@ -258,14 +260,13 @@
 		& .webmention {
 
 			& + .webmention {
-				margin-left: -0.75rem;
 				transition: margin-left var(--t-timing) var(--t-easing);
 			}
 		}
 
 		& .avatar {
 			border: 1px solid var(--c-border-line);
-			border-radius: 50%;
+			border-radius: var(--m-radius);
 			height: var(--s-600);
 			width: var(--s-600);
 		}
