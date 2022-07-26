@@ -14,15 +14,6 @@ module.exports = ({ file, env }) => {
 		},
 	};
 
-	if (path.basename(file) === 'editor.css') {
-		config.plugins['postcss-editor-styles'] = {
-			scopeTo: '.editor-styles-wrapper',
-			ignore: [':root', '.edit-post-visual-editor.editor-styles-wrapper', '.wp-toolbar'],
-			remove: ['html', ':disabled', '[readonly]', '[disabled]'],
-			tags: ['button', 'input', 'label', 'select', 'textarea', 'form'],
-		};
-	}
-
 	config.plugins.cssnano =
 		env === 'production'
 			? {
