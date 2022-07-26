@@ -6,6 +6,8 @@
  * @package Stardust
  */
 
+$site_pronouns = get_option( 'sd_site_pronouns' ) ?? false;
+
 ?>
 
 <div class="[ site-id <?php if ( ! is_home() ) { echo esc_attr( 'site-id--compact ' ); } ?>] [ h-card ]">
@@ -17,7 +19,9 @@
 			<a class="p-name u-url" rel="me" href="/">
 				<?php bloginfo( 'name' ); ?>
 			</a>
-			<span class="site-pronouns"><?php esc_html_e( 'he/him', 'stardust' ); ?></span>
+			<?php if ( ! empty( $site_pronouns ) ) : ?>
+				<span class="site-pronouns"><?php echo esc_html( $site_pronouns ); ?></span>
+			<?php endif; ?>
 		</h1>
 		<p class="site-username"><?php echo esc_html( '@smithtimmytim' ); ?></p>
 		<?php if ( is_home() ) : ?>
