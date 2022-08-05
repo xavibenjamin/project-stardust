@@ -35,7 +35,7 @@ function register() {
 function render_block_callback( $attributes, $content, $block ) {
 	ob_start();
 	get_template_part(
-		'inc/blocks/driver/markup',
+		'includes/blocks/driver/markup',
 		null,
 		[
 			'class_name' => 'wp-block-stardust-driver',
