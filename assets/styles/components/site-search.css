@@ -13,9 +13,8 @@
 	background: transparent;
 	border: 0;
 	color: var(--c-heading);
-	font-family: var(--f-secondary);
+	font-family: var(--f-head);
 	font-size: var(--s-900);
-	letter-spacing: -1.3px;
 	line-height: var(--l-flat);
 	width: 40vw;
 

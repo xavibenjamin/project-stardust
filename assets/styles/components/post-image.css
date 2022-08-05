@@ -6,10 +6,6 @@
 	margin-bottom: var(--s-700);
 	margin-top: var(--s-700);
 
-	&:not(.is-style-rounded) img {
-		border-radius: var(--m-radius);
-	}
-
 	& figcaption {
 		color: var(--c-text-alt);
 		font-size: var(--s-400);

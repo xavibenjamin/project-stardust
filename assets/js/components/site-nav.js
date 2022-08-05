@@ -13,26 +13,26 @@ const scrim = document.getElementById('js-site-nav-scrim');
 const handleClick = () => {
 	const isHidden = navigation.getAttribute('aria-hidden');
 
-	if (isHidden === "true") {
+	if (isHidden === 'true') {
 		showNavigation();
 	} else {
 		hideNavigation();
 	}
-}
+};
 
 /**
  * Handle Escape Key
  *
- * @param {object} e the event
+ * @param {Object} e the event
  */
 const handleEscapeKey = (e) => {
 	const { key } = e;
 
-	if (key === "Escape") {
+	if (key === 'Escape') {
 		hideNavigation();
 		toggle.focus();
 	}
-}
+};
 
 /**
  * Show Navigation
@@ -43,7 +43,7 @@ const showNavigation = () => {
 	navigation.setAttribute('aria-hidden', 'false');
 	scrim.classList.add('site-nav__scrim--active');
 	document.body.classList.add('site-navigation-is-open');
-}
+};
 
 /**
  * Hide Navigation
@@ -54,7 +54,7 @@ const hideNavigation = () => {
 	navigation.setAttribute('aria-hidden', 'true');
 	scrim.classList.remove('site-nav__scrim--active');
 	document.body.classList.remove('site-navigation-is-open');
-}
+};
 
 /**
  * Setup Event Listeners
@@ -62,12 +62,14 @@ const hideNavigation = () => {
 const addEventListeners = () => {
 	toggle.addEventListener('click', handleClick);
 	document.addEventListener('keyup', handleEscapeKey);
-}
+};
 
 /**
  * Initializing Function
  */
 export default function init() {
-	if (!navigation && !toggle) { return; }
+	if (!navigation && !toggle) {
+		return;
+	}
 	addEventListeners();
 }

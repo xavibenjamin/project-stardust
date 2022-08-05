@@ -52,7 +52,7 @@
 
 	& .wp-block-stardust-driver__label {
 		color: var(--c-heading);
-		font-family: var(--f-secondary);
+		font-family: var(--f-head);
 		font-size: var(--s-600);
 		font-weight: bold;
 		line-height: 1.1;

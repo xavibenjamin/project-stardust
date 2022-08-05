@@ -6,10 +6,10 @@
  */
 
 // Useful global constants.
-define( 'SD_VERSION', '2021.46' );
+define( 'SD_VERSION', '2022.2' );
 define( 'SD_TEMPLATE_URL', get_template_directory_uri() );
 define( 'SD_PATH', get_template_directory() . '/' );
-define( 'SD_INC', SD_PATH . 'inc/' );
+define( 'SD_INC', SD_PATH . 'includes/' );
 define( 'SD_BLOCK_DIR', SD_INC . 'blocks/' );
 define( 'SD_DIST_PATH', SD_PATH . 'dist/' );
 define( 'SD_DIST_URL', SD_TEMPLATE_URL . '/dist/' );

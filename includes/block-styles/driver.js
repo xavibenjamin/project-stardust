@@ -1,24 +1,21 @@
 import { registerBlockStyle } from '@wordpress/blocks';
 
 function registerDriverStyles() {
-	registerBlockStyle(
-		'stardust/driver',
-	[
+	registerBlockStyle('stardust/driver', [
 		{
 			label: 'Default',
 			name: 'default',
-			isDefault: true
+			isDefault: true,
 		},
 		{
 			label: 'Success',
-			name: 'success'
+			name: 'success',
 		},
 		{
 			label: 'Danger',
-			name: 'danger'
-		}
-	]
-	);
+			name: 'danger',
+		},
+	]);
 }
 
 wp.domReady(() => {

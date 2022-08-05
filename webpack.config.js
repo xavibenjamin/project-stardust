@@ -5,6 +5,12 @@ const DependencyExtractionWebpackPlugin = require('@wordpress/dependency-extract
 
 const isProduction = 'production' === process.env.NODE_ENV;
 
+const entries = {
+  "frontend": ['./assets/js/main.js', './assets/styles/main.css'],
+  "driver": './includes/blocks/driver/index.js',
+  "core-block-overrides": './includes/core-block-overrides.js',
+};
+
 const cssRules = {
   test: /\.css$/,
   use: [
@@ -41,15 +47,10 @@ const jsRules = {
 
 module.exports = {
   mode: 'development',
-  devtool: 'eval-cheap-source-map',
+	devtool: isProduction ? 'source-map' : 'inline-cheap-module-source-map',
 
   // Entry Points
-  entry: {
-    frontend: ['./assets/js/main.js', './assets/styles/main.css'],
-		"editor-style": './assets/styles/editor.css',
-		driver: './inc/blocks/driver/index.js',
-		"core-block-overrides": './inc/core-block-overrides.js',
-  },
+  entry: entries,
 
   // Output
   output: {

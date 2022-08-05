@@ -12,7 +12,6 @@
 }
 
 .entry__taxonomy {
-	font-family: var(--f-caps);
 	font-size: var(--s-400);
 	font-weight: 700;
 	line-height: var(--l-flat);
@@ -29,9 +28,8 @@
 .entry__title {
 
 	&:not(.headline) {
-		font-family: var(--f-primary);
+		font-family: var(--f-text);
 		font-size: var(--s-700);
-		letter-spacing: -0.03em;
 	}
 
 	& a {
@@ -62,10 +60,9 @@
 
 .entry__subtitle {
 	color: var(--c-text);
-	font-family: var(--f-primary);
+	font-family: var(--f-text);
 	font-size: var(--s-600);
 	font-weight: 400;
-	letter-spacing: -0.063rem;
 	line-height: var(--l-medium);
 }
 
@@ -75,7 +72,6 @@
 
 .entry__date {
 	color: var(--c-text-alt);
-	font-family: var(--f-caps);
 	font-size: var(--s-400);
 	text-decoration: none;
 }
@@ -136,7 +132,7 @@
 
 	& .has-drop-cap:not(:focus)::first-letter {
 		color: var(--c-text-accent);
-		font-family: var(--f-secondary);
+		font-family: var(--f-head);
 		font-size: 5.4em;
 		font-weight: 800;
 	}
@@ -187,7 +183,6 @@
 .more-link {
 	color: var(--c-text-alt);
 	display: inline-block;
-	font-family: var(--f-caps);
 	font-size: var(--s-400);
 	margin-top: var(--s-600);
 	text-decoration: none;

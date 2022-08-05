@@ -4,8 +4,10 @@
  */
 
 .grid {
+	--grid-columns: [wrapper-start] minmax(1rem, 1fr) [container-start] minmax(0, 0.8fr) [wide-content-start] minmax(0, 0.5fr) [main-content-start ] repeat(4, minmax(auto, 10.6rem)) [main-content-end] minmax(0, 0.5fr) [wide-content-end ] minmax(0, 0.8fr) [container-end] minmax(1rem, 1fr) [wrapper-end];
+
 	display: grid;
-	grid-gap: var(--s-700);
+	grid-template-columns: var(--grid-columns);
 }
 
 .grid--about {

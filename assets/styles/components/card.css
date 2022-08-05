@@ -39,7 +39,7 @@
 
 .card__title {
 	color: var(--c-text);
-	font-family: var(--f-primary);
+	font-family: var(--f-text);
 	font-size: var(--s-500);
 	margin-bottom: 0.2rem;
 	transition: color var(--t-timing);

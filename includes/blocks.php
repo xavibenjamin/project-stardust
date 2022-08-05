@@ -20,7 +20,7 @@ function setup() {
 		return __NAMESPACE__ . "\\$function";
 	};
 
-	add_action( 'enqueue_block_editor_assets', $n( 'blocks_editor_styles' ) );
+	add_action( 'enqueue_block_editor_assets', $n( 'blocks_editor_assets' ) );
 
 	add_filter( 'block_categories', $n( 'blocks_categories' ), 10, 2 );
 
@@ -66,20 +66,20 @@ function filter_plugins_url( $url, $path ) {
  *
  * @return void
  */
-function blocks_editor_styles() {
-	wp_enqueue_style(
-		'editor-style',
-		SD_TEMPLATE_URL . '/dist/css/editor-style.css',
-		[],
-		SD_VERSION
-	);
+function blocks_editor_assets() {
 
-	wp_enqueue_style(
-		'cloud-type-styles',
-		'https://cloud.typography.com/7114076/6038832/css/fonts.css',
-		[],
-		SD_VERSION
-	);
+	// Block JS Overrides
+	$overrides = SD_DIST_PATH . 'js/core-block-overrides/core-block-overrides-bundle.asset.php';
+	if ( file_exists( $overrides ) ) {
+		$dep = require_once $overrides;
+		wp_enqueue_script(
+			'core-block-overrides',
+			SD_DIST_URL . 'js/core-block-overrides/core-block-overrides-bundle.js',
+			$dep['dependencies'],
+			$dep['version'],
+			true
+		);
+	}
 }
 
 /**

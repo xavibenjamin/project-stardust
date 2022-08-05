@@ -34,10 +34,8 @@
 }
 
 .site-name {
-	font-family: var(--f-primary);
+	font-family: var(--f-text);
 	font-size: var(--s-600);
-	letter-spacing: 0.6px;
-	letter-spacing: -0.063rem;
 	margin-bottom: 0.1rem;
 
 	@media (--bp-medium) {
@@ -70,7 +68,6 @@
 
 .site-pronouns {
 	color: var(--c-accent-alt);
-	font-family: var(--f-caps);
 	font-size: 0.7em;
 	font-weight: 400;
 }

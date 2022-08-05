@@ -6,7 +6,6 @@
 	--base-size: 1rem;
 
 	/* Size Scale */
-
 	--s-300: calc(var(--base-size) * 0.75);
 	--s-400: var(--base-size);
 	--s-500: calc(var(--base-size) * 1.33);
@@ -17,7 +16,6 @@
 	--s-major: calc(var(--base-size) * 5.6);
 
 	/* Leading */
-
 	--l-flat: 1;
 	--l-tight: 1.1;
 	--l-medium: 1.4;
@@ -25,22 +23,18 @@
 
 	/* Fonts */
 
-	--f-primary: "Whitney SSm A", "Whitney SSm B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
-	--f-secondary: "Whitney Narrow A", "Whitney Narrow B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
+	--f-text: ff-real-text-pro, system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
+	--f-head: ff-real-headline-pro, system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
 	--f-mono: ui-monospace, sfmono-regular, sf mono, menlo, consolas, liberation mono, monospace;
-	--f-caps: "Whitney SSm SmallCaps A", "Whitney SSm SmallCaps B", system, -apple-system, blinkmacsystemfont, avenir, sans-serif;
 
 	/* Measurements */
-
 	--m-reg: 48rem;
 	--m-lg: 55rem;
 	--m-xl: 65rem;
 	--m-xxl: 75rem;
 
 	/* Misc */
-
-	--m-radius: 0.3rem;
-	--t-timing: 200ms;
+	--t-timing: 300ms;
 	--t-easing: ease;
 }
 
