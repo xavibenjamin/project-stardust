@@ -20,7 +20,6 @@
 }
 
 .photo-grid__card {
-	border-radius: var(--m-radius);
 	overflow: hidden;
 	position: relative;
 

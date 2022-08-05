@@ -11,10 +11,5 @@
 	& img {
 		border-radius: 0;
 		max-width: 1440px;
-
-		@media (--bp-xlarge) {
-			border-bottom-left-radius: var(--m-radius);
-			border-bottom-right-radius: var(--m-radius);
-		}
 	}
 }
