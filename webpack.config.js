@@ -8,7 +8,6 @@ const isProduction = 'production' === process.env.NODE_ENV;
 const entries = {
   "frontend": ['./assets/js/main.js', './assets/styles/main.css'],
   "driver": './includes/blocks/driver/index.js',
-  "editor-style": './assets/styles/editor.css',
   "core-block-overrides": './includes/core-block-overrides.js',
 };
 

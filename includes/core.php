@@ -21,7 +21,6 @@ function setup() {
 	add_action( 'wp_enqueue_scripts', $n( 'sd_enqueue_comments_reply' ) );
 	add_action( 'init', $n( 'sd_indieweb_plugin_support' ) );
 	add_action( 'wp_print_styles', $n( 'stardust_remove_plugin_assets' ), 100 );
-	add_action( 'enqueue_block_editor_assets', $n( 'core_block_overrides' ) );
 }
 
 /**
@@ -123,23 +122,4 @@ function sd_indieweb_plugin_support() {
 
 	// Remove syndication links from body
 	remove_filter( 'the_content', array( 'Syn_Config', 'the_content' ), 30 );
-}
-
-/**
- * Enqueue core block filters, styles and variations.
- *
- * @return void
- */
-function core_block_overrides() {
-	$overrides = SD_DIST_PATH . 'js/core-block-overrides/core-block-overrides-bundle.asset.php';
-	if ( file_exists( $overrides ) ) {
-		$dep = require_once $overrides;
-		wp_enqueue_script(
-			'core-block-overrides',
-			SD_DIST_URL . 'js/core-block-overrides/core-block-overrides-bundle.js',
-			$dep['dependencies'],
-			$dep['version'],
-			true
-		);
-	}
 }
