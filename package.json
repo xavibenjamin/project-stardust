@@ -6,6 +6,7 @@
     "build": "webpack --mode=production",
     "watch": "webpack --watch",
     "lint:php": "composer run lint",
+    "lint:css": "stylelint assets/styles",
     "lint:php:fix": "composer run lint-fix",
     "lint:css:fix": "stylelint assets/styles --fix"
   },
