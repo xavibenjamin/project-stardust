@@ -5,7 +5,7 @@
 
 .headline {
 	font-size: var(--s-800);
-	font-weight: 800;
+	font-weight: 900;
 	line-height: var(--l-tight);
 
 	@media (--bp-medium) {
