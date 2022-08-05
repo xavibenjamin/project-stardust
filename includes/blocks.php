@@ -73,13 +73,6 @@ function blocks_editor_styles() {
 		[],
 		SD_VERSION
 	);
-
-	wp_enqueue_style(
-		'cloud-type-styles',
-		'https://cloud.typography.com/7114076/6038832/css/fonts.css',
-		[],
-		SD_VERSION
-	);
 }
 
 /**

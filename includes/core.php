@@ -89,8 +89,8 @@ function stardust_bundle_assets() {
 	);
 
 	wp_enqueue_style(
-		'cloud-type-styles',
-		'https://cloud.typography.com/7114076/6038832/css/fonts.css',
+		'type',
+		'https://use.typekit.net/jlg8dnu.css',
 		[],
 		SD_VERSION
 	);
