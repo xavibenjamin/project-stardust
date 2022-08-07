@@ -4,7 +4,7 @@
 
 html {
 	font-family: var(--f-text);
-	font-size: clamp(16px, 100% + 0.15vw, 18px);
+	font-size: clamp(100%, 100% + 0.18vw, 200%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

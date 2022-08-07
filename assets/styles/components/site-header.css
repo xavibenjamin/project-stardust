@@ -3,10 +3,12 @@
  */
 
 .site-header {
+	grid-column: container;
 	padding-bottom: var(--s-400);
 	padding-top: var(--s-400);
 
 	@media (--bp-medium) {
+		grid-column: wrapper-start / container-start;
 		padding-bottom: var(--s-900);
 		padding-top: var(--s-700);
 	}
@@ -15,7 +17,8 @@
 .site-header__wrapper {
 	align-items: center;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	grid-column: main-content;
 	justify-content: space-between;
 	position: relative;
 }

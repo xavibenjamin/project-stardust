@@ -4,15 +4,24 @@
  */
 
 .grid {
-	--grid-columns: [wrapper-start] minmax(1rem, 1fr) [container-start] minmax(0, 0.8fr) [wide-content-start] minmax(0, 0.5fr) [main-content-start ] repeat(4, minmax(auto, 10.6rem)) [main-content-end] minmax(0, 0.5fr) [wide-content-end ] minmax(0, 0.8fr) [container-end] minmax(1rem, 1fr) [wrapper-end];
+	--side-gutter: var(--s-600);
+	--content-width: 42rem;
+	--grid-columns: [wrapper-start] minmax(var(--side-gutter), 1fr) [container-start] minmax(auto, var(--content-width)) [container-end] minmax(var(--side-gutter), 1fr) [wrapper-end];
 
 	display: grid;
 	grid-template-columns: var(--grid-columns);
-}
-
-.grid--about {
 
 	@media (--bp-medium) {
-		grid-template-columns: minmax(min-content, var(--m-reg)) minmax(min-content, 350px);
+		--grid-columns: [wrapper-start] 1fr [container-start ] 3fr [wrapper-end];
+	}
+}
+
+.grid--subgrid {
+	--side-gutter: var(--s-600);
+	--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] minmax(auto, var(--content-width)) [main-content-end] var(--side-gutter) [wide-content-end];
+
+	@media (--bp-large) {
+		--side-gutter: minmax(var(--s-600), var(--s-900));
+		--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] repeat(4, minmax(auto, calc(var(--content-width) / 4))) [main-content-end] var(--side-gutter) [wide-content-end] minmax(0, 18.75rem)  auto;
 	}
 }

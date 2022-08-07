@@ -10,9 +10,7 @@ $is_photos = is_tax( 'post_format', 'post-format-image' );
 ?>
 
 <main tabindex="-1" id="main-content" class="site-content">
-	<div class="wrapper <?php echo $is_photos ? ' wrapper--large' : ''; ?>">
-
-	<?php if ( is_archive() && ! $is_photos ) : ?>
+<?php if ( is_archive() && ! $is_photos ) : ?>
 			<header class="page-header">
 				<h1 class="[ page-header__title ] [ headline ]" id="page-title">
 					<?php
@@ -28,9 +26,13 @@ $is_photos = is_tax( 'post_format', 'post-format-image' );
 			</header>
 		<?php endif; ?>
 
+		<?php if ( $is_photos ) : ?>
+			<div class="grid">
+		<?php endif; ?>
 		<div class="<?php echo $is_photos ? 'photo-grid' : 'site-feed'; ?>">
 			<?php
-			if ( have_posts() ) : while ( have_posts() ) : the_post();
+			if ( have_posts() ) : 
+				while ( have_posts() ) : the_post();
 
 					if ( $is_photos ) {
 						get_template_part(
@@ -45,10 +47,13 @@ $is_photos = is_tax( 'post_format', 'post-format-image' );
 							'template-parts/content/content'
 						);
 					}
-			endwhile;
-endif;
+				endwhile;
+			endif;
 			?>
 		</div>
+		<?php if ( $is_photos ) : ?>
+			</div>
+		<?php endif; ?>
 		<?php get_template_part( 'template-parts/pagination' ); ?>
 	</div>
 </main>
