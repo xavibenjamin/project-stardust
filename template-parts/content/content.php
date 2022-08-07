@@ -18,7 +18,7 @@ $post_type = get_post_type( get_the_ID() );
 
 ?>
 
-<article <?php post_class( 'entry h-entry' ); ?>>
+<article <?php post_class( 'grid grid--subgrid entry h-entry' ); ?>>
 	<?php if ( ! has_post_format() ) : ?>
 		<header class="entry__header">
 			<?php if ( has_category() ) : ?>

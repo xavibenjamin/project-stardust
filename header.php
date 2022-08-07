@@ -16,10 +16,10 @@ $color_theme = get_option( 'sd_theme_color' ) ?? 'bright-pixels';
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( $class ); ?>>
+<body <?php body_class('grid'); ?>>
 
 <header class="site-header">
-	<div class="[ site-header__wrapper ] [ wrapper ]">
+	<div class="site-header__wrapper">
 		<?php
 			get_template_part( 'template-parts/header/site', 'id' );
 			get_template_part( 'template-parts/header/site', 'nav' );
