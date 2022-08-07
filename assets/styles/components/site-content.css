@@ -1,0 +1,8 @@
+.site-content {
+	grid-column: wrapper;
+	padding-top: var(--s-800);
+
+	@media (--bp-medium) {
+		grid-column-start: container-start;
+	}
+}

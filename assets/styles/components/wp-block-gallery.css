@@ -3,6 +3,11 @@
  */
 
 .wp-block-gallery {
+	gap: 0.5rem !important;
+
+	& img {
+		margin: 0;
+	}
 
 	&:not(:first-child) {
 		margin-top: var(--s-700);
