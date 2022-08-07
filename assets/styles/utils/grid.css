@@ -4,7 +4,7 @@
  */
 
 .grid {
-	--side-gutter: var(--s-600);
+	--side-gutter: var(--s-500);
 	--content-width: 42rem;
 	--grid-columns: [wrapper-start] minmax(var(--side-gutter), 1fr) [container-start] minmax(auto, var(--content-width)) [container-end] minmax(var(--side-gutter), 1fr) [wrapper-end];
 
@@ -17,11 +17,15 @@
 }
 
 .grid--subgrid {
-	--side-gutter: var(--s-600);
+	--side-gutter: var(--s-500);
 	--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] minmax(auto, var(--content-width)) [main-content-end] var(--side-gutter) [wide-content-end];
 
 	@media (--bp-large) {
-		--side-gutter: minmax(var(--s-600), var(--s-900));
-		--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] repeat(4, minmax(auto, calc(var(--content-width) / 4))) [main-content-end] var(--side-gutter) [wide-content-end] minmax(0, 18.75rem)  auto;
+		--side-gutter: minmax(var(--s-500), var(--s-700));
+		--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] repeat(4, minmax(auto, calc(var(--content-width) / 4))) [main-content-end] var(--side-gutter) [wide-content-end] auto;
+	}
+
+	@media (--bp-xlarge) {
+		--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] repeat(4, minmax(auto, calc(var(--content-width) / 4))) [main-content-end] var(--side-gutter) [wide-content-end] minmax(0, 18.75rem) auto;
 	}
 }
