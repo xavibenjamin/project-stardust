@@ -44,3 +44,4 @@
 @custom-media --bp-medium-max (max-width: 39.9em);
 @custom-media --bp-large (min-width: 64em);
 @custom-media --bp-xlarge (min-width: 90em);
+@custom-media --bp-xxlarge (min-width: 100em);
