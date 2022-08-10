@@ -7,9 +7,19 @@
 
 get_header();
 $is_photos = is_tax( 'post_format', 'post-format-image' );
+
+$base_classes = [
+	'site-content',
+];
+
+if ( is_archive() ) {
+	array_push( $base_classes, 'grid', 'grid--subgrid' );
+}
+
+$main_classes_string = join( ' ', $base_classes);
 ?>
 
-<main tabindex="-1" id="main-content" class="site-content">
+<main tabindex="-1" id="main-content" class="<?php echo esc_attr( $main_classes_string ); ?>">
 <?php if ( is_archive() && ! $is_photos ) : ?>
 			<header class="page-header">
 				<h1 class="[ page-header__title ] [ headline ]" id="page-title">
