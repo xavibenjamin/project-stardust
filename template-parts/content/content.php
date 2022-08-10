@@ -53,7 +53,7 @@ $post_type = get_post_type( get_the_ID() );
 
 		<?php if ( has_post_thumbnail() ) : ?>
 			<figure class="entry__featured-image">
-				<?php the_post_thumbnail( 'medium_large' ); ?>
+				<?php the_post_thumbnail( 'large' ); ?>
 				<?php if ( get_the_post_thumbnail_caption() ) : ?>
 					<figcaption class="entry__featured-image-caption"><?php the_post_thumbnail_caption(); ?></figcaption>
 				<?php endif; ?>
