@@ -10,10 +10,12 @@ if ( ! is_archive() ) { return; }
 
 $next_text       = __( 'Next', 'stardust' );
 $prev_text       = __( 'Prev', 'stardust' );
-$paged           = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+$paged           = get_query_var( 'paged' ) ?? false;
 $next_posts_link = get_next_posts_link( $next_text ) ?? false;
 $prev_posts_link = get_previous_posts_link( $prev_text ) ?? false;
 $view_more_link  = get_next_posts_link( __( 'View more', 'stardust' ) );
+
+if ( empty( $paged ) ) { return; }
 ?>
 
 <nav class="pagination" aria-label="Pagination">
