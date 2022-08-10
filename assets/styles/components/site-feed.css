@@ -4,6 +4,10 @@
 
 .site-feed {
 
+	@nest .archive & {
+		grid-column: main-content;
+	}
+
 	& > * + * {
 		margin-top: var(--s-major);
 	}

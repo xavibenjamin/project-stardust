@@ -3,6 +3,7 @@
  */
 
 .page-header {
+	grid-column: main-content;
 	margin-bottom: var(--s-800);
 }
 

@@ -8,6 +8,7 @@
 	--content-width: 42rem;
 	--grid-columns: [wrapper-start] minmax(var(--side-gutter), 1fr) [container-start] minmax(auto, var(--content-width)) [container-end] minmax(var(--side-gutter), 1fr) [wrapper-end];
 
+	align-items: start;
 	display: grid;
 	grid-template-columns: var(--grid-columns);
 
