@@ -3,19 +3,10 @@
 	border: 0;
 	color: var(--c-text);
 	font-family: var(--f-mono);
-	margin-bottom: var(--s-700);
-	margin-left: 50%;
-	margin-top: var(--s-700);
+	grid-column: wide-content;
 	outline: 0;
 	overflow-x: auto;
 	tab-size: 2;
-	text-align: left;
-	transform: translateX(-50%);
-	width: 100vw;
-
-	@media (--bp-medium) {
-		max-width: var(--m-lg);
-	}
 
 	& code {
 		background: none;
@@ -29,15 +20,13 @@
 
 	&[class*="language-"] {
 		background: var(--c-code-block-bg);
+		border-radius: 0;
 		margin: 0;
-		margin-bottom: var(--s-700);
-		margin-left: 50%;
-		margin-top: var(--s-700);
-		padding: var(--s-600);
+		padding: var(--s-500) var(--s-700);
 		position: relative;
 
-		@media (--bp-medium) {
-			border-radius: 0.25rem;
+		&:not(:first-child) {
+			margin-top: var(--s-500);
 		}
 	}
 }

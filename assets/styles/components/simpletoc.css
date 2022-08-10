@@ -13,26 +13,25 @@
 	position: relative;
 	z-index: 2;
 
-	@media (--bp-medium) {
-		float: right;
-		margin-left: var(--s-500);
-		margin-right: calc(var(--s-700) * -1);
-		max-width: 18rem;
+	@media (--bp-large) {
+		grid-column-end: span 2;
 	}
 
-	@media (--bp-large) {
-		margin-right: calc(var(--s-major) * -1);
+	@media (--bp-xxlarge) {
+		align-self: start;
+		grid-column: wide-content-end / span 1;
+		grid-row: span 300;
 	}
 }
 
 .simpletoc-title {
 	font-size: var(--s-400);
+	margin-bottom: var(--s-400);
 	margin-top: 0 !important;
 }
 
 .simpletoc {
 	margin-bottom: 0;
-	margin-left: -0.8rem;
 	padding-left: var(--s-600);
 
 	& li + li {
@@ -47,13 +46,4 @@
 			text-decoration: underline;
 		}
 	}
-}
-
-/* Editor Specific Stuff */
-
-.editor-styles-wrapper .simpletoc-wrapper {
-	float: none;
-	margin-left: 0;
-	margin-right: 0;
-	max-width: none;
 }
