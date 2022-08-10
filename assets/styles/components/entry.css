@@ -96,20 +96,9 @@
 }
 
 .entry__featured-image {
-	grid-column: main-content;
+	grid-column: wide-content;
 	margin-bottom: var(--s-600);
 	margin-top: var(--s-600);
-
-	/* @media (--bp-medium) {
-		margin-left: 50%;
-		max-width: 50rem;
-		transform: translateX(-50%);
-		width: 100vw;
-
-		& img {
-			width: 100%;
-		}
-	} */
 }
 
 .entry__featured-image-caption {

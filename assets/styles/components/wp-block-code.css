@@ -22,11 +22,15 @@
 		background: var(--c-code-block-bg);
 		border-radius: 0;
 		margin: 0;
-		padding: var(--s-500) var(--s-700);
+		padding: var(--s-500);
 		position: relative;
 
 		&:not(:first-child) {
 			margin-top: var(--s-500);
+		}
+
+		@media (--bp-large) {
+			padding: var(--s-500) var(--s-700);
 		}
 	}
 }

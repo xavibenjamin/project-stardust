@@ -7,8 +7,15 @@
 	padding-bottom: var(--s-400);
 	padding-top: var(--s-400);
 
-	@media (--bp-medium) {
-		background: var(--c-bg-alt);
+	@nest .home & {
+		margin-bottom: var(--s-500);
+	}
+
+	@media (--bp-large) {
+		align-self: stretch;
+
+		/* background: var(--c-bg-alt); */
+		border-right: 1px solid var(--c-border-line);
 		grid-column: wrapper-start / container-start;
 		min-width: 15rem;
 		padding-bottom: var(--s-900);
@@ -25,7 +32,7 @@
 	justify-content: space-between;
 	position: relative;
 
-	@media (--bp-medium) {
+	@media (--bp-large) {
 		align-items: flex-start;
 		flex-direction: column;
 		gap: var(--s-500);

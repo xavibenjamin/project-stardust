@@ -14,12 +14,12 @@
 	z-index: 2;
 
 	@media (--bp-large) {
-		grid-column-end: span 2;
+		/* grid-column-end: span 2; */
 	}
 
-	@media (--bp-xxlarge) {
+	@media (--bp-xxxlarge) {
 		align-self: start;
-		grid-column: wide-content-end / span 1;
+		grid-column: sidebar;
 		grid-row: span 300;
 	}
 }
