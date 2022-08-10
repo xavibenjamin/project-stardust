@@ -34,8 +34,6 @@ $partial_classes = join( ' ', $base_classes );
 			<?php endif; ?>
 		</h1>
 		<p class="site-username"><?php echo esc_html( '@smithtimmytim' ); ?></p>
-		<?php if ( is_home() ) : ?>
-			<p class="site-bio"><?php bloginfo( 'description' ); ?></p>
-		<?php endif; ?>
+		<p class="site-bio"><?php bloginfo( 'description' ); ?></p>
 	</div>
 </div>
