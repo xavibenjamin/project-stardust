@@ -16,7 +16,7 @@ if ( is_archive() ) {
 	array_push( $base_classes, 'grid', 'grid--subgrid' );
 }
 
-$main_classes_string = join( ' ', $base_classes);
+$main_classes_string = join( ' ', $base_classes );
 ?>
 
 <main tabindex="-1" id="main-content" class="<?php echo esc_attr( $main_classes_string ); ?>">
@@ -41,7 +41,7 @@ $main_classes_string = join( ' ', $base_classes);
 		<?php endif; ?>
 		<div class="<?php echo $is_photos ? 'photo-grid' : 'site-feed'; ?>">
 			<?php
-			if ( have_posts() ) : 
+			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 
 					if ( $is_photos ) {

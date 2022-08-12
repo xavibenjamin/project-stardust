@@ -9,7 +9,7 @@
 $site_pronouns = get_option( 'sd_site_pronouns' ) ?? false;
 $base_classes  = [
 	'site-id',
-	'h-card'
+	'h-card',
 ];
 
 if ( ! is_home() ) {
@@ -26,7 +26,7 @@ $partial_classes = join( ' ', $base_classes );
 	</div>
 	<div class="site-id__info">
 		<h1 class="site-name">
-			<a class="p-name u-url" rel="me" href="<?php echo site_url(); ?>">
+			<a class="p-name u-url" rel="me" href="<?php echo esc_url( site_url() ); ?>">
 				<?php bloginfo( 'name' ); ?>
 			</a>
 			<?php if ( ! empty( $site_pronouns ) ) : ?>

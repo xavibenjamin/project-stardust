@@ -17,7 +17,7 @@ $color_theme = get_option( 'sd_theme_color' ) ?? 'bright-pixels';
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('grid'); ?>>
+<body <?php body_class( 'grid' ); ?>>
 
 <header class="site-header">
 	<div class="site-header__wrapper">

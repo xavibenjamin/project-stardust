@@ -26,7 +26,7 @@ function setup() {
 
 	add_action( 'init', $n( 'register_theme_blocks' ) );
 
-	// add_action( 'init', $n( 'block_patterns_and_categories' ) );
+	// phpcs:ignore add_action( 'init', $n( 'block_patterns_and_categories' ) );
 }
 
 /**
