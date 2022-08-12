@@ -1,0 +1,41 @@
+name: "Lint and Build"
+
+on: [pull_request]
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Setting Up Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - name: Set PHP version
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        tools: composer:v2
+        coverage: none
+
+    - name: Install NPM Dependencies
+      run: npm run install:npm
+
+    - name: Install Composer Dependencies
+      run: npm run install:composer
+
+    - name: Lint JS
+      run: npm run lint:js
+
+    - name: Lint CSS
+      run: npm run lint:css
+
+    - name: Lint PHP
+      run: npm run lint:php
+
+    - name: Build Theme
+      run: npm run build
