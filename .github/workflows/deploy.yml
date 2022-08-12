@@ -1,0 +1,28 @@
+
+name: Build and Deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+      url: https://smithtimmytim.com
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+      - name: Install npm dependencies
+        run: npm install
+      - name: Build theme
+        run: npm run build --if-present
+    - name: Deploy to Server
+      uses: easingthemes/ssh-deploy@v2.2.11
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: ssh.getflywheel.com
+        REMOTE_USER: ${{ secrets.SSH_USER }}
+        ARGS: -rltgoDzvO --exclude .git --exclude .github
+        TARGET: /www/wp-content/themes/project-stardust
