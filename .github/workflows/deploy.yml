@@ -28,5 +28,5 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         REMOTE_HOST: ssh.getflywheel.com
         REMOTE_USER: ${{ secrets.SSH_USER }}
-        ARGS: -rltgoDzvO --exclude .git --exclude .github
+        ARGS: -rltgoDzvO --exclude .git --exclude .github --exclude node_modules
         TARGET: /www/wp-content/themes/project-stardust
