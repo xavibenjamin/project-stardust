@@ -5,6 +5,9 @@
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --watch",
+    "install:npm": "npm install --silent --no-progress",
+    "lint:css": "stylelint assets/styles",
+    "lint:js": "eslint assets includes",
     "lint:php": "composer run lint",
     "lint:php:fix": "composer run lint-fix",
     "lint:css:fix": "stylelint assets/styles --fix"
