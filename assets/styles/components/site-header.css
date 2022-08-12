@@ -7,10 +7,6 @@
 	padding-bottom: var(--s-400);
 	padding-top: var(--s-400);
 
-	@nest .home & {
-		margin-bottom: var(--s-500);
-	}
-
 	@media (--bp-large) {
 		align-self: stretch;
 
@@ -37,7 +33,7 @@
 		flex-direction: column;
 		gap: var(--s-500);
 		margin-left: auto;
-		max-width: 16rem;
+		max-width: 14rem;
 	}
 }
 
