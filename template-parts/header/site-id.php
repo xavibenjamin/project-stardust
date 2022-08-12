@@ -7,16 +7,26 @@
  */
 
 $site_pronouns = get_option( 'sd_site_pronouns' ) ?? false;
+$base_classes  = [
+	'site-id',
+	'h-card',
+];
+
+if ( ! is_home() ) {
+	array_push( $base_classes, 'site-id--compact' );
+}
+
+$partial_classes = join( ' ', $base_classes );
 
 ?>
 
-<div class="[ site-id <?php if ( ! is_home() ) { echo esc_attr( 'site-id--compact ' ); } ?>] [ h-card ]">
+<div class="<?php echo esc_attr( $partial_classes ); ?>">
 	<div class="site-id__image">
 		<img class="u-photo" src="<?php site_icon_url( 200 ); ?>" alt="Tim Smith Avatar Illustration">
 	</div>
 	<div class="site-id__info">
 		<h1 class="site-name">
-			<a class="p-name u-url" rel="me" href="/">
+			<a class="p-name u-url" rel="me" href="<?php echo esc_url( site_url() ); ?>">
 				<?php bloginfo( 'name' ); ?>
 			</a>
 			<?php if ( ! empty( $site_pronouns ) ) : ?>
@@ -24,8 +34,6 @@ $site_pronouns = get_option( 'sd_site_pronouns' ) ?? false;
 			<?php endif; ?>
 		</h1>
 		<p class="site-username"><?php echo esc_html( '@smithtimmytim' ); ?></p>
-		<?php if ( is_home() ) : ?>
-			<p class="site-bio"><?php bloginfo( 'description' ); ?></p>
-		<?php endif; ?>
+		<p class="site-bio"><?php bloginfo( 'description' ); ?></p>
 	</div>
 </div>

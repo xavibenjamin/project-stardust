@@ -27,7 +27,6 @@
 
 .archive-list__item-link {
 	color: var(--c-link);
-	font-family: var(--f-caps);
 	font-size: var(--s-400);
 	text-decoration: none;
 }

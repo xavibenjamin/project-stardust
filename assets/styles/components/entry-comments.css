@@ -115,7 +115,6 @@
 
 .comment-respond {
 	background-color: var(--c-bg-alt);
-	border-radius: var(--m-radius);
 	padding: var(--s-600);
 
 	& #cancel-comment-reply-link {
@@ -148,7 +147,6 @@
 		appearance: none;
 		background-color: var(--c-input-bg);
 		border: 0;
-		border-radius: var(--m-radius);
 		color: var(--c-text);
 		display: block;
 		font-size: var(--s-400);
@@ -177,7 +175,6 @@
 		appearance: none;
 		background-color: transparent;
 		border: 2px solid var(--c-accent);
-		border-radius: var(--m-radius);
 		color: var(--c-accent);
 		cursor: pointer;
 		display: inline-block;
@@ -191,7 +188,6 @@
 		appearance: none;
 		background-color: var(--c-input-bg);
 		border: 0;
-		border-radius: var(--m-radius);
 		color: var(--c-text);
 		display: block;
 		font-size: var(--s-400);
@@ -231,7 +227,6 @@
 
 	& h3 {
 		color: var(--c-text-accent);
-		font-family: var(--f-caps);
 		font-size: var(--s-400);
 	}
 
@@ -266,7 +261,6 @@
 
 		& .avatar {
 			border: 1px solid var(--c-border-line);
-			border-radius: var(--m-radius);
 			height: var(--s-600);
 			width: var(--s-600);
 		}

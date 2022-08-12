@@ -4,11 +4,17 @@
 
 .photo-grid {
 	display: grid;
+	grid-column: container;
 	grid-gap: 2px;
 	grid-template-columns: repeat(3, 1fr);
 
-	@media (--bp-medium) {
+	@media (--bp-large) {
+		grid-column-start: main-content;
 		grid-gap: var(--s-300);
+	}
+
+	@media (--bp-xlarge) {
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	@media (--bp-medium-max) {
@@ -20,7 +26,6 @@
 }
 
 .photo-grid__card {
-	border-radius: var(--m-radius);
 	overflow: hidden;
 	position: relative;
 

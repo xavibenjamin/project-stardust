@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <footer class="site-footer">
 	<div class="footer-logo">
 		<?php
@@ -15,20 +16,8 @@
 		?>
 	</div>
 </footer>
-<?php
-if ( ! is_page( 'links' ) ) {
-	get_template_part( 'template-parts/newsletter-bar' );
-}
 
-wp_footer();
-?>
+<?php wp_footer(); ?>
 
-<script aync src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-<script>
-	twemoji.parse(document.body, {
-		folder:'svg',
-		ext:'.svg'
-	});
-</script>
 </body>
 </html>

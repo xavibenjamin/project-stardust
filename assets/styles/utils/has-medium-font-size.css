@@ -1,3 +1,5 @@
 .has-medium-font-size {
-	letter-spacing: -0.063rem;
+	--wp--preset--font-size--medium: 1.25em;
+
+	line-height: var(--l-medium);
 }

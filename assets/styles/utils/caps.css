@@ -6,6 +6,7 @@
 .comment-body {
 
 	& .caps {
-		font-family: var(--f-caps);
+		font-size: 0.9em;
+		text-transform: uppercase;
 	}
 }

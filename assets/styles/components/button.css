@@ -4,7 +4,6 @@
 
 .button {
 	border: 1px solid var(--c-accent);
-	border-radius: var(--m-radius);
 	color: var(--c-accent);
 	display: inline-block;
 	font-size: var(--s-500);
@@ -24,7 +23,6 @@
 }
 
 .wp-block-button__link {
-	border-radius: var(--m-radius);
 	padding: 0.5rem var(--s-400) !important;
 }
 

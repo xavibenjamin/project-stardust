@@ -24,7 +24,6 @@
 @import url("site-footer");
 @import url("wp-block-stardust-driver");
 @import url("last-fm");
-@import url("about-cover");
 @import url("card");
 @import url("syndication-links");
 @import url("pill");
@@ -32,3 +31,4 @@
 @import url("newsletter-bar");
 @import url("simpletoc");
 @import url("pagination");
+@import url("site-content");

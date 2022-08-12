@@ -3,23 +3,28 @@
  */
 
 html {
-	font-family: var(--f-primary);
-	font-size: clamp(13px, 1.75vw, 18px);
+	font-family: var(--f-text);
+	font-size: clamp(105%, 105% + 0.18vw, 200%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
 	color: var(--c-text);
-	font-size: var(--s-500);
+	font-size: var(--s-400);
+	font-weight: 300;
 	line-height: var(--l-loose);
+
+	@media (--bp-medium) {
+		font-size: var(--s-500);
+	}
 }
 
 h1,
 h2,
 h3 {
 	color: var(--c-heading);
-	font-family: var(--f-secondary);
+	font-family: var(--f-head);
 	line-height: var(--l-tight);
 }
 
@@ -29,7 +34,6 @@ h3 {
 
 code {
 	background-color: var(--c-code);
-	border-radius: 0.25rem;
 	color: var(--c-accent);
 	font-family: var(--f-mono) !important;
 	font-size: 0.85em;
@@ -42,12 +46,17 @@ mark {
 	color: var(--c-text);
 }
 
-a:not([class]) {
+a:not([class]),
+.link {
 	color: var(--c-link);
+
+	&:visited {
+		color: var(--c-text-alt);
+	}
 }
 
-ul:not([class]) {
-	list-style: none;
+ul:not([class]),
+.ul {
 	padding-left: var(--s-500);
 
 	@media (--bp-medium) {
@@ -57,61 +66,35 @@ ul:not([class]) {
 	& li {
 		position: relative;
 
-		&::before {
+		&::marker {
 			color: var(--c-text-accent);
-			content: "•";
-			display: inline-block;
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-			left: -1em;
-			line-height: var(--l-loose);
-			position: absolute;
 		}
 
 		& + li {
-			margin-top: 0.75rem;
+			margin-top: var(--s-400);
 		}
 	}
 }
 
 ol:not([class]),
-.simpletoc {
-	counter-reset: section;
-	list-style: none;
-	padding-left: var(--s-500);
-
-	@media (--bp-medium) {
-		padding-left: var(--s-700);
-	}
+.simpletoc,
+.ol {
+	padding-left: var(--s-800);
 
 	& li {
 		position: relative;
 
-		&::before {
+		&::marker {
 			color: var(--c-text-accent);
-			content: counter(section);
-			counter-increment: section;
 			font-family: var(--f-mono);
 			font-size: 0.85em;
 			font-weight: bold;
-			left: -3em;
 			line-height: var(--l-loose);
 			padding-right: 0.55em;
-			position: absolute;
-			text-align: right;
-			top: 0.18em;
-			width: 3em;
-		}
-
-		&:nth-child(-n + 9)::before {
-			content: counter(section);
 		}
 
 		& + li {
 			margin-top: 0.75rem;
-		}
-
-		& ol {
-			counter-reset: section;
 		}
 	}
 }

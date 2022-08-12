@@ -3,6 +3,10 @@
  * - appears at the bottom of every page
  */
 
+.newsletter-bar {
+	grid-column: wrapper;
+}
+
 .newsletter-bar--is-active {
 	bottom: 0;
 	left: 0;
@@ -40,6 +44,7 @@
 }
 
 .newsletter-bar__body {
+	grid-column: main-content-start / container-end;
 
 	@media (--bp-medium) {
 		align-items: flex-end;

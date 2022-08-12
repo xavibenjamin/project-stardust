@@ -39,24 +39,16 @@
 
 .card__title {
 	color: var(--c-text);
-	font-family: var(--f-primary);
-	font-size: var(--s-500);
+	font-family: var(--f-text);
+	font-size: calc(var(--s-400) * 0.9);
 	margin-bottom: 0.2rem;
 	transition: color var(--t-timing);
-
-	@media (--bp-medium) {
-		font-size: calc(var(--s-400) * 0.9);
-	}
 }
 
 .card__meta {
 	color: var(--c-text-alt);
-	font-size: var(--s-400);
+	font-size: calc(var(--s-400) * 0.8);
 	transition: color var(--t-timing);
-
-	@media (--bp-medium) {
-		font-size: calc(var(--s-400) * 0.8);
-	}
 }
 
 .card__link {

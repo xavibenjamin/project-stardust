@@ -17,6 +17,26 @@
 	& .site-id__image {
 		margin-bottom: 0;
 	}
+
+	@media (--bp-large) {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	& .site-bio {
+
+		@media (--bp-large-max) {
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: auto;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
+	}
 }
 
 .site-id__image {
@@ -25,7 +45,7 @@
 	& img {
 		border: 1px solid var(--c-border-line);
 		border-radius: 50%;
-		max-width: 5rem;
+		max-width: 4rem;
 	}
 }
 
@@ -34,15 +54,8 @@
 }
 
 .site-name {
-	font-family: var(--f-primary);
-	font-size: var(--s-600);
-	letter-spacing: 0.6px;
-	letter-spacing: -0.063rem;
+	font-size: var(--s-500);
 	margin-bottom: 0.1rem;
-
-	@media (--bp-medium) {
-		font-size: var(--s-500);
-	}
 
 	& a {
 		color: var(--c-heading);
@@ -61,25 +74,20 @@
 
 .site-username {
 	color: var(--c-text-alt);
-	font-size: var(--s-500);
-
-	@media (--bp-medium) {
-		font-size: var(--s-400);
-	}
+	font-size: var(--s-400);
 }
 
 .site-pronouns {
 	color: var(--c-accent-alt);
-	font-family: var(--f-caps);
-	font-size: 0.7em;
+	font-family: var(--f-text);
+	font-size: 0.6em;
 	font-weight: 400;
 }
 
 .site-bio {
-	font-size: var(--s-500);
-	margin-top: var(--s-500);
-
-	@media (--bp-medium) {
-		font-size: var(--s-400);
-	}
+	font-size: var(--s-400);
+	line-height: var(--l-small);
+	margin-top: var(--s-400);
+	position: relative;
+	z-index: 5;
 }

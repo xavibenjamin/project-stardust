@@ -9,15 +9,15 @@
 .wp-block-stardust-driver {
 	background-color: var(--c-bg-alt);
 	border-left: 0.2rem solid var(--c-alert-accent);
-	border-radius: 0 0.25rem 0.25rem 0;
-	margin-bottom: var(--s-600);
-	margin-top: var(--s-600);
 	padding: var(--s-600);
 	position: relative;
 
-	@media (--bp-medium) {
-		margin-left: calc(var(--s-600) * -1);
-		margin-right: calc(var(--s-600) * -1);
+	@media (--bp-large) {
+		grid-column: wide-content;
+	}
+
+	&:not(:first-child) {
+		margin-top: var(--s-700);
 	}
 
 	& + .wp-block-stardust-driver {
@@ -52,7 +52,7 @@
 
 	& .wp-block-stardust-driver__label {
 		color: var(--c-heading);
-		font-family: var(--f-secondary);
+		font-family: var(--f-head);
 		font-size: var(--s-600);
 		font-weight: bold;
 		line-height: 1.1;
@@ -73,8 +73,6 @@
 
 	& .wp-block-code {
 		background: var(--c-bg);
-		margin-left: 0;
-		transform: translate(0);
 		width: 100%;
 
 		& .prism-titlename {
