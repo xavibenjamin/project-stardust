@@ -15,6 +15,9 @@ get_header();
 			<h2 class="taxonomy-list__title">Browse by Category</h2>
 			<ul class="taxonomy-list__list">
 				<?php
+
+
+
 					wp_list_categories(
 						array(
 							'exclude'  => array( 1, 156 ),
