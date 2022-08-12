@@ -23,8 +23,10 @@ get_header();
 				<div class="site-search__results">
 					<?php
 
-						$allsearch      = new WP_Query( "s=$s&showposts=0" );
-						$results        = $allsearch->found_posts;
+						$allsearch = new WP_Query( "s=$s&showposts=0" );
+						$results   = $allsearch->found_posts;
+
+						// translators: the number of results
 						$results_output = sprintf( _n( 'Found %s result', 'Found %s results', $results ), $results );
 					?>
 					<p><?php echo esc_html( $results_output ); ?></p>

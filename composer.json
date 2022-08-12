@@ -7,7 +7,7 @@
         "10up/phpcs-composer": "dev-master"
     },
     "scripts": {
-        "lint": "phpcs -s .",
+        "lint": "phpcs --standard=10up-Default --ignore=*/dist/* -s .",
         "lint-fix": "phpcbf ."
     },
     "config": {

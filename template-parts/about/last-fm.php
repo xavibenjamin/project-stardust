@@ -25,6 +25,8 @@ $artists = get_top_artists();
 
 	<ul class="sidebar-section__list">
 		<?php
+
+		// phpcs:disable PHPCompatibility.Lists.NewKeyedList.Found, PHPCompatibility.Lists.NewShortList.Found
 		foreach ( $tracks as $track ) :
 			[
 				'name' => $song_name,
