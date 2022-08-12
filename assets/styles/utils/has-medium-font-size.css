@@ -1,0 +1,5 @@
+.has-medium-font-size {
+	--wp--preset--font-size--medium: 1.25em;
+
+	line-height: var(--l-medium);
+}
