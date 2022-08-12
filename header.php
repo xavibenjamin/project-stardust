@@ -13,6 +13,7 @@ $color_theme = get_option( 'sd_theme_color' ) ?? 'bright-pixels';
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
+	<!-- Deployed using GitHub Actions -->
 	<?php wp_head(); ?>
 </head>
 
