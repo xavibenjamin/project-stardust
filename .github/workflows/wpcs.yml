@@ -14,4 +14,3 @@ jobs:
             standard: '10up-Default'
             standard_repo: 'https://github.com/10up/phpcs-composer.git'
             repo_branch: 'master'
-            use_local_config: 'true'
