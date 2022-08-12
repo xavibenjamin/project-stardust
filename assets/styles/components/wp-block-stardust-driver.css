@@ -9,9 +9,12 @@
 .wp-block-stardust-driver {
 	background-color: var(--c-bg-alt);
 	border-left: 0.2rem solid var(--c-alert-accent);
-	grid-column: wide-content;
 	padding: var(--s-600);
 	position: relative;
+
+	@media (--bp-large) {
+		grid-column: wide-content;
+	}
 
 	&:not(:first-child) {
 		margin-top: var(--s-700);

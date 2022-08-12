@@ -6,6 +6,7 @@
  */
 
 ?>
+
 <footer class="site-footer">
 	<div class="footer-logo">
 		<?php
@@ -15,12 +16,8 @@
 		?>
 	</div>
 </footer>
-<?php
-if ( ! is_page( 'links' ) ) {
-	get_template_part( 'template-parts/newsletter-bar' );
-}
 
-wp_footer();
-?>
+<?php wp_footer(); ?>
+
 </body>
 </html>

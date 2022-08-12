@@ -18,9 +18,24 @@
 		margin-bottom: 0;
 	}
 
-	@media (--bp-medium) {
+	@media (--bp-large) {
 		align-items: flex-start;
 		flex-direction: column;
+	}
+
+	& .site-bio {
+
+		@media (--bp-large-max) {
+			border: 0;
+			clip: rect(0 0 0 0);
+			height: auto;
+			margin: 0;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
 	}
 }
 
@@ -71,7 +86,7 @@
 
 .site-bio {
 	font-size: var(--s-400);
-	line-height: var(--l-tight);
+	line-height: var(--l-small);
 	margin-top: var(--s-400);
 	position: relative;
 	z-index: 5;

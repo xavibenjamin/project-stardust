@@ -4,16 +4,20 @@
 
 html {
 	font-family: var(--f-text);
-	font-size: clamp(100%, 100% + 0.18vw, 200%);
+	font-size: clamp(105%, 105% + 0.18vw, 200%);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
 	color: var(--c-text);
-	font-size: var(--s-500);
+	font-size: var(--s-400);
 	font-weight: 300;
 	line-height: var(--l-loose);
+
+	@media (--bp-medium) {
+		font-size: var(--s-500);
+	}
 }
 
 h1,

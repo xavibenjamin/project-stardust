@@ -36,9 +36,6 @@ $main_classes_string = join( ' ', $base_classes );
 			</header>
 		<?php endif; ?>
 
-		<?php if ( $is_photos ) : ?>
-			<div class="grid">
-		<?php endif; ?>
 		<div class="<?php echo $is_photos ? 'photo-grid' : 'site-feed'; ?>">
 			<?php
 			if ( have_posts() ) :
@@ -61,9 +58,7 @@ $main_classes_string = join( ' ', $base_classes );
 			endif;
 			?>
 		</div>
-		<?php if ( $is_photos ) : ?>
-			</div>
-		<?php endif; ?>
+
 		<?php get_template_part( 'template-parts/pagination' ); ?>
 	</div>
 </main>

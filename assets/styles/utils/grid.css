@@ -5,28 +5,29 @@
 
 .grid {
 	--side-gutter: var(--s-500);
-	--content-width: 42rem;
-	--grid-columns: [wrapper-start] minmax(var(--side-gutter), 1fr) [container-start] minmax(auto, var(--content-width)) [container-end] minmax(var(--side-gutter), 1fr) [wrapper-end];
+	--content-width: 38rem;
+	--grid-columns: [wrapper-start] minmax(auto, 1fr) [container-start] minmax(auto, var(--content-width)) [container-end] minmax(auto, 1fr) [wrapper-end];
 
 	align-items: start;
 	display: grid;
+	grid-auto-rows: max-content;
 	grid-template-columns: var(--grid-columns);
 
-	@media (--bp-medium) {
-		--grid-columns: [wrapper-start] 1fr [container-start ] 3fr [wrapper-end];
+	@media (--bp-large-max) {
+		column-gap: var(--s-500);
+	}
+
+	@media (--bp-large) {
+		--grid-columns: [wrapper-start] 0.4fr [container-start ] 1fr [container-end wrapper-end];
 	}
 }
 
 .grid--subgrid {
-	--side-gutter: var(--s-500);
-	--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] minmax(auto, var(--content-width)) [main-content-end] var(--side-gutter) [wide-content-end];
+	--grid-columns: [container-start wide-content-start] minmax(auto, 1fr) [main-content-start] minmax(auto, var(--content-width)) [main-content-end] minmax(auto, 1fr) [wide-content-end container-end];
+
+	column-gap: var(--side-gutter);
 
 	@media (--bp-large) {
-		--side-gutter: minmax(var(--s-500), var(--s-700));
-		--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] repeat(4, minmax(auto, calc(var(--content-width) / 4))) [main-content-end] var(--side-gutter) [wide-content-end] auto;
-	}
-
-	@media (--bp-xlarge) {
-		--grid-columns: [wide-content-start] var(--side-gutter) [main-content-start] repeat(4, minmax(auto, calc(var(--content-width) / 4))) [main-content-end] var(--side-gutter) [wide-content-end] minmax(0, 18.75rem) auto;
+		--grid-columns: [container-start wide-content-start] var(--s-500) [main-content-start] repeat(4, minmax(auto, calc(var(--content-width) / 4))) [main-content-end ] var(--side-gutter) [wide-content-end] var(--side-gutter) [sidebar-start] minmax(0, 0.5fr) [sidebar-end] auto [container-end];
 	}
 }

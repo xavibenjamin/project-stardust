@@ -52,4 +52,12 @@
 	& .alignright {
 		flex-direction: row-reverse;
 	}
+
+	&.alignfull,
+	& .alignfull {
+
+		& img {
+			grid-column: wide-content-start / -1;
+		}
+	}
 }
