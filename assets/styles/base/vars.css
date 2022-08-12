@@ -37,6 +37,9 @@
 	/* Misc */
 	--t-timing: 200ms;
 	--t-easing: ease;
+
+	/* WordPress Vars */
+	--wp--preset--font-size--medium: var(--s-600);
 }
 
 /* Media Queries */

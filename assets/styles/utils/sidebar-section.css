@@ -5,19 +5,18 @@
 
 .sidebar-section {
 
-	& + .sidebar-section {
-		margin-top: 4rem;
+	@media (--bp-xxxlarge) {
+
+		& + .sidebar-section {
+			margin-top: 4rem;
+		}
 	}
 }
 
 .sidebar-section__title {
 	align-items: center;
 	display: flex;
-	font-size: var(--s-600);
-
-	@media (--bp-medium) {
-		font-size: var(--s-500);
-	}
+	font-size: var(--s-500);
 
 	& svg {
 		fill: var(--c-accent-alt);
