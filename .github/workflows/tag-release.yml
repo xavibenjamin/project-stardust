@@ -1,7 +1,8 @@
 name: 'Tag and Release'
 on:
   push:
-
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,7 +14,6 @@ jobs:
         uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          dry_run: true
       
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
