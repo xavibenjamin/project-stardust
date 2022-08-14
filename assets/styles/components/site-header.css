@@ -20,8 +20,6 @@
 
 	@media (--bp-large) {
 		align-self: stretch;
-
-		/* border-right: 1px solid var(--c-border-line); */
 		grid-column: wrapper-start / container-start;
 		min-width: 15rem;
 		padding-left: var(--s-600);
@@ -44,7 +42,7 @@
 		flex-direction: column;
 		gap: var(--s-500);
 		margin-left: auto;
-		max-width: 14rem;
+		max-width: 12rem;
 		position: sticky;
 		top: var(--s-800);
 	}
