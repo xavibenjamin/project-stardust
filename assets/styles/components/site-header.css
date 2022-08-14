@@ -4,6 +4,8 @@
 
 .site-header {
 	grid-column: container;
+	position: relative;
+	z-index: 100;
 
 	@media (--bp-large-max) {
 		margin-bottom: var(--s-500);
@@ -44,6 +46,6 @@
 		margin-left: auto;
 		max-width: 14rem;
 		position: sticky;
-		top: var(--s-700);
+		top: var(--s-800);
 	}
 }
