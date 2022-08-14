@@ -42,10 +42,12 @@
 .entry__title--snippet {
 	align-items: center;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 0.4rem;
 
 	& .title__parent {
 		color: var(--c-link);
+		display: block;
 		font-size: var(--s-500);
 	}
 
@@ -127,6 +129,10 @@
 .entry__content {
 	display: contents;
 
+	& a:visited {
+		color: var(--c-text-alt);
+	}
+
 	& > * {
 		grid-column: main-content;
 	}
@@ -188,7 +194,7 @@
 
 .entry__footer {
 	grid-column: main-content;
-	margin-top: var(--s-600);
+	margin-top: var(--s-500);
 }
 
 /*  Entry Tags */
