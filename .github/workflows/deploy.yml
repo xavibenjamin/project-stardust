@@ -12,6 +12,9 @@ jobs:
     environment: 
       name: production
       url: https://smithtimmytim.com
+
+    permissions:
+      deployments: write
     
     steps:
     - name: Checkout Repo
