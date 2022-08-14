@@ -6,7 +6,10 @@
  * @package Stardust
  */
 
+use function Stardust\Utility\widont;
+
 $site_pronouns = get_option( 'sd_site_pronouns' ) ?? false;
+$site_bio      = widont( get_bloginfo( 'description' ) );
 $base_classes  = [
 	'site-id',
 	'h-card',
@@ -17,7 +20,6 @@ if ( ! is_home() ) {
 }
 
 $partial_classes = join( ' ', $base_classes );
-
 ?>
 
 <div class="<?php echo esc_attr( $partial_classes ); ?>">
@@ -34,6 +36,6 @@ $partial_classes = join( ' ', $base_classes );
 			<?php endif; ?>
 		</h1>
 		<p class="site-username"><?php echo esc_html( '@smithtimmytim' ); ?></p>
-		<p class="site-bio"><?php bloginfo( 'description' ); ?></p>
+		<p class="site-bio"><?php echo esc_html( $site_bio ); ?></p>
 	</div>
 </div>
