@@ -5,6 +5,7 @@
 
 .site-id {
 	display: flex;
+	flex-basis: 80%;
 	flex-direction: column;
 	position: relative;
 }
@@ -45,7 +46,7 @@
 	& img {
 		border: 1px solid var(--c-border-line);
 		border-radius: 50%;
-		max-width: 4rem;
+		max-width: calc(var(--s-900) + 0.8vw);
 	}
 }
 
@@ -54,8 +55,12 @@
 }
 
 .site-name {
-	font-size: var(--s-500);
+	font-size: var(--s-600);
 	margin-bottom: 0.1rem;
+
+	@media (--bp-large) {
+		font-size: var(--s-400);
+	}
 
 	& a {
 		color: var(--c-heading);
@@ -74,20 +79,28 @@
 
 .site-username {
 	color: var(--c-text-alt);
-	font-size: var(--s-400);
+	font-size: var(--s-500);
+
+	@media (--bp-large) {
+		font-size: var(--s-400);
+	}
 }
 
 .site-pronouns {
 	color: var(--c-accent-alt);
 	font-family: var(--f-text);
-	font-size: 0.6em;
+	font-size: 0.7em;
 	font-weight: 400;
 }
 
 .site-bio {
-	font-size: var(--s-400);
+	color: var(--c-text-accent);
 	line-height: var(--l-small);
 	margin-top: var(--s-400);
 	position: relative;
 	z-index: 5;
+
+	@media (--bp-large) {
+		font-size: var(--s-400);
+	}
 }
