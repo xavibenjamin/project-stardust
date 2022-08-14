@@ -14,9 +14,14 @@ body {
 	font-size: var(--s-400);
 	font-weight: 300;
 	line-height: var(--l-loose);
+	padding-top: var(--s-400);
 
 	@media (--bp-medium) {
 		font-size: var(--s-500);
+	}
+
+	@media (--bp-large) {
+		padding-top: var(--s-800);
 	}
 }
 

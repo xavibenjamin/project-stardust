@@ -3,6 +3,5 @@
 
 	@media (--bp-large) {
 		grid-column-start: container-start;
-		padding-top: var(--s-800);
 	}
 }
