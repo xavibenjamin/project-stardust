@@ -20,31 +20,8 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v3
 
-    - name: Get git output names
-      id: git
-      shell: bash
-      run: |
-        if [[ "${{ github.ref }}" != "refs/tags/"* ]]; then
-          if [[ ${{ github.event_name }} == 'pull_request' ]]; then
-            echo "::set-output name=current_branch::$HEAD_REF"
-          else
-            echo "::set-output name=current_branch::$REF_BRANCH"
-          fi
-        else
-          REF=$(printf "%q" "${{ github.ref }}")
-          REF_BRANCH=${REF/refs\/tags\/${{ inputs.strip_tag_prefix }}/}
-          echo "::set-output name=current_branch::$(eval printf "%s" "$REF_BRANCH")"
-        fi
-    
-    - uses: chrnorm/deployment-action@releases/v1
-      name: Create GitHub deployment
-      id: deployment
-      with:
-        token: "${{ github.token }}"
-        environment: production
-        ref: ${{ steps.git.outputs.current_branch }}
-
     - uses: actions/setup-node@v3
+      name: Setup Node
       with:
         node-version: 16
     
@@ -62,21 +39,3 @@ jobs:
         REMOTE_USER: ${{ secrets.SSH_USER }}
         ARGS: -rltgoDzvO --exclude .git --exclude .github --exclude node_modules
         TARGET: /www/wp-content/themes/project-stardust
-    
-    - name: Update deployment status (success)
-      if: success()
-      uses: chrnorm/deployment-status@v2
-      with:
-        token: '${{ github.token }}'
-        environment-url: http://my-app-url.com
-        state: 'success'
-        deployment-id: ${{ steps.deployment.outputs.deployment_id }}
-    
-    - name: Update deployment status (failure)
-      if: failure()
-      uses: chrnorm/deployment-status@v2
-      with:
-        token: '${{ github.token }}'
-        environment-url: http://my-app-url.com
-        state: 'failure'
-        deployment-id: ${{ steps.deployment.outputs.deployment_id }}
