@@ -1,6 +1,6 @@
 {
   "name": "project-stardust",
-  "version": "2022.2",
+  "version": "2022.3",
   "description": "Theme for my blog",
   "scripts": {
     "build": "webpack --mode=production",
