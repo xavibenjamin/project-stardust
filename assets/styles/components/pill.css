@@ -9,13 +9,17 @@
 	border-radius: 50rem;
 	color: var(--c-text);
 	display: flex;
-	font-size: var(--s-300);
+	font-size: var(--s-400);
 	font-weight: bold;
 	gap: 0.5rem;
 	justify-content: space-between;
 	line-height: var(--l-tight);
 	padding: 0.5rem var(--s-300);
 	text-decoration: none;
+
+	@media (--bp-large) {
+		font-size: var(--s-300);
+	}
 }
 
 .pill__meta {
