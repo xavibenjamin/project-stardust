@@ -176,16 +176,12 @@
 	grid-auto-rows: max-content;
 	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 
-	@media (--bp-large) {
-		gap: var(--s-500);
-		grid-column-end: sidebar;
+	@media (--bp-medium) {
+		grid-column-end: wide-content-end;
 	}
 
 	@media (--bp-xlarge) {
-		grid-column-end: container;
-	}
-
-	@media (--bp-xxxlarge) {
+		gap: var(--s-500);
 		grid-column: sidebar;
 		grid-row: 2 / 50;
 		margin-top: 0;
