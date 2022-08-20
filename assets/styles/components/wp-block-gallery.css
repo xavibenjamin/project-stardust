@@ -3,13 +3,23 @@
  */
 
 .wp-block-gallery {
-	gap: 0.5rem !important;
+	--gallery-grid-gap: calc(var(--base-size) * 0.3);
+
+	gap: var(--gallery-grid-gap) !important;
+
+	& .blocks-gallery-grid {
+		gap: var(--gallery-grid-gap) !important;
+	}
+
+	& .blocks-gallery-item {
+		margin: 0 !important;
+	}
 
 	& img {
 		margin: 0;
 	}
 
 	&:not(:first-child) {
-		margin-top: var(--s-700);
+		margin-top: var(--s-500);
 	}
 }
