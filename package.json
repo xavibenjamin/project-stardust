@@ -48,8 +48,7 @@
   },
 
   "release": {
-    "branches": [ "main",  "feat/50-update-release-actions-to-comment-on-released-pull-requests"], 
-    "dryRun": true,
+    "branches": [ "main" ], 
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
