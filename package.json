@@ -1,7 +1,8 @@
 {
   "name": "project-stardust",
-  "version": "2022.4",
+  "version": "2022.4.0",
   "description": "Theme for my blog",
+  "private": true,
   "scripts": {
     "build": "webpack --mode=production",
     "watch": "webpack --watch",
@@ -11,10 +12,13 @@
     "lint:css": "stylelint assets/styles",
     "lint:js": "eslint assets includes",
     "lint:php:fix": "composer run lint-fix",
-    "lint:css:fix": "stylelint assets/styles --fix"
+    "lint:css:fix": "stylelint assets/styles --fix",
+    "release": "npx semantic-release"
   },
+
   "author": "Timothy Smith",
   "license": "ISC",
+
   "devDependencies": {
     "@babel/core": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
@@ -35,10 +39,23 @@
     "postcss-loader": "^6.1.1",
     "postcss-nested": "^5.0.6",
     "postcss-preset-env": "^7.0.0",
+    "semantic-release": "^19.0.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2"
+  },
+
+  "release": {
+    "branches": [ "main",  "feat/50-update-release-actions-to-comment-on-released-pull-requests"], 
+    "dryRun": true,
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+     ["@semantic-release/github", {
+      "assets": ["dist/**"]
+     }]
+    ]
   }
 }
