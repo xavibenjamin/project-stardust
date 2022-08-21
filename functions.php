@@ -6,13 +6,16 @@
  */
 
 // Useful global constants.
-define( 'SD_VERSION', '2022.5' );
 define( 'SD_TEMPLATE_URL', get_template_directory_uri() );
 define( 'SD_PATH', get_template_directory() . '/' );
 define( 'SD_INC', SD_PATH . 'includes/' );
 define( 'SD_BLOCK_DIR', SD_INC . 'blocks/' );
 define( 'SD_DIST_PATH', SD_PATH . 'dist/' );
 define( 'SD_DIST_URL', SD_TEMPLATE_URL . '/dist/' );
+
+$content = file_get_contents( SD_PATH . 'package.json' ); //phpcs:ignore
+$content = json_decode( $content, true );
+define( 'SD_VERSION', $content['version'] );
 
 require_once SD_INC . 'blocks.php';
 require_once SD_INC . 'core.php';
