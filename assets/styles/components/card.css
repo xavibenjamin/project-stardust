@@ -77,11 +77,11 @@
 	}
 
 	& .card__meta {
+		--icon-size: calc(var(--base-size) * 0.65);
+
 		align-items: center;
 		display: flex;
 		gap: calc(var(--base-size) * 0.3);
-
-		--icon-size: calc(var(--base-size) * 0.65);
 
 		& svg {
 			fill: var(--c-text-alt);
