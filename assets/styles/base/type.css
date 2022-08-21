@@ -11,19 +11,9 @@ html {
 
 body {
 	color: var(--c-text);
-
-	/* font-size: var(--s-400); */
 	font-size: var(--s-500);
 	font-weight: 300;
 	line-height: var(--l-loose);
-	padding-top: var(--s-400);
-
-	/* @media (--bp-medium) {
-	} */
-
-	@media (--bp-large) {
-		padding-top: var(--s-800);
-	}
 }
 
 h1,

@@ -4,6 +4,7 @@
 
 .site-header {
 	grid-column: container;
+	padding-top: var(--s-400);
 	position: relative;
 	z-index: 100;
 
@@ -23,6 +24,7 @@
 		grid-column: wrapper-start / container-start;
 		min-width: 15rem;
 		padding-left: var(--s-600);
+		padding-top: var(--s-800);
 	}
 }
 

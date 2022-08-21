@@ -1,7 +1,9 @@
 .site-content {
 	grid-column: wrapper;
+	padding-bottom: var(--s-800);
 
 	@media (--bp-large) {
 		grid-column-start: container-start;
+		padding-top: var(--s-800);
 	}
 }

@@ -3,14 +3,15 @@
  */
 
 .photo-grid {
+	--photo-grid-gap: calc(var(--base-size) * 0.3);
+
 	display: grid;
 	grid-column: container;
-	grid-gap: 2px;
+	grid-gap: var(--photo-grid-gap);
 	grid-template-columns: repeat(3, 1fr);
 
 	@media (--bp-large) {
 		grid-column-start: main-content;
-		grid-gap: var(--s-300);
 	}
 
 	@media (--bp-xlarge) {
