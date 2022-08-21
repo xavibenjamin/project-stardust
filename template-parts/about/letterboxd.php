@@ -25,15 +25,13 @@ if ( empty( $films ) ) {
 	<ul class="sidebar-section__list">
 	<?php
 	foreach ( $films as $film ) {
-		$film_title         = $film->get_item_tags( 'https://letterboxd.com', 'filmTitle' )[0]['data'];
-		$film_rating        = $film->get_item_tags( 'https://letterboxd.com', 'memberRating' )[0]['data'];
-		$film_watched_date  = $film->get_item_tags( 'https://letterboxd.com', 'watchedDate' );
-		$film_canonical_url = $film->get_link();
-		$timestamp          = strtotime( $film_watched_date[0]['data'] );
+		$film_title         = $film['title'];
+		$film_rating        = $film['rating'];
+		$film_canonical_url = $film['url'];
+		$film_rewatch       = $film['rewatch'];
+		$timestamp          = $film['timestamp'];
 		$formatted_date     = gmdate( 'D, M jS, Y', $timestamp );
-		$content            = $film->get_content();
-		preg_match( '/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $content, $first_image );
-		$film_poster = $first_image['src'] ?? false;
+		$film_poster        = $film['poster'];
 
 		$ratings_partial_args = [
 			'rating' => $film_rating,
@@ -64,6 +62,11 @@ if ( empty( $films ) ) {
 						<span>
 							<?php echo esc_html( $formatted_date ); ?>
 						</span>
+						<?php if ( ! empty( $film_rewatch ) ) : ?>
+							<span>
+								<?php get_template_part( 'template-parts/svg/icon', 'sync' ); ?>
+							</span>
+						<?php endif; ?>
 					</div>
 				</div>
 			</article>
