@@ -1,6 +1,6 @@
 {
   "name": "project-stardust",
-  "version": "2022.4.0",
+  "version": "0.0.0",
   "description": "Theme for my blog",
   "private": true,
   "scripts": {
@@ -15,14 +15,14 @@
     "lint:css:fix": "stylelint assets/styles --fix",
     "release": "npx semantic-release"
   },
-
   "author": "Timothy Smith",
   "license": "ISC",
-
   "devDependencies": {
     "@babel/core": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.16.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@wordpress/dependency-extraction-webpack-plugin": "^3.2.1",
     "@wordpress/eslint-plugin": "^12.8.0",
     "babel-loader": "^8.2.2",
@@ -46,15 +46,26 @@
     "webpack": "^5.50.0",
     "webpack-cli": "^4.7.2"
   },
-
   "release": {
-    "branches": [ "main" ], 
+    "branches": [
+      "main"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-     ["@semantic-release/github", {
-      "assets": ["dist/**"]
-     }]
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
+        }
+      ]
     ]
   }
 }
