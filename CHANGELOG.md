@@ -1,3 +1,10 @@
+## [0.4.4](https://github.com/smithtimmytim/project-stardust/compare/v0.4.3...v0.4.4) (2022-08-21)
+
+
+### Bug Fixes
+
+* **recently watched:** rewatched icon ([#67](https://github.com/smithtimmytim/project-stardust/issues/67)) ([fae15cb](https://github.com/smithtimmytim/project-stardust/commit/fae15cb1c865cc90ba3e515fc198810a464d0b1d))
+
 ## [0.4.3](https://github.com/smithtimmytim/project-stardust/compare/v0.4.2...v0.4.3) (2022-08-21)
 
 
