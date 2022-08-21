@@ -2,11 +2,13 @@
 name: 'Build and Deploy'
 
 on:
-  push:
-    branches: [ main ]
+  workflow_run:
+    workflows: ['Tag and Release']
+    types:
+      - completed
 
 jobs:
-  building:
+  deploy:
 
     runs-on: ubuntu-latest
     environment: 
@@ -29,7 +31,7 @@ jobs:
       run: npm install
     
     - name: Build theme
-      run: npm run build --if-present
+      run: npm run build
     
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@v2.2.11
