@@ -75,4 +75,18 @@
 		margin-top: 0;
 		width: 4em;
 	}
+
+	& .card__meta {
+		align-items: center;
+		display: flex;
+		gap: calc(var(--base-size) * 0.3);
+
+		--icon-size: calc(var(--base-size) * 0.65);
+
+		& svg {
+			fill: var(--c-text-alt);
+			height: var(--icon-size);
+			width: var(--icon-size);
+		}
+	}
 }
