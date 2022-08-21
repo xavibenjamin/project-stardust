@@ -45,7 +45,25 @@ function get_recent_tracks() {
 		}
 	}
 
-	$filtered_data = $lastfm_data['recenttracks']['track'];
+	$filtered_data = [];
+	$tracks        = $lastfm_data['recenttracks']['track'];
+
+	foreach ( $tracks as $track ) {
+		$song_name   = $track['name'];
+		$song_url    = $track['url'];
+		$artist_name = $track['artist']['#text'];
+		$cover_img   = $track['image']['2']['#text'];
+
+		array_push(
+			$filtered_data,
+			[
+				'song'   => $song_name,
+				'url'    => $song_url,
+				'artist' => $artist_name,
+				'cover'  => $cover_img,
+			]
+		);
+	}
 
 	return $filtered_data;
 }
@@ -53,7 +71,7 @@ function get_recent_tracks() {
 /**
  * Get Top Artists
  *
- * @return array $filtered_data the artists array
+ * @return array $filtered_data just the artist stuff I need
  */
 function get_top_artists() {
 	$settings         = get_api_options();
@@ -71,7 +89,23 @@ function get_top_artists() {
 		}
 	}
 
-	$filtered_data = $top_artists_data['topartists']['artist'];
+	$filtered_data = [];
+	$artists       = $top_artists_data['topartists']['artist'];
+
+	foreach ( $artists as $artist ) {
+		$artist_name      = $artist['name'];
+		$artist_url       = $artist['url'];
+		$artist_playcount = $artist['playcount'];
+
+		array_push(
+			$filtered_data,
+			[
+				'name'      => $artist_name,
+				'url'       => $artist_url,
+				'playcount' => $artist_playcount,
+			]
+		);
+	}
 
 	return $filtered_data;
 }
