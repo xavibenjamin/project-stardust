@@ -26,20 +26,11 @@ $artists = get_top_artists();
 	<ul class="sidebar-section__list">
 		<?php
 
-		// phpcs:disable PHPCompatibility.Lists.NewKeyedList.Found, PHPCompatibility.Lists.NewShortList.Found
 		foreach ( $tracks as $track ) :
-			[
-				'name' => $song_name,
-				'url' => $song_url,
-				'artist' => [
-					'#text' => $artist_name
-				],
-				'image' => [
-					'2' => [
-						'#text' => $cover_img
-					]
-				]
-			] = $track;
+			$song_name   = $track['song'];
+			$song_url    = $track['url'];
+			$artist_name = $track['artist'];
+			$cover_img   = $track['cover'];
 			?>
 
 			<li>
@@ -80,11 +71,9 @@ $artists = get_top_artists();
 	<ul class="sidebar-section__list sidebar-section__list--compressed">
 		<?php
 		foreach ( $artists as $artist ) :
-			[
-				'name'      => $artist_name,
-				'url'       => $artist_url,
-				'playcount' => $artist_playcount,
-			] = $artist;
+			$artist_name      = $artist['name'];
+			$artist_url       = $artist['url'];
+			$artist_playcount = $artist['playcount'];
 			?>
 
 			<li>
