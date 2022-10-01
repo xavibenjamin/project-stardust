@@ -1,3 +1,10 @@
+## [0.4.5](https://github.com/xavibenjamin/project-stardust/compare/v0.4.4...v0.4.5) (2022-10-01)
+
+
+### Bug Fixes
+
+* change name and username ([#69](https://github.com/xavibenjamin/project-stardust/issues/69)) ([70074e8](https://github.com/xavibenjamin/project-stardust/commit/70074e865263ac0057e81b988c1e7f20039e98b7))
+
 ## [0.4.4](https://github.com/smithtimmytim/project-stardust/compare/v0.4.3...v0.4.4) (2022-08-21)
 
 
