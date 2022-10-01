@@ -24,7 +24,7 @@ $partial_classes = join( ' ', $base_classes );
 
 <div class="<?php echo esc_attr( $partial_classes ); ?>">
 	<div class="site-id__image">
-		<img class="u-photo" src="<?php site_icon_url( 200 ); ?>" alt="Tim Smith Avatar Illustration">
+		<img class="u-photo" src="<?php site_icon_url( 200 ); ?>" alt="Xavi Benjamín Avatar Illustration">
 	</div>
 	<div class="site-id__info">
 		<h1 class="site-name">
@@ -35,7 +35,7 @@ $partial_classes = join( ' ', $base_classes );
 				<span class="site-pronouns"><?php echo esc_html( $site_pronouns ); ?></span>
 			<?php endif; ?>
 		</h1>
-		<p class="site-username"><?php echo esc_html( '@smithtimmytim' ); ?></p>
+		<p class="site-username"><?php echo esc_html( '@elxaviben' ); ?></p>
 		<p class="site-bio"><?php echo esc_html( $site_bio ); ?></p>
 	</div>
 </div>
