@@ -15,7 +15,7 @@
     "lint:css:fix": "stylelint assets/styles --fix",
     "release": "npx semantic-release"
   },
-  "author": "Timothy Smith",
+  "author": "Xavi Benjamín",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.4",
