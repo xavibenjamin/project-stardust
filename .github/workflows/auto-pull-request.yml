@@ -1,0 +1,28 @@
+name: 'Auto-Create Release Pull Requests'
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  auto-pr:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: Create Pull Request
+        uses: devops-infra/action-pull-request@v0.5.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: develop
+          target_branch: main
+          title: "chore(bot): next release"
+          assignee: ${{ github.actor }}
+          label: automatic
+          template: .github/PULL_REQUEST_TEMPLATE.md
+          old_string: "<!-- Add your description here -->"
+          new_string: "**Automatic pull request**"
+          get_diff: true
