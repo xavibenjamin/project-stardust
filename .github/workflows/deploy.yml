@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: production
-      url: https://smithtimmytim.com
+      url: https://xavibenjamin.com
 
     permissions:
       deployments: write
