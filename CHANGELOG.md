@@ -1,3 +1,32 @@
+## [1.0.1](https://github.com/xavibenjamin/project-stardust/compare/v1.0.0...v1.0.1) (2022-10-02)
+
+
+### Bug Fixes
+
+* deploy action ([#75](https://github.com/xavibenjamin/project-stardust/issues/75)) ([3df7ca4](https://github.com/xavibenjamin/project-stardust/commit/3df7ca464f8721f4ac262b0b1f71a87edddce5f7))
+
+# [1.0.0](https://github.com/xavibenjamin/project-stardust/compare/v0.4.6...v1.0.0) (2022-10-02)
+
+
+### chore
+
+* **bot:** next release ([#73](https://github.com/xavibenjamin/project-stardust/issues/73)) ([53a4f1e](https://github.com/xavibenjamin/project-stardust/commit/53a4f1ef81080455870d88f594276f6e0c88a11c))
+
+
+### Features
+
+* add auto pull request for develop ([2fa4c66](https://github.com/xavibenjamin/project-stardust/commit/2fa4c66debfeb1b262c2037fdd2d081da47e7bb6))
+* add auto pull request for develop ([#72](https://github.com/xavibenjamin/project-stardust/issues/72)) ([fd74378](https://github.com/xavibenjamin/project-stardust/commit/fd74378de1e9d8dfe308fbe0ad43d49e410625bc))
+* add lint PR title action ([a240202](https://github.com/xavibenjamin/project-stardust/commit/a24020296fb97e65daf782b1cb5184c3a42a7198))
+* add lint PR title action ([#74](https://github.com/xavibenjamin/project-stardust/issues/74)) ([eec0b04](https://github.com/xavibenjamin/project-stardust/commit/eec0b0408caa539cfa7070a040694a61bd159e63))
+
+
+### BREAKING CHANGES
+
+* **bot:** Name has been changed.
+
+Pipelines and actions have been updated accordingly.
+
 ## [0.4.6](https://github.com/xavibenjamin/project-stardust/compare/v0.4.5...v0.4.6) (2022-10-02)
 
 
