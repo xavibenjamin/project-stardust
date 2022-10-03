@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/xavibenjamin/project-stardust/compare/v1.0.3...v1.0.4) (2022-10-03)
+
+
+### Bug Fixes
+
+* deploy action for real this time ([4059e66](https://github.com/xavibenjamin/project-stardust/commit/4059e6638696a2b4f4e52e297023d60745b95d75))
+
 ## [1.0.3](https://github.com/xavibenjamin/project-stardust/compare/v1.0.2...v1.0.3) (2022-10-03)
 
 
