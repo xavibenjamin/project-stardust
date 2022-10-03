@@ -2,12 +2,8 @@
 name: 'Build and Deploy'
 
 on:
-  workflow_run:
-    workflows: ['Tag and Release']
-    types:
-      - completed
-    branches:
-      - main
+  release:
+    types: [published]
 
 jobs:
   deploy:
