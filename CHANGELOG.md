@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/xavibenjamin/project-stardust/compare/v1.0.1...v1.0.2) (2022-10-03)
+
+
+### Bug Fixes
+
+* deploy action ([#77](https://github.com/xavibenjamin/project-stardust/issues/77)) ([58b7614](https://github.com/xavibenjamin/project-stardust/commit/58b76140455c4f1bf538715d559efadb250db4c2))
+
 ## [1.0.1](https://github.com/xavibenjamin/project-stardust/compare/v1.0.0...v1.0.1) (2022-10-02)
 
 
