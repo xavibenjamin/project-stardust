@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/xavibenjamin/project-stardust/compare/v1.0.2...v1.0.3) (2022-10-03)
+
+
+### Bug Fixes
+
+* production deployment pipeline ([#79](https://github.com/xavibenjamin/project-stardust/issues/79)) ([79fd769](https://github.com/xavibenjamin/project-stardust/commit/79fd7699c05738e30bf9a6623a8d5ccac5ae9a98))
+
 ## [1.0.2](https://github.com/xavibenjamin/project-stardust/compare/v1.0.1...v1.0.2) (2022-10-03)
 
 
